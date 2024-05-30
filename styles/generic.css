@@ -1,0 +1,116 @@
+:root{
+    --red_nav_background: #F20400;
+    --grey_footer_background: #15151E;
+    --grey_footer_border: #38383F;
+    --f1-regular: 'f1-regular';
+    --f1-bold: 'f1-bold';
+    --f1-wide: 'f1-wide';
+    --TitilliumWeb_light: 'TitilliumWeb-Light';
+    --TitilliumWeb_regular: 'TitilliumWeb-regular';
+    --TitilliumWeb_bold: 'TitilliumWeb-bold';
+}
+
+@font-face {
+    font-family: 'f1-regular';
+    src: url(../assets/fonts/Formula1-Regular.otf);
+}
+
+@font-face {
+    font-family: 'f1-bold';
+    src: url(../assets/fonts/Formula1-Bold.otf);
+}
+
+@font-face {
+    font-family: 'f1-wide';
+    src: url(../assets/fonts/Formula1-Wide.otf);
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Light';
+    src: url(../assets/fonts/TitilliumWeb-Light.ttf);
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Regular';
+    src: url(../assets/fonts/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-bold';
+    src: url(../assets/fonts/TitilliumWeb-Bold.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---- nav ----*/
+header{
+    background-color: #F20400;
+}
+
+nav{
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .container_logo_f1{
+    margin-left: 70px;
+}
+
+ul{
+    list-style: none;
+    font-family: var(--f1-regular);
+    font-size: 22px;
+    color: #fff;
+    width: 60%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul > li > a{
+    color: #fff;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #F20400;
+    transition: all .3s;
+}
+
+ul > li > a:hover{
+    border-bottom: #fff solid 3px;
+}
+
+.container_icon_perfil{
+    background-color: #15151E;;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 9px;
+    margin-right: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .2s ease;
+}
+
+.container_icon_perfil:hover{
+    background-color: #20202e;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.container_icon_perfil img{
+    width: 40px;
+}
+/*--------------*/
