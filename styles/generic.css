@@ -70,6 +70,10 @@ a{
     text-decoration: none;
 }
 
+::selection{
+    background-color: #F20400;
+    color: #fff;
+}
 /* ---- nav ----*/
 header{
     background-color: #F20400;
