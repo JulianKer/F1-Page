@@ -79,7 +79,7 @@ header{
 }
 
 nav{
-    height: 80px;
+    height: 3.75em;
 
     display: flex;
     align-items: center;
@@ -87,13 +87,17 @@ nav{
 }
 
 nav .container_logo_f1{
-    margin-left: 70px;
+    margin-left: 3.125em;
+    margin-top: 5px;
+    & img{
+        width: 7.8em;
+    }
 }
 
 ul{
     list-style: none;
     font-family: var(--f1-regular);
-    font-size: 22px;
+    font-size: 17px;
     color: #fff;
     width: 60%;
 
@@ -114,10 +118,10 @@ ul > li > a:hover{
 
 .container_icon_perfil{
     background-color: #15151E;;
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 2.8em;
+    min-height: 2.8em;
     border-radius: 9px;
-    margin-right: 70px;
+    margin-right: 4.13em;
 
     display: flex;
     align-items: center;
@@ -133,6 +137,6 @@ ul > li > a:hover{
 }
 
 .container_icon_perfil img{
-    width: 40px;
+    width: 1.8em;
 }
 /*--------------*/
