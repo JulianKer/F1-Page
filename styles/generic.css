@@ -145,3 +145,199 @@ ul li a img{
     width: 1.8em;
 }
 /*--------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- footer ----*/
+footer{
+    background-color: #15151E;
+    height: 31em;
+    display: flex;
+    flex-direction: column;
+
+    & .footer_s1{
+        display: flex;
+        flex-direction: column;
+        height: 12em;
+        border-bottom: 2px solid #38383F;
+        margin: 0 3em;
+        padding-bottom: 1.5em;
+        
+        & .div1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+            img{
+                width: 100px;
+            }
+
+            .footer_titulo{
+                color: #fff;
+                font-size: 1.2em;
+                padding-left: 0.5em;
+                padding-bottom: 0.3em;
+            }
+        }
+        
+        .div2 {
+            display: flex;
+            width: 65em;
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
+            
+        }
+    }
+
+    .footer_s2{
+        display: flex;
+        flex-direction: row;
+        height: 13.5em;
+        margin: 2em 3em 0.2em 3em; /*-----------------------*/
+        border: 7px solid #38383F;
+        border-left: none;
+        border-top: none;
+        border-bottom-right-radius: 3em ;
+
+        & .seccion_links{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 60em;
+            margin-left: 8em;
+            padding-bottom: 2em;
+
+            & div{
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0;
+                /*
+                flex-direction: column; 
+                align-items: center;
+                justify-content: center;
+                */
+            }
+
+            div a{
+                color: #fff;
+                margin-bottom: 1.5em;
+                font-size: 1.3em;
+                width: 80%;
+                height: 2em;
+                text-align: start;
+                text-decoration: underline #15151E;
+                transition: all .2s;
+            }
+
+            div a:hover{
+                text-decoration: underline #F20400;
+                text-underline-offset: .2em ;
+            }
+
+        }
+
+        .seccion_redes {
+            width: 40%;
+
+            & .div_redes_1{
+                display: flex;
+                justify-content: space-evenly;
+
+                & .redes_a_pirelli{
+                    margin-right: -7em;
+                }
+
+                img{
+                    width: 7em;
+                }
+            }
+
+            .div_redes_2 {
+                height: 5.7em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .div_redes_2 a{
+                width: 2.5em;
+                height: 2.5em;
+                margin: .8em;
+                position: relative;
+            }
+            .div_redes_2 .img_facebook{
+                width: 2.4em;
+                height: 2em;
+                margin-right: 1em;
+            }
+            .div_redes_2 .img_x{
+                width: 3em;
+                height: 2.6em;
+                margin-right: 1em;
+                position: absolute;
+                left: -.35em;
+            }
+            .div_redes_2 .img_instagram{
+                width: 1.8em;
+                height: 1.8em;
+                margin-right: 1em;
+                position: absolute;
+                top: .3em;
+                left: .23em;
+            }
+            .div_redes_2 .img_youtube{
+                width: 3.7em;
+                height: 1.6em;
+                margin-right: 1em;
+                position: absolute;
+                top: .4em;
+                left: -.8em;
+            }
+        }
+    }
+
+    .footer_s3{
+        height: 2.1em;
+        display: flex;
+        justify-content: space-between;
+        margin: .7em 3em;
+        align-items: center;
+
+        & img{
+            width: 7em;
+        }
+
+        p {
+            font-size: 0.8em;
+            color: #38383F;
+        }
+    }
+}
+    
+
+
+
+
+/*--------------*/
