@@ -116,6 +116,11 @@ ul > li > a:hover{
     border-bottom: #fff solid 3px;
 }
 
+ul li a img{
+    width: 1.5em;
+    height: 1em;
+}
+
 .container_icon_perfil{
     background-color: #15151E;;
     min-width: 2.8em;

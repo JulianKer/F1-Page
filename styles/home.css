@@ -2,7 +2,6 @@
 /*------ main ------- */
 .main{
     padding: 3.1em;
-    border: solid 2px green;
     display: flex;
     gap: 1.8em;
 
@@ -19,7 +18,7 @@
     border-right: 10px solid #F20400;
 
     & h2{
-        font-size: 2.3em;
+        font-size: 2.2em;
         padding: 40px 0px;
     }
     a{
@@ -40,59 +39,128 @@
 .seccion2{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.1em;
+    gap: 1.8em;
 
     & .card{
         border-bottom: solid 1px #38383F;
         border-right: solid 1px #38383F;
         border-bottom-right-radius: 42px;
-        transition: all .7s;
+        overflow: hidden;
 
-        & h3{
-            font-size: 1.12em;
+        & .container_h3{
+            width: 100%;
+            background-color: #fff;
+            border-bottom-right-radius: 42px;
+            transition: all .6s;
+        }
+        
+        h3{
+            transition: all .6s;
+            
+            width: 18em;
+            font-size: 1em;
             padding: 1em 1.25em;
+            
             color: #000;
+            background-color: #fff;
         }
     }
-
+    
     .card:hover{
-        background-color: #38383F;
         border-right: solid 1px #F20400;
         border-bottom: solid 1px #F20400;
-        transform: scale(1.03);
-
-        & h3{
-            color: #fff;
+        
+        & .container_h3{
+            transform: translateY(-1em);
+        }
+        h3{
             text-decoration: underline;
             text-underline-offset: 4px;
+        }
+
+        img{
+            transform: scale(1.1);
         }
     }
 
     img{
+        object-fit: cover;
         width: 20.6em;
-        height: 9.1em;
+        height: 10em;
+        transition: all .6s;
     }
     button{
         width: 13.8em;
         height: 3.3em;
+
         background-color: #F20400;
-        border: 0;
+        border: solid 3px #F20400;
         border-radius: 9px;
+
         transition: all .5s;
     }
 
     button:hover{
-        transform: translateX(10px);
+        background-color: #fff;
+        cursor: pointer;
+
         & a{
-            text-decoration: underline;
+            color: #000;
             text-underline-offset: 4px;
+        }
+        span{
+            color: #F20400;
         }
     }
 
     button > a{
-        font-size: 1.25em;
+        font-size: 1.1em;
         color: #fff;
     }
 
 }
+/*--------------------*/
+
+/*------ seccion 3----*/
+.seccion3{
+    border: 8px solid #F20400;
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    margin: 0 3.6em 0 3.1em;
+
+    & .contenedor_de_partes{
+        display: flex;
+        margin: 2em 0 0 0;
+    
+        & .part1, .part2{
+            width: 50%;
+        }
+        .part1 h5{
+            font-size: 1.2em;
+            margin: 1em 0;
+        }
+
+        .part2{
+            margin:  0 5em;
+            & p{
+                font-size: 1.48em;
+            }
+        }
+    }
+
+    .titulo_s3{
+        font-size: 1.8em;
+        
+        position: absolute;
+        z-index: 10;
+        top: -.9em;
+
+        background-color: #fff;
+        width: 8em;
+    }
+
+}
+
 /*--------------------*/
