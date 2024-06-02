@@ -14,20 +14,32 @@
     font-family: 'f1-regular';
     src: url(../assets/fonts/Formula1-Regular.otf);
 }
+.fuente_f1_reg{
+    font-family: 'f1-regular';
+}
 
 @font-face {
     font-family: 'f1-bold';
     src: url(../assets/fonts/Formula1-Bold.otf);
+}
+.fuente_f1_bold{
+    font-family: 'f1-bold';
 }
 
 @font-face {
     font-family: 'f1-wide';
     src: url(../assets/fonts/Formula1-Wide.otf);
 }
+.fuente_f1_wide{
+    font-family: 'f1-wide';
+}
 
 @font-face {
     font-family: 'TitilliumWeb-Light';
     src: url(../assets/fonts/TitilliumWeb-Light.ttf);
+}
+.fuente_tw_Light{
+    font-family: 'TitilliumWeb-Light';
 }
 
 @font-face {
@@ -35,9 +47,16 @@
     src: url(../assets/fonts/TitilliumWeb-Regular.ttf);
 }
 
+.fuente_tw_regular{
+    font-family: 'TitilliumWeb-Regular';
+}
+
 @font-face {
     font-family: 'TitilliumWeb-bold';
     src: url(../assets/fonts/TitilliumWeb-Bold.ttf);
+}
+.fuente_tw_bold{
+    font-family: 'TitilliumWeb-Bold';
 }
 
 
@@ -54,6 +73,9 @@ a{
 /* ---- nav ----*/
 header{
     background-color: #F20400;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
 }
 
 nav{
