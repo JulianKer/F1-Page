@@ -10,6 +10,7 @@
     --TitilliumWeb_bold: 'TitilliumWeb-bold';
 }
 
+/* ----------------------------------------------------------FUENTES---------------------------------------------------------- */
 @font-face {
     font-family: 'f1-regular';
     src: url(../assets/fonts/Formula1-Regular.otf);
@@ -58,6 +59,8 @@
 .fuente_tw_bold{
     font-family: 'TitilliumWeb-Bold';
 }
+/* }-------------------------------------------------------------------------------------------------------------------- */
+
 
 
 *{
@@ -65,16 +68,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 a{
     text-decoration: none;
 }
-
 ::selection{
     background-color: #F20400;
     color: #fff;
 }
-/* ---- nav ----*/
+
+
+/* ----------------------------------------------- nav ----------------------------------------------------*/
 header{
     background-color: #F20400;
     position: sticky;
@@ -143,10 +146,97 @@ ul > li > a:hover{
 .container_icon_perfil img{
     width: 1.8em;
 }
-/*--------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 
-/*-----desplegable equipos-----*/
+/*---------------------------------------desplegable pilotos--------------------------------------------*/
+.nav_pilotos:hover + .desplegable_pilotos,
+.desplegable_pilotos:hover{
+    display: block;
+    left: 0;
+    top: 3.5em;
+}
+.desplegable_pilotos{
+    display: none;
+    position: absolute;
+    padding: 3em 5em;
+    background-color: #15151E;
+    width: 100%;
 
+    & .container_titulos{
+        border-right: 2px solid #38383F;
+        border-bottom: 2px solid #38383F;
+        border-bottom-right-radius: 10px;
+        padding-bottom: 1em;
+
+        & .titulo_all_drivers,
+        .titulo_salon_fama{
+            color: #fff;
+            margin-right: 4em;
+
+            & >span{
+                color: #F20400;
+            }
+        }
+
+        .titulo_all_drivers:hover,
+        .titulo_salon_fama:hover{
+            text-decoration: underline #F20400;
+            text-underline-offset: 5px;
+        }
+    }
+}
+
+.contenedor_pilotos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em 4em;
+    margin-top: 2em;
+
+    & .piloto{
+        display: flex;
+        align-items: center;
+
+        height: 2em;
+        padding-bottom: .5em;
+        font-size: .9em;
+
+        border-right: 2px solid #38383F;
+        border-bottom: 2px solid #38383F;
+        border-bottom-right-radius: 10px;
+        transition: all .2s;
+    }
+    
+    .rectangulo_vertical{
+        width: .4em;
+        height: .9em;
+        margin-right: 1em;
+    }
+
+    .nombre{
+        width: 80%;
+        color: #fff;
+
+        & .apellido{
+            margin-left: .6em;
+        }
+    }
+
+    .pico{
+        width: 10%;
+        padding-bottom: .1em;
+        transition: all .2s;
+        font-size: 1.4em;
+        color: #fff;
+    }
+
+    a:hover .pico{
+        transform: translateX(.5em);
+    }
+
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------desplegable equipos--------------------------------------------*/
 .nav_equipos:hover + .desplegable_equipos,
 .desplegable_equipos:hover{
     display: block;
@@ -158,7 +248,7 @@ ul > li > a:hover{
     display: none;
     position: absolute;
     width: 100%;
-    padding: 3em;
+    padding: 3em 5em;
     background-color: #15151E;
     border-bottom: 1px solid #F20400;
 
@@ -176,7 +266,8 @@ ul > li > a:hover{
             justify-content: space-between;
         }
         div > span{
-            margin-right: .5em;
+            margin-right: 1em;
+            transition: all .4s;
         }
 
         > img{
@@ -192,6 +283,13 @@ ul > li > a:hover{
         border-bottom-right-radius: 10px;
         display: block;
         padding-bottom: 1em;
+        span{
+            color: #F20400;
+        }
+    }
+    .titulo_all_teams:hover{
+        text-decoration: underline #F20400;
+        text-underline-offset: 5px;
     }
 
     .contenedor_equipos{
@@ -216,18 +314,21 @@ ul > li > a:hover{
     color: white;
 }
 
-.desplegable_equipos a > span{
-    color: #F20400;
+.desplegable_equipos a:hover span{
+    transform: translateX(.5em);;
 }
 
 .redbull{
     background-image: linear-gradient(to right,#15151E, #3671C6);
 }
-
 .borde_redbull:hover{
     border-bottom-color: #3671C6;
     border-right-color: #3671C6;
 }
+.borde_redbull:hover span{
+    color: #3671C6;
+}
+
 .rb{
     background-image: linear-gradient(to right,#15151E, #6692FF);
 }
@@ -235,6 +336,10 @@ ul > li > a:hover{
     border-bottom-color: #6692FF;
     border-right-color: #6692FF;
 }
+.borde_rb:hover span{
+    color: #6692FF;
+}
+
 .ferrari{
     background-image: linear-gradient(to right,#15151E, #E80020);
 }
@@ -242,6 +347,10 @@ ul > li > a:hover{
     border-bottom-color: #E80020;
     border-right-color: #E80020;
 }
+.borde_ferrari:hover span{
+    color: #E80020;
+}
+
 .williams{
     background-image: linear-gradient(to right,#15151E, #64C4FF);
 }
@@ -249,6 +358,10 @@ ul > li > a:hover{
     border-bottom-color: #64C4FF;
     border-right-color: #64C4FF;
 }
+.borde_williams:hover span{
+    color: #64C4FF;
+}
+
 .haas{
     background-image: linear-gradient(to right,#15151E, #B6BABD);
 }
@@ -256,6 +369,10 @@ ul > li > a:hover{
     border-bottom-color: #B6BABD;
     border-right-color: #B6BABD;
 }
+.borde_haas:hover span{
+    color: #B6BABD;
+}
+
 .alpine{
     background-image: linear-gradient(to right,#15151E, #0093CC);
 }
@@ -263,6 +380,10 @@ ul > li > a:hover{
     border-bottom-color: #0093CC;
     border-right-color: #0093CC;
 }
+.borde_alpine:hover span{
+    color: #0093CC;
+}
+
 .aston_martin{
     background-image: linear-gradient(to right,#15151E, #229971);
 }
@@ -270,6 +391,10 @@ ul > li > a:hover{
     border-bottom-color: #229971;
     border-right-color: #229971;
 }
+.borde_aston_martin:hover span{
+    color: #229971;
+}
+
 .kick_sauber{
     background-image: linear-gradient(to right,#15151E, #52E252);
 }
@@ -277,6 +402,10 @@ ul > li > a:hover{
     border-bottom-color: #52E252;
     border-right-color: #52E252;
 }
+.borde_kick_sauber:hover span{
+    color: #52E252;
+}
+
 .mercedes{
     background-image: linear-gradient(to right,#15151E, #27F4D2);
 }
@@ -284,6 +413,10 @@ ul > li > a:hover{
     border-bottom-color: #27F4D2;
     border-right-color: #27F4D2;
 }
+.borde_mercedes:hover span{
+    color: #27F4D2;
+}
+
 .mclaren{
     background-image: linear-gradient(to right,#15151E, #FF8000);
 }
@@ -291,7 +424,11 @@ ul > li > a:hover{
     border-bottom-color: #FF8000;
     border-right-color: #FF8000;
 }
-/*-----------------------------*/
+.borde_mclaren:hover span{
+    color: #FF8000;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 
 
@@ -315,7 +452,7 @@ ul > li > a:hover{
 
 
 
-/* ---- footer ----*/
+/* ------------------------------------------------- footer -----------------------------------------------------*/
 footer{
     background-color: #15151E;
     height: 31em;
@@ -485,9 +622,5 @@ footer{
         }
     }
 }
-    
 
-
-
-
-/*--------------*/
+/*-----------------------------------------------------------------------------------------------------*/
