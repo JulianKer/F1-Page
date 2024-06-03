@@ -110,19 +110,14 @@ ul{
 }
 
 ul > li > a{
+    padding: .82em 0;
     color: #fff;
-    padding-bottom: 4px;
     border-bottom: 3px solid #F20400;
     transition: all .3s;
 }
 
 ul > li > a:hover{
     border-bottom: #fff solid 3px;
-}
-
-ul li a img{
-    width: 1.5em;
-    height: 1em;
 }
 
 .container_icon_perfil{
@@ -150,7 +145,153 @@ ul li a img{
 }
 /*--------------*/
 
+/*-----desplegable equipos-----*/
 
+.nav_equipos:hover + .desplegable_equipos,
+.desplegable_equipos:hover{
+    display: block;
+    left: 0;
+    top: 3.5em;
+}
+
+.desplegable_equipos{
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding: 3em;
+    background-color: #15151E;
+    border-bottom: 1px solid #F20400;
+
+    & .equipo{
+        font-size: 1.4em;
+        position: relative;
+        border-right: 2px solid #38383F;
+        border-bottom: 2px solid #38383F;
+        border-bottom-right-radius: .7em;
+        width: 90%;
+        transition: all .4s;
+
+        & > div{
+            display: flex;
+            justify-content: space-between;
+        }
+        div > span{
+            margin-right: .5em;
+        }
+
+        > img{
+            position: relative;
+            z-index: 20;
+            left: .6em;
+        }
+    }
+
+    .titulo_all_teams{
+        border-right: 2px solid #38383F;
+        border-bottom: 2px solid #38383F;
+        border-bottom-right-radius: 10px;
+        display: block;
+        padding-bottom: 1em;
+    }
+
+    .contenedor_equipos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1em;
+        margin-top: 2.5em;
+
+        & .rectangulo_de_color{
+            color: #15151E;
+            position: absolute;
+            z-index: 10;
+            bottom: 1.1em;
+            width: 1.8em;
+            height: 1em;
+        }
+    }
+}
+
+.desplegable_equipos a{
+    color: white;
+}
+
+.desplegable_equipos a > span{
+    color: #F20400;
+}
+
+.redbull{
+    background-image: linear-gradient(to right,#15151E, #3671C6);
+}
+
+.borde_redbull:hover{
+    border-bottom-color: #3671C6;
+    border-right-color: #3671C6;
+}
+.rb{
+    background-image: linear-gradient(to right,#15151E, #6692FF);
+}
+.borde_rb:hover{
+    border-bottom-color: #6692FF;
+    border-right-color: #6692FF;
+}
+.ferrari{
+    background-image: linear-gradient(to right,#15151E, #E80020);
+}
+.borde_ferrari:hover{
+    border-bottom-color: #E80020;
+    border-right-color: #E80020;
+}
+.williams{
+    background-image: linear-gradient(to right,#15151E, #64C4FF);
+}
+.borde_williams:hover{
+    border-bottom-color: #64C4FF;
+    border-right-color: #64C4FF;
+}
+.haas{
+    background-image: linear-gradient(to right,#15151E, #B6BABD);
+}
+.borde_haas:hover{
+    border-bottom-color: #B6BABD;
+    border-right-color: #B6BABD;
+}
+.alpine{
+    background-image: linear-gradient(to right,#15151E, #0093CC);
+}
+.borde_alpine:hover{
+    border-bottom-color: #0093CC;
+    border-right-color: #0093CC;
+}
+.aston_martin{
+    background-image: linear-gradient(to right,#15151E, #229971);
+}
+.borde_aston_martin:hover{
+    border-bottom-color: #229971;
+    border-right-color: #229971;
+}
+.kick_sauber{
+    background-image: linear-gradient(to right,#15151E, #52E252);
+}
+.borde_kick_sauber:hover{
+    border-bottom-color: #52E252;
+    border-right-color: #52E252;
+}
+.mercedes{
+    background-image: linear-gradient(to right,#15151E, #27F4D2);
+}
+.borde_mercedes:hover{
+    border-bottom-color: #27F4D2;
+    border-right-color: #27F4D2;
+}
+.mclaren{
+    background-image: linear-gradient(to right,#15151E, #FF8000);
+}
+.borde_mclaren:hover{
+    border-bottom-color: #FF8000;
+    border-right-color: #FF8000;
+}
+/*-----------------------------*/
 
 
 
