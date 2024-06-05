@@ -1,0 +1,354 @@
+
+
+/*------------------------------------primer grilla de carreras pasadas-------------------------------------*/
+.carrera{
+    border-top: 2px #000 solid;
+    border-right: 2px #000 solid;
+    border-top-right-radius: 1em;
+    position: relative;
+    padding: 1em 1.2em;
+    color: #000;
+    transition: all .2s;
+}
+
+.carrera:hover{
+    border-top: 2px #F20400 solid;
+    border-right: 2px #F20400 solid;
+    transform: translateY(-1em);
+}
+
+
+.contenedor_cronogramas{
+    margin: 0 4em 4em 3em;
+    display: grid;
+    grid-template-columns:  /*repeat(4, 1fr)*/ repeat(auto-fit, minmax(315px, 1fr));
+    row-gap: 4em;
+}
+
+.contenedor_titulo_f1_schedeule{
+    margin: 4em;
+    border-top: 10px solid #000;
+    border-right: 10px solid #000;
+    border-top-right-radius: 1.5em;
+    padding-top: 1em;
+}
+
+.titulo_f1_schedule{
+    font-size: 62px;
+}
+
+.subtitulo_f1_schedule{
+    font-size: 1em;
+}
+
+.titulo_rondas{
+    font-size: 1em;
+    background-color: #fff;
+    color: #F20400;
+    padding: .1em 1em;
+
+    position: absolute;
+    top: -.9em;
+    left: 0;
+}
+
+.contenedor_dias_mes_img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+
+    border-bottom: 1px solid #929292;
+    padding-bottom: .7em;
+
+    & .dias{
+        font-size: 2em;
+        margin-bottom: .2em;
+    }
+    .mes{
+        display: inline;
+        font-size: 1.3em;
+        padding: 0 .5em;
+        border-radius: .5em;
+        background-color: #000;
+        color: #fff;
+
+    }
+}
+.contenedor_dias_mes_img .img_country{
+    width: 3em;
+    height: auto;
+    border: 1px solid #929292;
+    border-radius: .3em;
+    justify-self: end;
+}
+
+.carrera > img{
+    width: 100%;
+    height: auto;
+    border-radius: .7em;
+}
+
+
+
+
+.carrera > .podio{
+    width: 100%;
+    border-radius: .7em;
+    padding: .3em;
+
+    display: flex;
+    align-items: end;
+
+    position: relative;
+    bottom: -1.5em;
+}
+
+.podio_1,
+.podio_2,
+.podio_3{
+    background-color: #15151E;
+    border-radius: 1em;
+    border-bottom-left-radius: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.podio_1{
+    margin: 0 .2em;
+    max-height: 6em;
+}
+.podio_1 img{
+    width: 100%;
+}
+
+.podio_2{
+    max-height: 5.5em;
+}
+.podio_2 img{
+    width: 90%;
+}
+
+.podio_3{
+    max-height: 5em;
+}
+.podio_3 img{
+    width: 88%;
+}
+
+.podio_1 p,
+.podio_2 p,
+.podio_3 p{
+    background-color: #fff;
+    text-align: center;
+    border-bottom-right-radius: 1em;
+    border-bottom: solid 2px #929292;
+    border-right: solid 2px #929292;
+}
+
+.nombre_circuito{
+    font-size: 1.2em;
+    margin-top: 1em;
+
+    & span{
+        color: #F20400;
+    }
+}
+
+.nombre_gp{
+    font-size: .85em;
+    border-bottom: 1px solid #929292;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.contenedor_imgs{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    & .img_win_flag{
+        width: 100%;
+        height: 70%;
+        border-radius: 1em;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------ carrera proxima ------------------------------------------------------*/
+.contenedor_carrera_proxima{
+    width: 100%;
+    background-color: #15151E;
+    padding: 2em 4em 1em 4em;
+}
+
+.carrera_proxima{
+    display: grid;
+    grid-template-columns: 22.5% 77.5%;
+
+    /* background-color: red; */
+    padding: 1.5em 1em 1em 0;
+    border-top: 9px solid #F20400;
+    border-right: 9px solid #F20400;
+    border-top-right-radius: 2em;
+}
+
+.carrera_proxima:hover .contenedor_img_fondo_carrera_proxima img{
+    transform: scale(1.1);
+}
+
+.contenedor_descripcion{
+    position: relative;
+    color: #fff;
+    & >img{
+        width: 200px;
+        height: 150px;
+    }
+
+    .nombre_circuito{
+        font-size: 2em;
+    }
+    .mes{
+        color: #000;
+        background-color: #fff;
+    }
+
+}
+
+.titulo_ronda_siguiente{
+    position: absolute;
+    top: -2.5em;
+    font-size: 1em;
+    background-color: #15151E;
+    color: #F20400;
+    padding-right: 1em;
+}
+
+.contenedor_img_fondo_carrera_proxima{
+    height: 19.925em;
+    width: 59.7em;
+
+    position: relative;
+    align-self: center;
+    justify-self: center;
+
+    margin-left: 3em;
+
+    border-radius: 1em;
+    overflow: hidden;
+
+    & img{
+        position: absolute;
+        top: -7.5em;
+        left: -2.5em;
+        transition: all .2s;
+    }
+}
+
+.horarios{
+    position: absolute;
+    z-index: 10;
+    top: 6.5em;
+    right: 2em;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+    height: 170px;
+    background-color: #15151E;
+    font-size: 12px;
+    border-radius: .5em;
+    padding: 1em;
+
+    & >div{
+        display:grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        height: 20%;
+    }
+
+    .p1,.p2,.qualy{
+        margin-bottom: 1.1em;
+    }
+    .p3{
+        border-bottom: solid 1px #929292;
+        padding-bottom: .55em;
+    }
+    .qualy{
+        padding-top: .55em;
+    }
+
+    div > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1.5em;
+        background-color: #434343;
+        border-radius: 1em;
+    }
+}
+
+.div_img_circuito{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------- carreras proximas circuitos----------------------------------------------*/
+
+.contenedor_cronograma_carreras_proximas{
+    margin: 3em 4em 4em 3em;
+    display: grid;
+    grid-template-columns:  /*repeat(4, 1fr)*/ repeat(auto-fit, minmax(315px, 1fr));
+    row-gap: 4em;
+}
+
+.contenedor_circuito_img{
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 1em;
+}
+.contenedor_circuito_img > img{
+    width: 12em;
+}
+
+.otra_season{
+    grid-column: 1/5;
+    border-top: 2px solid #929292;
+    border-left: 2px solid #929292;
+    border-top-left-radius: .6em;
+    margin: 0 1em;
+    padding: 1em 1em .7em 1.5em;
+    transition: all .1s;
+
+    & span{
+        color: #F20400;
+        padding-right: .2em;
+    }
+    a{
+        display: block;
+        color: #000;
+        transition: all .1s;
+    }
+}
+
+.otra_season:hover{
+    border-top: 2px solid #F20400;
+    border-left: 2px solid #F20400;
+    cursor: pointer;
+}
+
+.otra_season:hover a{
+    transform: translateX(-.5em);
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
