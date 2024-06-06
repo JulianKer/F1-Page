@@ -86,8 +86,8 @@ header{
 }
 
 nav{
-    height: 3.75em;
-
+    min-height: 3.75em;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,6 +109,8 @@ ul{
     width: 60%;
 
     display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6.5em, 1fr)); */
     justify-content: space-evenly;
 }
 
@@ -117,6 +119,7 @@ ul > li > a{
     color: #fff;
     border-bottom: 3px solid #F20400;
     transition: all .3s;
+    display: flex;
 }
 
 ul > li > a:hover{
@@ -155,6 +158,7 @@ ul > li > a:hover{
     left: 0;
     top: 3.5em;
 }
+
 .desplegable_pilotos{
     display: none;
     position: absolute;
@@ -600,14 +604,14 @@ ul > li > a:hover{
 /* ------------------------------------------------- footer -----------------------------------------------------*/
 footer{
     background-color: #15151E;
-    height: 31em;
+    min-height: 31em;
     display: flex;
     flex-direction: column;
 
     & .footer_s1{
         display: flex;
         flex-direction: column;
-        height: 12em;
+        min-height: 12em;
         border-bottom: 2px solid #38383F;
         margin: 0 3em;
         padding-bottom: 1.5em;
@@ -630,19 +634,30 @@ footer{
         }
         
         .div2 {
-            display: flex;
-            width: 65em;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+            width: 100%;
+            place-items: center;
+            row-gap: 2.5em;
+            
+            /* display: flex; */
+            /* width: 65em; */
             justify-content: space-between;
-            align-items: center;
-            align-self: center;
+            /* align-items: center;
+            align-self: center; */
             
         }
     }
 
     .footer_s2{
+
+        /* display: grid; */
+        /* grid-template-columns: repeat(auto); */
+        /* min-height: 13.5em; ------------------------------------------------------------------------------------HACERRRRR*/
         display: flex;
-        flex-direction: row;
-        height: 13.5em;
+        /* flex-direction: row;  */
+        min-height: 13.5em;
+        min-width: 80%;
         margin: 2em 3em 0.2em 3em; /*-----------------------*/
         border: 7px solid #38383F;
         border-left: none;
@@ -651,8 +666,10 @@ footer{
 
         & .seccion_links{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            width: 60em;
+            grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+            min-width: 60%;
+            /* grid-template-columns: 1fr 1fr 1fr;
+            width: 60em; */
             margin-left: 8em;
             padding-bottom: 2em;
 
@@ -689,8 +706,12 @@ footer{
             width: 40%;
 
             & .div_redes_1{
-                display: flex;
-                justify-content: space-evenly;
+                
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-around;
+                /* display: flex;
+                justify-content: space-evenly; */
 
                 & .redes_a_pirelli{
                     margin-right: -7em;
@@ -707,10 +728,13 @@ footer{
             }
 
             .div_redes_2 {
-                height: 5.7em;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                min-height: 5.7em;
+                width: 20em;
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                /* display: flex; */
+                /* justify-content: center;
+                align-items: center; */
 
             }
             .div_redes_2 a{
@@ -751,7 +775,7 @@ footer{
     }
 
     .footer_s3{
-        height: 2.1em;
+        min-height: 2.1em;
         display: flex;
         justify-content: space-between;
         margin: .7em 3em;
@@ -769,3 +793,55 @@ footer{
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1355px) {
+    .footer_s2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion_links{
+        margin: 0 !important;
+        place-items: center;
+    }
+
+    .seccion_redes{
+        width: 100%;
+        margin: 0 !important;
+        align-content: center;
+
+        & .div_redes_1{
+            justify-items: center;
+        }
+
+        .div_redes_2{
+            min-width: 100%;
+            justify-items: center;
+        }
+
+        .redes_a_pirelli{
+            margin: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .seccion_links{
+        height: 22em;
+    }
+    .seccion_redes{
+        min-width: 100%;
+    }
+
+    .footer_s3{
+        flex-direction: column;
+        gap: 1em;
+        
+        & p{
+            text-align: center;
+        }
+    }
+
+}

@@ -2,12 +2,13 @@
 /*------ main ------- */
 .main{
     padding: 3.1em;
-    display: flex;
     gap: 1.8em;
 
-    & .seccion1, .seccion2{
-        width: 48%;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(39em, 1fr));
+    /* grid-template-columns: 1fr 1fr; */
+    width: 100%;
+
 }
 
 /*----- seccion1 ----*/
@@ -16,10 +17,12 @@
     border-top-right-radius: 50px;
     border-top: 10px solid #F20400;
     border-right: 10px solid #F20400;
+    padding: 1.7em 1.7em 0 0;
+    width: 100%;
 
     & h2{
         font-size: 2.2em;
-        padding: 40px 0px;
+        padding: 0 0 1.2em 0;
     }
     a{
         color: #000;
@@ -30,7 +33,7 @@
     }
     img{
         object-fit: cover;
-        width: 40em;
+        width: 100% /*40em*/;
     }
 }
 /*--------------------*/
@@ -38,8 +41,11 @@
 /*----- seccion2 ----*/
 .seccion2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, 19em);
+    place-content: center;
     gap: 1.8em;
+
+    width: 100%;
 
     & .card{
         border-bottom: solid 1px #38383F;
@@ -90,6 +96,7 @@
         transition: all .6s;
     }
     button{
+        align-self: end;
         width: 13.8em;
         height: 3.3em;
 
@@ -132,22 +139,29 @@
     margin: 2em 3.6em 0 3.1em;
 
     & .contenedor_de_partes{
-        display: flex;
-        margin: 2em 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(38.75em, 1fr));
+        margin: 2em 0;
+        width: 100%;
     
-        & .part1, .part2{
-            width: 50%;
-        }
-        .part1 h5{
+        & .part1 h5{
             font-size: 1.2em;
             margin: 2em 0;
             cursor: default;
         }
 
+        .part1 iframe{
+            width: 35em;
+            height: 19.6em;
+        }
+
         .part2{
-            margin:  0 5em;
+            margin: 0 5em;
+            /* height: 5em; */
             & p{
                 font-size: 1.48em;
+                width: 100%;
+                word-wrap: break-word;
             }
         }
     }
@@ -182,11 +196,13 @@
 
     .contenedor_noticias_s4{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(21.2em, 1fr));
+        place-items: center;
         gap: 1em;
     }
 
     .noticias{
+        max-width: 21.2em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -244,3 +260,73 @@
     }
 }
 /*--------------------*/
+
+@media screen and (max-width: 1355px) {
+    .part1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .main{
+        padding: 1em;
+
+        & .seccion1 h2{
+            font-size: 1.8em;
+        }
+    }
+
+    .seccion1,
+    .seccion2{
+        width: 90vw !important;
+    }
+
+    .seccion2{
+        align-items: center;
+        place-items: center;
+    }
+
+    .seccion3{
+        width: 90vw;
+        margin:  2em 1em;
+
+        & .contenedor_de_partes{
+            margin: 0 !important;
+            grid-template-columns: 1fr !important;
+            padding: 2em;
+        }
+    
+        .part1{
+            margin-top: 0em !important;
+            font-size: .9em;
+        }
+        .part2{
+            margin: 0 !important;
+            font-size: .9em;
+        }
+    
+        .part1 iframe{
+            max-width: 100%;
+            min-height: 20em;
+        }
+        .part2 p{
+            word-wrap: break-word;
+        }
+    
+    }
+
+    .seccion4{
+        margin: 1em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .titulo_s4{
+            width: 80%;
+        }
+    }
+
+
+}
