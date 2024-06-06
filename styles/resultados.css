@@ -1,0 +1,15 @@
+.main_resultados{
+    border: 2px solid blue;
+    margin: 1em 4em 1em 3em;
+}
+
+.campeonato_constructores,
+.campeonato_pilotos{
+    border: 2px solid green;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.campeonato_constructores img{
+    width: 10em;
+}

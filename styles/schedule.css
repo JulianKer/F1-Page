@@ -31,6 +31,7 @@
     border-right: 10px solid #000;
     border-top-right-radius: 1.5em;
     padding-top: 1em;
+    min-width: 18.8em;
 }
 
 .titulo_f1_schedule{
@@ -231,6 +232,7 @@
     height: 19.925em;
     width: 59.7em;
 
+
     position: relative;
     align-self: center;
     justify-self: center;
@@ -326,7 +328,7 @@
     border-top: 2px solid #929292;
     border-left: 2px solid #929292;
     border-top-left-radius: .6em;
-    margin: 0 1em;
+    margin: 0 4em 4em 3em;
     padding: 1em 1em .7em 1.5em;
     transition: all .1s;
 
@@ -352,3 +354,57 @@
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1355px) {
+    .carrera_proxima{
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor_img_fondo_carrera_proxima{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contenedor_img_fondo_carrera_proxima{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .contenedor_titulo_f1_schedeule{
+        margin: 1.5em;
+        margin-bottom: 6em;
+    }
+
+    .contenedor_titulo_f1_schedeule .titulo_f1_schedule{
+        font-size: 1.9em;
+        margin-bottom: .5em;
+    }
+
+    .contenedor_cronogramas{
+        margin: 0 1em 6em 0;
+        margin-right: 1em;
+    }
+
+    .contenedor_carrera_proxima{
+        padding: 2em 1em;
+    }
+
+    .contenedor_img_fondo_carrera_proxima{
+        & img{
+        left: -20em;
+        }
+
+        .horarios{
+            width: 290px;
+        }
+    }
+
+    .contenedor_cronograma_carreras_proximas{
+        margin: 5em 1em 6em 0;
+        margin-right: 1em;
+    }
+}
