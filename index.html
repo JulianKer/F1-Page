@@ -6,13 +6,24 @@
     <link rel="icon" href="assets/logos/ORIGINALES/F1 LOGO.png">
     <link rel="stylesheet" href="styles/generic.css">
     <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/nav.js" defer></script>
     <title>Inicio | F1</title>
 </head>
 <body>
     <header>
         <nav>
+            <img src="assets/icons/burger_menu.svg" alt="" class="img_burger_menu">
+            <div class="menu_desplegable_oculto">
+                <ul class="ul_secundario">
+                    <li><a href="pages/pilotos.html">Pilotos  <span>></span></a></li>
+                    <li><a href="pages/equipos.html">Equipos  <span>></span></a></li>
+                    <li><a href="pages/resultados.html">Resultados  <span>></span></a></li>
+                    <li><a href="pages/cronograma.html">Cronograma  <span>></span></a></li>
+                    <li><a href="pages/historia.html">Historia  <span>></span></a></li>
+                </ul>
+            </div>
             <a href="index.html" class="container_logo_f1"><img src="assets/logos/BLANCOS/f1_logo nav.svg" alt="F1 logo"></a>
-            <ul>
+            <ul class="ul_principal">
                 <!--------------------- opcion pilotos--------------------------->
                 <li class="titulos-nav"><a href="pages/pilotos.html" class="nav_pilotos">
                     Pilotos <img src="assets/icons/arrow down.svg" alt=""></a>

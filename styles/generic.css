@@ -101,6 +101,11 @@ nav .container_logo_f1{
     }
 }
 
+.img_burger_menu{
+    display: none;
+    cursor: pointer;
+}
+
 ul{
     list-style: none;
     font-family: var(--f1-regular);
@@ -114,15 +119,15 @@ ul{
     justify-content: space-evenly;
 }
 
-ul > li > a{
-    padding: .82em 0;
+.ul_principal > li > a{
+    padding: 1em 0;
     color: #fff;
     border-bottom: 3px solid #F20400;
     transition: all .3s;
     display: flex;
 }
 
-ul > li > a:hover{
+.ul_principal > li > a:hover{
     border-bottom: #fff solid 3px;
 }
 
@@ -148,6 +153,61 @@ ul > li > a:hover{
 
 .container_icon_perfil img{
     width: 1.8em;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------desplegable RESPONSIVE--------------------------------------------*/
+.menu_desplegable_oculto{
+    display: none;
+    justify-content: center;
+    
+    background-color: #F20400;
+
+    position: absolute;
+    left: 0;
+    /* top: 3.75em; */
+    z-index: 10;
+
+    width: 100%;
+
+    transition: all .2s;
+}
+    
+.menu_desplegable_oculto .ul_secundario{
+    width: 100%;
+    padding: 1em 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.menu_desplegable_oculto .ul_secundario li{
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom-right-radius: 1em;
+
+    width: 100%;
+    margin-bottom: 1em;
+
+}
+
+.ul_secundario a{
+    height: 2em;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    transition: all .2s;
+
+    & > span{
+        justify-self: end;
+        margin-right: 1.5em;
+        transition: all .2s;
+    }
+}
+
+.ul_secundario a:hover{
+    transform: translateX(.5em);
 }
 /*-----------------------------------------------------------------------------------------------------*/
 
@@ -826,7 +886,47 @@ footer{
     }
 }
 
+@media screen and (max-width: 915px){
+    nav ul{
+        display: none;
+    }
+
+    nav .container_logo_f1{
+        margin-left: 0;
+    }
+
+    .img_burger_menu{
+        display: block;
+        margin-left: 3em;
+    }
+}
+
 @media screen and (max-width: 750px) {
+
+    nav .container_logo_f1 img{
+        width: 6.5em;
+    }
+
+    .img_burger_menu{
+        margin-left: 1em;
+    }
+
+    .container_icon_perfil{
+        margin-right: 1em;
+    }
+
+    .container_icon_perfil{
+        min-width: 2.5em;
+        min-height: 2.5em;
+    }
+    
+    .container_icon_perfil img{
+        width: 1.5em;
+    }
+
+    .menu_desplegable_oculto .ul_secundario{
+        padding: 1em;
+    }
 
     .seccion_links{
         height: 22em;
@@ -844,4 +944,10 @@ footer{
         }
     }
 
+}
+
+@media screen and (max-width: 412px){
+    nav .container_logo_f1 img{
+        width: 6em;
+    }
 }
