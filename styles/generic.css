@@ -514,6 +514,7 @@ ul{
 
 .desplegable_cronograma{
     display: none;
+
     background-color: #15151E;
     position: absolute;
     left: 0;
@@ -543,14 +544,14 @@ ul{
 }
 
 .contenedor_gps{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
     gap: 3.1em;
     margin-top: 2.5em;
 }
 
 .gp{
     position: relative;
-    width: 22%;
 
     padding: .8em .8em 0 .8em;
     padding-left: 0;
@@ -894,6 +895,13 @@ footer{
 
 
 @media screen and (max-width: 1355px) {
+
+    .contenedor_de_titulos_mas{
+        & a{
+            margin-right: 2em;
+        }
+    }
+
     .footer_s2{
         flex-direction: column;
         align-items: center;
@@ -965,6 +973,10 @@ footer{
     .menu_desplegable_oculto .ul_secundario{
         padding: 1em;
     }
+
+    /* .desplegable_mas .contenedor_de_titulos_mas a{
+        margin-right: .5em;
+    } */
 
     .seccion_links{
         height: 22em;
