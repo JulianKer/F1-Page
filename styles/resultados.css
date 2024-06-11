@@ -1,15 +1,182 @@
 .main_resultados{
-    border: 2px solid blue;
     margin: 1em 4em 1em 3em;
 }
 
 .campeonato_constructores,
 .campeonato_pilotos{
-    border: 2px solid green;
     width: 100%;
     margin-bottom: 1em;
 }
 
-.campeonato_constructores img{
-    width: 10em;
+.titulo_resultados{
+    font-size: 2em;
+
+    border-bottom: 5px solid #F20400;
+    padding: .5em 0;
+    margin-bottom: 1.5em;
+}
+
+.contenedor_puesto_constructores{
+    width: 11em;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+
+    & h5{
+        font-size: 1.1em;
+    }
+}
+.podio_constructores,
+.equipos_constructores{
+    padding: 0 2em;
+}
+
+
+.podio_c1,
+.podio_c2,
+.podio_c3{
+    color: #000;
+    border-right: 2px solid #929292;
+    border-top: 2px solid #929292;
+    border-top-right-radius: 1em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 3em;
+
+    font-size: 1.5em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+
+    transition: all .2s;
+
+    & .contenedor_img_equipo > img{
+        height: 80%;
+    }
+
+    .titulo_equipo_constructor span{
+        margin-right: .5em;
+    }
+}
+
+.puntos{
+    width: 3em;
+    justify-self: end;
+
+    & .num{
+        text-align: center;
+        transition: all .2s;
+
+    }
+
+    .pts{
+        font-size: .8em;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        border-radius: 1em;
+        transition: all .2s;
+    }
+
+}
+
+.podio_constructores a:hover,
+.equipos_constructores a:hover{
+    border-right: 2px solid #F20400;
+    border-top: 2px solid #F20400;
+
+    & .puntos .num{
+        color: #F20400;
+    }
+
+    .puntos .pts{
+        background-color: #F20400;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------- los demas equipos en constructores---------------------------------*/
+
+.equipos_constructores{
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5em;
+}
+
+.equipos_constructores a:hover{
+    border: 2px solid #F20400;
+
+    & .puntos .num{
+        color: #F20400;
+    }
+
+    .puntos .pts{
+        background-color: #F20400;
+    }
+}
+
+.demas_equipos{
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 3em;
+
+    padding: 0 1em;
+    margin-bottom: 1em;
+
+    border: 2px solid #929292;
+    border-radius: 1em;
+
+    & img{
+        width: 3em;
+    }
+
+    .titulo_equipo_constructor span{
+        margin-right: .5em;
+    }
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1355px) {
+    .equipos_constructores{
+        grid-template-columns: 1fr;
+
+        & .contenedor_puesto_constructores{
+            width: 5em;
+        }
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .main_resultados{
+        margin: 1em;
+    }
+
+    .podio_c1,
+    .podio_c2,
+    .podio_c3{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .podio_constructores,
+    .equipos_constructores{
+        padding: 0;
+    }
+    .demas_equipos > img{
+        justify-self: end;
+    }
 }

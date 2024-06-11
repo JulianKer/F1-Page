@@ -62,7 +62,6 @@
 /* }-------------------------------------------------------------------------------------------------------------------- */
 
 
-
 *{
     margin: 0;
     padding: 0;
@@ -210,6 +209,82 @@ ul{
     transform: translateX(.5em);
 }
 /*-----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------bkgrds equipos--------------------------------------------------*/
+.backgroundRedbull{
+    background-color: #3671C6;
+    color: #3671C6;
+}
+
+.backgroundRb{
+    background-color: #6692FF;
+    color: #6692FF;
+}
+
+.backgroundFerrari{
+    background-color: #E80020;
+    color: #E80020;
+}
+
+.backgroundWilliams{
+    background-color: #64C4FF;
+    color: #64C4FF;
+}
+
+.backgroundHaas{
+    background-color: #B6BABD;
+    color: #B6BABD;
+}
+
+.backgroundAlpine{
+    background-color: #0093CC;
+    color: #0093CC;
+}
+
+.backgroundAston_martin{
+    background-color: #229971;
+    color: #229971;
+}
+
+.backgroundKick_sauber{
+    background-color: #52E252;
+    color: #52E252;
+}
+
+.backgroundMercedes{
+    background-color: #27F4D2;
+    color: #27F4D2;
+}
+
+.backgroundMclaren{
+    background-color: #FF8000;
+    color: #FF8000;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*---------------------------------------desplegable pilotos--------------------------------------------*/
 .nav_pilotos:hover + .desplegable_pilotos,
@@ -526,7 +601,7 @@ ul{
 
 
 
-/*---------------------------------------------opcion calendario------------------------------------------------------*/
+/*---------------------------------------------desplegable calendario------------------------------------------------------*/
 .nav_cronograma:hover + .desplegable_cronograma,
 .desplegable_cronograma:hover{
     display: block;
@@ -571,7 +646,7 @@ ul{
     gap: 3.1em;
     margin-top: 2.5em;
 
-    overflow: auto;
+    overflow: visible;
     max-height: 60vh;
     padding-right: 1em;
 }
@@ -949,6 +1024,9 @@ footer{
         }
     }
 
+    .contenedor_gps{
+        overflow: auto;
+    }
 
     .footer_s2{
         flex-direction: column;
