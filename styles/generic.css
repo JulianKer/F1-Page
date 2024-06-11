@@ -157,7 +157,7 @@ ul{
 /*-----------------------------------------------------------------------------------------------------*/
 
 
-/*---------------------------------------desplegable RESPONSIVE--------------------------------------------*/
+/*----------------------------- menú para mobile RESPONSIVE--------------------------------------------*/
 .menu_desplegable_oculto{
     display: none;
     justify-content: center;
@@ -640,7 +640,45 @@ ul{
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
+/*-------------------------------------------desplegable_historia   --------------------------------------------------*/
+.nav_mas:hover + .desplegable_mas,
+.desplegable_mas:hover{
+    display: block;
+}
 
+.desplegable_mas{
+    display: none;
+    background-color: #15151E;
+
+    position: absolute;
+    left: 0;
+    top: 3.5em;
+
+    width: 100%;
+}
+
+.contenedor_de_titulos_mas{
+    margin: 3em 5em;
+    padding-bottom: 1em;
+
+    border-right: 2px solid #38383F;
+    border-bottom: 2px solid #38383F;
+    border-bottom-right-radius: 10px;
+
+    & a{
+        color: #fff;
+        margin-right: 4em;
+    }
+
+    a:hover{
+        text-decoration: underline #F20400;
+        text-underline-offset: 5px;
+    }
+    span{
+        color: #F20400;
+    }
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 
 
