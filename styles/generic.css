@@ -252,7 +252,7 @@ ul{
 
 .contenedor_pilotos{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1em 4em;
     margin-top: 2em;
 
@@ -309,7 +309,7 @@ ul{
 }
 
 .desplegable_equipos{
-    display: none; /*     aca va none, le puse block ara verlo */
+    display: none;
     position: absolute;
     width: 100%;
     padding: 3em 5em;
@@ -359,8 +359,6 @@ ul{
 
     .contenedor_equipos{
         display: grid;
-        /* grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr); */
         grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
         max-height: 60vh;
         overflow: auto;
@@ -686,7 +684,7 @@ ul{
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-/*-------------------------------------------desplegable_historia   --------------------------------------------------*/
+/*-------------------------------------------desplegable_mas   --------------------------------------------------*/
 .nav_mas:hover + .desplegable_mas,
 .desplegable_mas:hover{
     display: block;
