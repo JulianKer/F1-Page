@@ -309,7 +309,7 @@ ul{
 }
 
 .desplegable_equipos{
-    display: none;
+    display: none; /*     aca va none, le puse block ara verlo */
     position: absolute;
     width: 100%;
     padding: 3em 5em;
@@ -359,8 +359,14 @@ ul{
 
     .contenedor_equipos{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        /* grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr); */
+        grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+        max-height: 60vh;
+        overflow: auto;
+
+
+
         gap: 1em;
         margin-top: 2.5em;
 
@@ -374,6 +380,24 @@ ul{
         }
     }
 }
+
+/*--------------------------------------------scroll---------------------------------------*/
+/*esto va combinado con q al contenedor_equipos le tengo q poner el overflow auto y con el max-height*/
+
+.contenedor_equipos::-webkit-scrollbar{ /* este debe estar para "activar" la scrollbar?*/
+    width: 10px;
+}
+.contenedor_equipos::-webkit-scrollbar-thumb {
+    background-color: #38383F; /*parte que se mueve*/
+    border-radius: 10px;
+    height: 5px;
+}
+
+.contenedor_equipos::-webkit-scrollbar-track {
+    background-color: #15151E; /*parte quieta*/
+}
+
+/*----------------------------------------------------------------------------------------*/
 
 .desplegable_equipos a{
     color: white;
@@ -545,11 +569,32 @@ ul{
 
 .contenedor_gps{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 3.1em;
     margin-top: 2.5em;
+
+    overflow: auto;
+    max-height: 60vh;
+    padding-right: 1em;
 }
 
+/*--------------------------------------------scroll---------------------------------------*/
+/*esto va combinado con q al contenedor_gps le tengo q poner el overflow auto y con el max-height */
+
+.contenedor_gps::-webkit-scrollbar{ /* este debe estar para "activar" la scrollbar?*/
+    width: 10px;
+}
+.contenedor_gps::-webkit-scrollbar-thumb {
+    background-color: #38383F; /*parte que se mueve*/
+    border-radius: 10px;
+    height: 5px;
+}
+
+.contenedor_gps::-webkit-scrollbar-track {
+    background-color: #15151E; /*parte quieta*/
+}
+
+/*----------------------------------------------------------------------------------------*/
 .gp{
     position: relative;
 
@@ -896,11 +941,16 @@ footer{
 
 @media screen and (max-width: 1355px) {
 
+    #br_relleno{
+        display: none;
+    }
+
     .contenedor_de_titulos_mas{
         & a{
             margin-right: 2em;
         }
     }
+
 
     .footer_s2{
         flex-direction: column;
