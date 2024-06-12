@@ -5,21 +5,397 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/logos/ORIGINALES/F1 LOGO.png">
     <link rel="stylesheet" href="../styles/generic.css">
+    <script src="../scripts/navPages.js" defer></script>
+
     <title>Equipos | F1</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="container_logo_f1"><img src="../assets/logos/BLANCOS/F1 LOGO recortado.png" alt="F1 logo"></a>
-            <ul>
-                <li class="titulos-nav"><a href="pilotos.html">Pilotos</a></li>
-                <li class="titulos-nav"><a href="equipos.html">Equipos</a></li>
-                <li class="titulos-nav"><a href="estadisticas.html">Estadísticas</a></li>
-                <li class="titulos-nav"><a href="resultados.html">Resultados</a></li>
-                <li class="titulos-nav"><a href="calendario.html">Calendario</a></li>
+            <img src="../assets/icons/burger_menu.svg" alt="" class="img_burger_menu">
+            <div class="menu_desplegable_oculto">
+                <ul class="ul_secundario">
+                    <li><a href="../pages/pilotos.html">Pilotos  <span>></span></a></li>
+                    <li><a href="../pages/equipos.html">Equipos  <span>></span></a></li>
+                    <li><a href="../pages/resultados.html">Resultados  <span>></span></a></li>
+                    <li><a href="../pages/cronograma.html">Cronograma  <span>></span></a></li>
+                    <li><a href="../pages/mas.html">Más  <span>></span></a></li>
+                </ul>
+            </div>
+            <a href="../index.html" class="container_logo_f1"><img src="../assets/logos/BLANCOS/f1_logo nav.svg" alt="F1 logo"></a>
+            <ul class="ul_principal">
+                <!--------------------- opcion pilotos--------------------------->
+                <li class="titulos-nav"><a href="pilotos.html" class="nav_pilotos">
+                    Pilotos <img src="../assets/icons/arrow down.svg" alt=""></a>
+
+                    <section class="desplegable_pilotos">
+                        <div class="container_titulos">
+                            <a href="#" class="titulo_all_drivers fuente_f1_bold">Todos los pilotos <span>></span></a>
+                            <a href="#" class="titulo_salon_fama fuente_f1_bold">Salón de la fama <span>></span></a>
+                        </div>
+                
+                        <div class="contenedor_pilotos">
+                            <a href="#" class="piloto borde_williams">
+                                <p class="rectangulo_vertical williams"></p>
+                                <p class="nombre">Alexander<span class="apellido">ALBON</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_aston_martin">
+                                <p class="rectangulo_vertical aston_martin"></p>
+                                <p class="nombre fuente_f1_reg">Fernando<span class="apellido">ALONSO</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_kick_sauber">
+                                <p class="rectangulo_vertical kick_sauber"></p>
+                                <p class="nombre fuente_f1_reg">Valteri<span class="apellido">BOTTAS</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_alpine">
+                                <p class="rectangulo_vertical alpine"></p>
+                                <p class="nombre fuente_f1_reg">Pierre<span class="apellido">GASLY</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_mercedes">
+                                <p class="rectangulo_vertical mercedes"></p>
+                                <p class="nombre fuente_f1_reg">Lewis<span class="apellido">HAMILTON</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_haas">
+                                <p class="rectangulo_vertical haas"></p>
+                                <p class="nombre fuente_f1_reg">Nico<span class="apellido">HULKENBERG</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_ferrari">
+                                <p class="rectangulo_vertical ferrari"></p>
+                                <p class="nombre fuente_f1_reg">Charles<span class="apellido">LECLERC</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_haas">
+                                <p class="rectangulo_vertical haas"></p>
+                                <p class="nombre fuente_f1_reg">Kevin<span class="apellido">MAGNUSSEN</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_mclaren">
+                                <p class="rectangulo_vertical mclaren"></p>
+                                <p class="nombre fuente_f1_reg">Lando<span class="apellido">NORRIS</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_alpine">
+                                <p class="rectangulo_vertical alpine"></p>
+                                <p class="nombre fuente_f1_reg">Esteban<span class="apellido">OCON</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_redbull">
+                                <p class="rectangulo_vertical redbull"></p>
+                                <p class="nombre fuente_f1_reg">Sergio<span class="apellido">PEREZ</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_mclaren">
+                                <p class="rectangulo_vertical mclaren"></p>
+                                <p class="nombre fuente_f1_reg">Oscar<span class="apellido">PIASTRI</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_rb">
+                                <p class="rectangulo_vertical rb"></p>
+                                <p class="nombre fuente_f1_reg">Daniel<span class="apellido">RICCIARDO</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_mercedes">
+                                <p class="rectangulo_vertical mercedes"></p>
+                                <p class="nombre fuente_f1_reg">George<span class="apellido">RUSSELL</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_ferrari">
+                                <p class="rectangulo_vertical ferrari"></p>
+                                <p class="nombre fuente_f1_reg">Carlos<span class="apellido">SAINZ</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_williams">
+                                <p class="rectangulo_vertical williams"></p>
+                                <p class="nombre fuente_f1_reg">Logan<span class="apellido">SARGEANT</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_aston_martin">
+                                <p class="rectangulo_vertical aston_martin"></p>
+                                <p class="nombre fuente_f1_reg">Lance<span class="apellido">STROLL</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_rb">
+                                <p class="rectangulo_vertical rb"></p>
+                                <p class="nombre fuente_f1_reg">Yuki<span class="apellido">TSUNODA</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_redbull">
+                                <p class="rectangulo_vertical redbull"></p>
+                                <p class="nombre fuente_f1_reg">Max<span class="apellido">VERSTAPPEN</span></p>
+                                <span class="pico">></span>
+                            </a>
+                            <a href="#" class="piloto borde_kick_sauber">
+                                <p class="rectangulo_vertical kick_sauber"></p>
+                                <p class="nombre fuente_f1_reg">Zhou<span class="apellido">GUANYU</span></p>
+                                <span class="pico">></span>
+                            </a>
+                        </div>
+                    </section>
+                </li>
+                <!--------------------------------------------------------------->
+
+                <!--------------------- opcion equipos--------------------------->
+                <li class="titulos-nav"><a href="equipos.html" class="nav_equipos">
+                    Equipos 
+                    <img src="../assets/icons/arrow down.svg" alt=""></a>
+                    <section class="desplegable_equipos">
+                        <a href="#" class="titulo fuente_f1_bold">Todos los equipos <span>></span></a>
+                
+                        <div class="contenedor_equipos">
+                            <a href="#" class="equipo borde_alpine">
+                                <div>
+                                    <h6 class="fuente_f1_reg">Alpine</h6>
+                                    <span class="fuente_f1_reg mi_span">></span>
+                                </div>
+                                <div class="rectangulo_de_color alpine">.</div>
+                                <img src="../assets/img/cars/alpine.png" alt="">
+                            </a>
+                
+                            <a href="#" class="equipo borde_haas">
+                                <div>
+                                    <h6 class="fuente_f1_reg">Haas</h6>
+                                    <span class="fuente_f1_reg">></span>
+                                </div>
+                                <div class="rectangulo_de_color haas">.</div>
+                                <img src="../assets/img/cars/haas.png" alt="">
+                            </a>
+                
+                            <a href="#" class="equipo borde_mercedes">
+                                <div>
+                                    <h6 class="fuente_f1_reg">Mercedes</h6>
+                                    <span class="fuente_f1_reg">></span>
+                                </div>
+                                <div class="rectangulo_de_color mercedes">.</div>
+                                <img src="../assets/img/cars/mercedes.png" alt="">
+                            </a>
+                
+                            <a href="#" class="equipo borde_williams">
+                                <div>
+                                    <h6 class="fuente_f1_reg">Williams</h6>
+                                    <span class="fuente_f1_reg">></span>
+                                </div>
+                                <div class="rectangulo_de_color williams">.</div>
+                                <img src="../assets/img/cars/williams.png" alt="">
+                            </a>
+                
+                            <a href="#" class="equipo borde_aston_martin">
+                                <div>
+                                    <h6 class="fuente_f1_reg">Aston Martin</h6>
+                                    <span class="fuente_f1_reg">></span>
+                                </div>
+                                <div class="rectangulo_de_color aston_martin">.</div>
+                                <img src="../assets/img/cars/aston martin.png" alt="">
+                            </a>
+                
+                            <a href="#" class="equipo borde_kick_sauber">
+                                <div>
+                                    <h6 class="fuente_f1_reg">Kick Sauber</h6>
+                                    <span class="fuente_f1_reg">></span>
+                                </div>
+                                <div class="rectangulo_de_color kick_sauber">.</div>
+                                <img src="../assets/img/cars/kick sauber.png" alt="">
+                            </a>
+                
+                            <a href="#" class="equipo borde_rb">
+                                <div>
+                                    <h6 class="fuente_f1_reg">RB</h6>
+                                    <span class="fuente_f1_reg">></span>
+                                </div>
+                                <div class="rectangulo_de_color rb">.</div>
+                                <img src="../assets/img/cars/visa cash.png" alt="">
+                            </a>
+                
+                            <!----------------br de relleno--------------------->
+                            <br id="br_relleno">
+                            <!----------------------------------------------------->
+                
+                            <a href="#" class="equipo borde_ferrari">
+                                <div>
+                                    <h6 class="fuente_f1_reg">Ferrari</h6>
+                                    <span class="fuente_f1_reg">></span>
+                                </div>
+                                <div class="rectangulo_de_color ferrari">.</div>
+                                <img src="../assets/img/cars/ferrari.png" alt="">
+                            </a>
+                
+                            <a href="#" class="equipo borde_mclaren">
+                                <div>
+                                    <h6 class="fuente_f1_reg">Mclaren</h6>
+                                    <span class="fuente_f1_reg">></span>
+                                </div>
+                                <div class="rectangulo_de_color mclaren">.</div>
+                                <img src="../assets/img/cars/mclaren.png" alt="">
+                            </a>
+                
+                            <a href="#" class="equipo borde_redbull">
+                                <div>
+                                    <h6 class="fuente_f1_reg">Red Bull</h6>
+                                    <span class="fuente_f1_reg">></span>
+                                </div>
+                                <div class="rectangulo_de_color redbull">.</div>
+                                <img src="../assets/img/cars/red bull.png" alt="">
+                            </a>
+                        </div>
+                    </section>
+                </li>
+                <!--------------------------------------------------------------->
+
+                <!--------------opcion resultados-------------------------------->
+                <li class="titulos-nav nav_resultados"><a href="resultados.html">Resultados <img src="../assets/icons/arrow down.svg" alt=""></a></li>
+                <!--------------------------------------------------------------->
+
+                <!-----------------opcion cronograma---------------------------->
+                <li class="titulos-nav "><a href="cronograma.html" class="nav_cronograma">
+                    Cronograma <img src="../assets/icons/arrow down.svg" alt=""></a>
+                    <section class="desplegable_cronograma">
+                        <div class="container_titulos">
+                            <a href="cronograma.html" class="titulo fuente_f1_bold">Cronograma <span>></span></a>
+                            <a href="#" class="titulo fuente_f1_bold">2025 <span>></span></a>
+                            <a href="#" class="titulo fuente_f1_bold">Programa de carreras <span>></span></a>
+                        </div>
+                        <section class="contenedor_gps">
+
+
+
+                            <a href="cronograma.html#Monaco" class="gp borde_gris_gp">
+                                <p class="t_posicionado1">Anterior</p>
+                                <div class="contenedor_img_titulo_gp">
+                                    <img src="../assets/img/gp_2024/Monaco_gp_2024.png" alt="">
+                                    <div class="contenedor_titulo_gp">
+                                        <p class="titulo_gp">FORMULA 1 GRAND PRIX DE MONACO 2024</p>
+                                        <p class="fecha_gp fuente_tw_regular">Mayo 24 - 26 <span>></span></p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="cronograma.html#Canadá" class="gp borde_gris_gp">
+                                <p class="t_posicionado2">Siguiente</p>
+                                <div class="contenedor_img_titulo_gp">
+                                    <img src="../assets/img/gp_2024/Canadian_gp_2024.png" alt="">
+                                    <div class="contenedor_titulo_gp">
+                                        <p class="titulo_gp">FORMULA 1 AWS GRAND PRIX DU CANADA 2024</p>
+                                        <p class="fecha_gp fuente_tw_regular">June 07 - 09 <span>></span></p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="cronograma.html#España" class="gp borde_transp_gp">
+                                <p class="t_posicionado3">Próximamente</p>
+                                <div class="contenedor_img_titulo_gp">
+                                    <img src="../assets/img/gp_2024/Spanish_gp_2024.png" alt="">
+                                    <div class="contenedor_titulo_gp">
+                                        <p class="titulo_gp">FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024</p>
+                                        <p class="fecha_gp fuente_tw_regular">June 21 - 23 <span>></span></p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="cronograma.html#Austria" class="gp borde_transp_gp">
+                                <div class="contenedor_img_titulo_gp">
+                                    <img src="../assets/img/gp_2024/Austrian_gp_2024.png" alt="">
+                                    <div class="contenedor_titulo_gp">
+                                        <p class="titulo_gp">FORMULA 1 QATAR AIRWAYS AUSTRIAN GRAND PRIX 2024</p>
+                                        <p class="fecha_gp fuente_tw_regular">June 28 - 30 <span>></span></p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+
+
+                        </section>
+                    </section>
+                </li>
+                <!--------------------------------------------------------------->
+
+                <!--------------opcion estadisticas------------------------------>
+                <li class="titulos-nav"><a href="mas.html" class="nav_mas">
+                    Más <img src="../assets/icons/arrow down.svg" alt=""></a>
+                    <section class="desplegable_mas">
+                        <div class="contenedor_de_titulos_mas fuente_f1_bold">
+                            <a href="#">¿Qué es la F1? <span>></span></a>
+                            <a href="#">Regulaciones <span>></span></a>
+                            <a href="#">Monoplazas <span>></span></a>
+                            <a href="#">Neumáticos <span>></span></a>
+                        </div>
+                    </section>
+                </li>
+                <!--------------------------------------------------------------->
+
             </ul>
             <a href="#" class="container_icon_perfil"><img src="../assets/icons/Perfil icono blanco.png" alt="profile"></a>
         </nav>
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <section class="footer_s1">
+            <div class="div1">
+                <a href="#"><img src="../assets/logos/ORIGINALES/F1 LOGO.png"></a>
+                <h5 class="footer_titulo fuente_f1_bold">Patrocinadores</h5>
+            </div>
+            <div class="div2">
+                <a href="https://www.rolex.com/es/watches?gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf1OVehXiEARuAgWAXozdlJmUfmXHXZTyxK0QTay-58dEZcDncKs3W8aAp59EALw_wcB&ef_id=Cj0KCQjwsPCyBhD4ARIsAPaaRf1OVehXiEARuAgWAXozdlJmUfmXHXZTyxK0QTay-58dEZcDncKs3W8aAp59EALw_wcB:G:s&s_kwcid=AL!141!3!682920436043!e!!g!!rolex!8673756201!86523249785&gad_source=1"><img src="../assets/logos/BLANCOS/ROLEX LOGO B.png" alt=""></a>
+                <a href="https://www.aramco.com/"><img src="../assets/logos/BLANCOS/ARAMCO LOGO B.png" alt=""></a>
+                <a href="https://crypto.com/"><img src="../assets/logos/BLANCOS/CRYPTO LOGO B.png" alt=""></a>
+                <a href="https://www.dhl.com/ar-es/home.html"><img src="../assets/logos/BLANCOS/DHL  LOGO B.png" alt=""></a>
+                <a href="https://www.qatarairways.com/en/homepage.html?CID=SXAR23456872M&account=Google-AMERICAS-AR-EN-Brand&campaign=AR-Brand-Hero-EN_exact&adgroup=qatar+airways&term=qatar+airways&&&&&gad_source=1&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf0eGTe5d68coEJ8s27bCak4j5nMPCwsxahaVjDOfmrfsTeusbFBKD4aAiSYEALw_wcB&gclsrc=aw.ds"><img src="../assets/logos/BLANCOS/QATAR AIRWAYS LOGO B.png" alt=""></a>
+                <a href="https://promocionesmsc.com.ar/landings/mes-del-crucero-2024?utm_source=Busqueda&utm_medium=CPC&utm_campaign=Mes+del+Crucero&gad_source=1&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf39TJMCMXjJ_uxd8tV2U1YQcb2AtWCl9Jz2R6MlMaUYQ3p8lJSGnSMaAtqpEALw_wcB"><img src="../assets/logos/BLANCOS/MSC LOGO B.png" alt=""></a>
+            </div>
+        </section>
+        <section class="footer_s2">
+            <section class="seccion_links">
+                <div>
+                    <a href="https://www.fiaformula2.com/" class="fuente_tw_regular">F2</a>
+                    <a href="https://www.fiaformula3.com/" class="fuente_tw_regular">F3</a>
+                    <a href="https://www.f1academy.com/" class="fuente_tw_regular">F1 ACADEMY</a>
+                </div>
+                <div>
+                    <a href="pilotos.html" class="fuente_tw_regular">PILOTOS</a>
+                    <a href="equipos.html" class="fuente_tw_regular">EQUIPOS</a>
+                    <a href="estadisticas.html" class="fuente_tw_regular">ESTADÍSTICAS</a>
+                </div>
+                <div>
+                    <a href="resultados.html" class="fuente_tw_regular">RESULTADOS</a>
+                    <a href="calendario.html" class="fuente_tw_regular">CALENDARIO</a>
+                </div>
+            </section>
+            <section  class="seccion_redes">
+                <div class="div_redes_1">
+                    <a href="https://www.pirelli.com/tyres/es-ar/auto/home" class="redes_a_pirelli"><img src="../assets/logos/ORIGINALES/PIRELLI LOGO.png" alt=""></a>
+                    <a href="https://www.fia.com/es/la-fia" class="redes_a_fia"><img src="../assets/logos/ORIGINALES/Logo_FIA.svg" alt=""></a> <!--CAMBIAR A LOGO FIA--> 
+                </div>
+                <div class="div_redes_2">
+                    <a href="https://www.facebook.com/Formula1" ><img src="../assets/logos/BLANCOS/FACEBOOK LOGO B.png" alt="" class="img_facebook"></a>
+                    <a href="https://x.com/f1" ><img src="../assets/logos/BLANCOS/X LOGO B.png" alt="" class="img_x"></a>
+                    <a href="https://www.instagram.com/f1/" ><img src="../assets/logos/BLANCOS/INSTAGRAM LOGO B.png" alt="" class="img_instagram"></a>
+                    <a href="https://www.youtube.com/F1" ><img src="../assets/logos/BLANCOS/YOUTUBE LOGO B.png" alt="" class="img_youtube"></a>
+                </div>
+            </section>
+        </section>
+        <section class="footer_s3">
+            <a href="#"><img src="../assets/logos/BLANCOS/F1 LOGO recortado.png" alt=""></a>
+            <p class="fuente_f1_reg">© 2003-2024 Formula One World Championship Limited</p>
+        </section>
+    </footer>
 </body>
 </html>
