@@ -32,9 +32,7 @@
 }
 
 
-.podio_c1,
-.podio_c2,
-.podio_c3{
+.podio_c{
     color: #000;
     border-right: 2px solid #929292;
     border-top: 2px solid #929292;
@@ -161,9 +159,7 @@
         margin: 1em;
     }
 
-    .podio_c1,
-    .podio_c2,
-    .podio_c3{
+    .podio_c{
         display: flex;
         flex-direction: column;
         gap: 1em;

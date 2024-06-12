@@ -589,11 +589,11 @@ if (hayCarreraPresente === false && futuras.length > 0) {
     if (carreraAEliminarDelHtml != null) {
         // y al contenedor de carreras futuras, le remuevo la primer carrera (q repito, es la mas próxima)
         contenedorCarrerasProximas.removeChild(carreraAEliminarDelHtml);
+        // una vez la haya eliminado del contenedor de carreras futuras y de su debido array de futuras, la inserto como carrera presente
+        // que YO se que NO ESTÁ sucediendo AHORA, pero es la mas proxima a suceder
+        insertarCarreraPresente(eliminadaDelArrayFuturas);
     }
 
-    // una vez la haya eliminado del contenedor de carreras futuras y de su debido array de futuras, la inserto como carrera presente
-    // que YO se que NO ESTÁ sucediendo AHORA, pero es la mas proxima a suceder
-    insertarCarreraPresente(eliminadaDelArrayFuturas);
     }
 
 // if (hayCarreraPresente === false && futuras.length > 0) {
