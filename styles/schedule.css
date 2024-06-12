@@ -298,6 +298,9 @@
 .div_img_circuito{
     display: flex;
     justify-content: center;
+    background-image: url(../assets/img/circuitos/fondo/img_plus_fondo_de_circuitos_oscuro.png);
+    background-size: 8px;
+    border-radius: .7em;
 }
 
 
@@ -316,8 +319,11 @@
 .contenedor_circuito_img{
     display: flex;
     justify-content: center;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     border-radius: 1em;
+    background-image: url(../assets/img/circuitos/fondo/img_plus_fondo_de_circuitos.png);
+    background-size: 8px;
+    border-radius: .7em;
 }
 .contenedor_circuito_img > img{
     width: 12em;
@@ -362,6 +368,10 @@
 
     .contenedor_img_fondo_carrera_proxima{
         margin: 0;
+    }
+
+    .div_img_circuito{
+        margin-bottom: 1em;
     }
 }
 
