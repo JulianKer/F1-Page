@@ -233,6 +233,317 @@ let arrayCarreras = [
         "imagen_fondo": '../assets/img/fondos_carreras_proximas/spain.png',
         "imagen_circuito": '../assets/img/circuitos/spain.png'
     },
+    {
+        "id": 'Austria',
+        "ronda": '11',
+        "dias": '28-30',
+        "mes": 'JUN',
+        "banderaPais": '../assets/img/country _flags/austria.png',
+        "nombreCircuito": 'Austria  ',
+        "nombreGP": 'FORMULA 1 QATAR AIRWAYS AUSTRIAN GRAND PRIX 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 28,
+        "diaFin": 30,
+        "mesInicio": 6,
+        "mesFin": 6,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/austria.png',
+        "imagen_circuito": '../assets/img/circuitos/austria.png'
+    },
+    {
+        "id": 'Gran_Bretaña',
+        "ronda": '12',
+        "dias": '05-07',
+        "mes": 'JUL',
+        "banderaPais": '../assets/img/country _flags/gran_bretaña.png',
+        "nombreCircuito": 'Gran Bretaña  ',
+        "nombreGP": 'FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 5,
+        "diaFin": 7,
+        "mesInicio": 7,
+        "mesFin": 7,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/gran_bretaña.png',
+        "imagen_circuito": '../assets/img/circuitos/gran_bretaña.png'
+    },
+    {
+        "id": 'Hungría',
+        "ronda": '13',
+        "dias": '19-21',
+        "mes": 'JUL',
+        "banderaPais": '../assets/img/country _flags/hungria.png',
+        "nombreCircuito": 'Hungría  ',
+        "nombreGP": 'FORMULA 1 HUNGARIAN GRAND PRIX 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio":19 ,
+        "diaFin": 21,
+        "mesInicio":7 ,
+        "mesFin": 7,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/hungria.png',
+        "imagen_circuito": '../assets/img/circuitos/hungria.png'
+    },
+    {
+        "id": 'Belgica',
+        "ronda": '14',
+        "dias": '26-28',
+        "mes": 'JUL',
+        "banderaPais": '../assets/img/country _flags/belgica.png',
+        "nombreCircuito": 'Bélgica  ',
+        "nombreGP": 'FORMULA 1 ROLEX BELGIAN GRAND PRIX 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 26,
+        "diaFin": 28,
+        "mesInicio": 7,
+        "mesFin": 7,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/belgica.png',
+        "imagen_circuito": '../assets/img/circuitos/belgica.png'
+    },
+    {
+        "id": 'Paises_Bajos',
+        "ronda": '15',
+        "dias": '23-25',
+        "mes": 'AGO',
+        "banderaPais": '../assets/img/country _flags/paises_bajos.png',
+        "nombreCircuito": 'Paises Bajos  ',
+        "nombreGP": 'Paises Bajos ',
+        "p2NombrePiloto": 'FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2024',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 23,
+        "diaFin": 25,
+        "mesInicio": 8,
+        "mesFin": 8,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/paises_bajos.png',
+        "imagen_circuito": '../assets/img/circuitos/paises_bajos.png'
+    },
+    {
+        "id": 'Italia',
+        "ronda": '16',
+        "dias": '30-01',
+        "mes": 'AGO-SEP',
+        "banderaPais": '../assets/img/country _flags/italia.png',
+        "nombreCircuito": 'Italia  ',
+        "nombreGP": 'FORMULA 1 PIRELLI GRAN PREMIO D`ITALIA 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 30,
+        "diaFin": 1,
+        "mesInicio": 8,
+        "mesFin": 9,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/italia.png',
+        "imagen_circuito": '../assets/img/circuitos/italia.png'
+    },
+    {
+        "id": 'Azerbaiyán',
+        "ronda": '17',
+        "dias": '13-15',
+        "mes": 'SEP',
+        "banderaPais": '../assets/img/country _flags/azerbaiyan.png',
+        "nombreCircuito": 'Azerbaiyán  ',
+        "nombreGP": 'FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 13,
+        "diaFin": 15,
+        "mesInicio": 9,
+        "mesFin": 9,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/azerbaijan.png',
+        "imagen_circuito": '../assets/img/circuitos/azerbaiyan.png'
+    },
+    {
+        "id": 'Singapur',
+        "ronda": '18',
+        "dias": '20-22',
+        "mes": 'SEP',
+        "banderaPais": '../assets/img/country _flags/singapur.png',
+        "nombreCircuito": 'Singapur  ',
+        "nombreGP": 'FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 20,
+        "diaFin": 22,
+        "mesInicio": 9,
+        "mesFin": 9,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/singapur.png',
+        "imagen_circuito": '../assets/img/circuitos/singapur.png'
+    },
+    {
+        "id": 'Estados_Unidos',
+        "ronda": '19',
+        "dias": '18-20',
+        "mes": 'OCT',
+        "banderaPais": '../assets/img/country _flags/eeuu.png',
+        "nombreCircuito": 'Estados Unidos  ',
+        "nombreGP": 'FORMULA 1 PIRELLI UNITED STATES GRAND PRIX 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 18,
+        "diaFin": 20,
+        "mesInicio": 10,
+        "mesFin": 10,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/eeuu.png',
+        "imagen_circuito": '../assets/img/circuitos/eeuu.png'
+    },
+    {
+        "id": 'Mexico',
+        "ronda": '20',
+        "dias": '25-27',
+        "mes": 'OCT',
+        "banderaPais": '../assets/img/country _flags/mexico.png',
+        "nombreCircuito": 'Mexico  ',
+        "nombreGP": 'FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 25,
+        "diaFin": 27,
+        "mesInicio": 10,
+        "mesFin": 10,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/mexico.png',
+        "imagen_circuito": '../assets/img/circuitos/mexico.png'
+    },
+    {
+        "id": 'Brasil',
+        "ronda": '21',
+        "dias": '01-03',
+        "mes": 'NOV',
+        "banderaPais": '../assets/img/country _flags/brazil.png',
+        "nombreCircuito": 'Brasil  ',
+        "nombreGP": 'FORMULA 1 LENOVO GRANDE PRÊMIO DE SÃO PAULO 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 1,
+        "diaFin": 3,
+        "mesInicio": 11,
+        "mesFin": 11,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/brazil.png',
+        "imagen_circuito": '../assets/img/circuitos/brazil.png'
+    },
+    {
+        "id": 'Las_Vegas',
+        "ronda": '22',
+        "dias": '21-23',
+        "mes": 'nov',
+        "banderaPais": '../assets/img/country _flags/eeuu.png',
+        "nombreCircuito": 'Las Vegas  ',
+        "nombreGP": 'FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 21,
+        "diaFin": 23,
+        "mesInicio": 11,
+        "mesFin": 11,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/eeuu.png',
+        "imagen_circuito": '../assets/img/circuitos/lasvegas.png'
+    },
+    {
+        "id": 'Qatar',
+        "ronda": '23',
+        "dias": '29-01',
+        "mes": 'NOV-DIC',
+        "banderaPais": '../assets/img/country _flags/qatar.png',
+        "nombreCircuito": 'Qatar  ',
+        "nombreGP": 'FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 29,
+        "diaFin": 1,
+        "mesInicio": 11,
+        "mesFin": 12,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/qatar.png',
+        "imagen_circuito": '../assets/img/circuitos/qatar.png'
+    },
+    {
+        "id": 'Abu Dhabi',
+        "ronda": '24',
+        "dias": '06-08',
+        "mes": 'DIC',
+        "banderaPais": '../assets/img/country _flags/abu_dhabi.png',
+        "nombreCircuito": 'Abu Dhabi  ',
+        "nombreGP": 'FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2024 ',
+        "p2NombrePiloto": '',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/',
+        "p1NombrePiloto": '',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/',
+        "p3NombrePiloto": '',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+
+        "diaInicio": 6,
+        "diaFin": 8,
+        "mesInicio": 12,
+        "mesFin": 12,
+        "imagen_fondo": '../assets/img/fondos_carreras_proximas/abu_dhabi.png',
+        "imagen_circuito": '../assets/img/circuitos/abu_dhabi.png'
+    }
+
+    // FALTA AGREGAR LAS CARRERAS DESPUES DE ESPAÑA ASI LAS MUESTRA AUTOMATICAMENTE Y PODRIA FIJARME EL TEMA DE LOS HORARIOS 
+    // DE LAS P1 P2 P3 Y Q1 Q2 Y Q3 Y RACE YA QUE NO SON IGUALES PARA TODAS PERO BUENO, ES ALGO MENOR
 ]
 
 
@@ -262,28 +573,28 @@ arrayCarreras.forEach((carrera)=>{
             insertarCarreraFutura(carrera);
             break;
     }
-
-    //luego de hacer lo que corresponde segun su estado, verifico si hay o NO una carrera presente, en caso de que YA HAYA, NO entro al if
-    // pero en caso de que SI HAYA, veo que tenga carreras fututras, si hay almenos una, entonces entro al if.
-    if (hayCarreraPresente === false && futuras.length > 0) {
-
-        //como se que SI hay carreras futuras, elimino la primer carrera futura de su array (porque es la carrera mas proxima)
-        // y la guardo en una variable
-        let eliminadaDelArrayFuturas = futuras.shift();
-        //luego busco en el contenedor de carreras futuras, la carrera con el id que elimine del array
-        let carreraAEliminarDelHtml = document.getElementById(eliminadaDelArrayFuturas.id);
-
-        // si la encontré, entro
-        if (carreraAEliminarDelHtml != null) {
-            // y al contenedor de carreras futuras, le remuevo la primer carrera (q repito, es la mas próxima)
-            contenedorCarrerasProximas.removeChild(carreraAEliminarDelHtml);
-        }
-
-        // una vez la haya eliminado del contenedor de carreras futuras y de su debido array de futuras, la inserto como carrera presente
-        // que YO se que NO ESTÁ sucediendo AHORA, pero es la mas proxima a suceder
-        insertarCarreraPresente(eliminadaDelArrayFuturas);
-    }
 })
+
+//luego de hacer lo que corresponde segun su estado, verifico si hay o NO una carrera presente, en caso de que YA HAYA, NO entro al if
+// pero en caso de que SI HAYA, veo que tenga carreras fututras, si hay almenos una, entonces entro al if.
+if (hayCarreraPresente === false && futuras.length > 0) {
+
+    //como se que SI hay carreras futuras, elimino la primer carrera futura de su array (porque es la carrera mas proxima)
+    // y la guardo en una variable
+    let eliminadaDelArrayFuturas = futuras.shift();
+    //luego busco en el contenedor de carreras futuras, la carrera con el id que elimine del array
+    let carreraAEliminarDelHtml = document.getElementById(eliminadaDelArrayFuturas.id);
+
+    // si la encontré, entro
+    if (carreraAEliminarDelHtml != null) {
+        // y al contenedor de carreras futuras, le remuevo la primer carrera (q repito, es la mas próxima)
+        contenedorCarrerasProximas.removeChild(carreraAEliminarDelHtml);
+    }
+
+    // una vez la haya eliminado del contenedor de carreras futuras y de su debido array de futuras, la inserto como carrera presente
+    // que YO se que NO ESTÁ sucediendo AHORA, pero es la mas proxima a suceder
+    insertarCarreraPresente(eliminadaDelArrayFuturas);
+    }
 
 // if (hayCarreraPresente === false && futuras.length > 0) {
 //     console.log("Tuve que poner la del FUTURA en PRESENTE");
