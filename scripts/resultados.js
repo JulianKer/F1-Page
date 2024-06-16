@@ -1,3 +1,9 @@
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------       Campeonato Constructores      ----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
 // llamo a los contenedores de equipos, el de podio y los de NO podio
 let contenedorPodioConstructores = document.getElementById("podio_de_constructores");
 let contenedorEquiposConstructores = document.getElementById("equipos_constructores");
@@ -133,3 +139,277 @@ function insertarEquipo(equipo, posicion) {
         </div>
     </a>`
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------  FIN Campeonato Constructores      ----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------       Campeonato Pilotos      ----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+let cant_podio_pilotos = 0;
+
+let podio_p1 = document.querySelector(".podio_p1")
+let podio_p2 = document.querySelector(".podio_p2")
+let podio_p3 = document.querySelector(".podio_p3")
+let contenedor_demas_pilotos = document.getElementById("contenedor_demas_pilotos")
+
+let arrayPilotos = [
+    {
+        "img_piloto": '../assets/img/img_pilotos/sai.png',
+        "apellido": 'SAI',
+        "img_escuderia": '../assets/img/logos_teams/ferrari.png',
+        "puntos": 108,
+        "color":'backgroundFerrari',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/per.png',
+        "apellido": 'PER',
+        "img_escuderia": '../assets/img/logos_teams/redbull.png',
+        "puntos": 107,
+        "color":'backgroundRedbull',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/pia.png',
+        "apellido": 'PIA',
+        "img_escuderia": '../assets/img/logos_teams/mclaren.png',
+        "puntos": 81,
+        "color":'backgroundMclaren',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/rus.png',
+        "apellido": 'RUS',
+        "img_escuderia": '../assets/img/logos_teams/mercedes-logo.png',
+        "puntos": 69,
+        "color":'backgroundMercedes',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/ham.png',
+        "apellido": 'HAM',
+        "img_escuderia": '../assets/img/logos_teams/mercedes-logo.png',
+        "puntos": 55,
+        "color":'backgroundMercedes',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/alo.png',
+        "apellido": 'ALO',
+        "img_escuderia": '../assets/img/logos_teams/aston-martin-logo.png',
+        "puntos": 41,
+        "color":'backgroundAston_martin',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/tsu.png',
+        "apellido": 'TSU',
+        "img_escuderia": '../assets/img/logos_teams/rb-logo.png',
+        "puntos": 19,
+        "color":'backgroundRb',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/str.png',
+        "apellido": 'STR',
+        "img_escuderia": '../assets/img/logos_teams/aston-martin-logo.png',
+        "puntos": 17,
+        "color":'backgroundAston_martin',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/alb.png',
+        "apellido": 'ALB',
+        "img_escuderia": '../assets/img/logos_teams/williams-logo.png',
+        "puntos": 2,
+        "color":'backgroundWilliams',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/oco.png',
+        "apellido": 'OCO',
+        "img_escuderia": '../assets/img/logos_teams/alpine-logo.png',
+        "puntos": 2,
+        "color":'backgroundAlpine',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/mag.png',
+        "apellido": 'MAG',
+        "img_escuderia": '../assets/img/logos_teams/haas-logo.png',
+        "puntos": 1,
+        "color":'backgroundHaas',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/zho.png',
+        "apellido": 'ZHO',
+        "img_escuderia": '../assets/img/logos_teams/kick-sauber-logo.png',
+        "puntos": 0,
+        "color":'backgroundKick_sauber',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/ric.png',
+        "apellido": 'RIC',
+        "img_escuderia": '../assets/img/logos_teams/rb-logo.png',
+        "puntos": 9,
+        "color":'backgroundRb',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/bea.png',
+        "apellido": 'BEA',
+        "img_escuderia": '../assets/img/logos_teams/ferrari.png',
+        "puntos": 6,
+        "color":'backgroundFerrari',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/hul.png',
+        "apellido": 'HUL',
+        "img_escuderia": '../assets/img/logos_teams/haas-logo.png',
+        "puntos": 6,
+        "color":'backgroundHaas',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/gas.png',
+        "apellido": 'GAS',
+        "img_escuderia": '../assets/img/logos_teams/alpine-logo.png',
+        "puntos": 3,
+        "color":'backgroundAlpine',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/bot.png',
+        "apellido": 'BOT',
+        "img_escuderia": '../assets/img/logos_teams/kick-sauber-logo.png',
+        "puntos": 0,
+        "color":'backgroundKick_sauber',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/sar.png',
+        "apellido": 'SAR',
+        "img_escuderia": '../assets/img/logos_teams/williams-logo.png',
+        "puntos": 0,
+        "color":'backgroundWilliams',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/ver.png',
+        "apellido": 'VER',
+        "img_escuderia": '../assets/img/logos_teams/redbull.png',
+        "puntos": 194,
+        "color":'backgroundRedbull',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/lec.png',
+        "apellido": 'LEC',
+        "img_escuderia": '../assets/img/logos_teams/ferrari.png',
+        "puntos": 138,
+        "color":'backgroundFerrari',
+    },
+    {
+        "img_piloto": '../assets/img/img_pilotos/nor.png',
+        "apellido": 'NOR',
+        "img_escuderia": '../assets/img/logos_teams/mclaren.png',
+        "puntos": 131,
+        "color":'backgroundMclaren',
+    },
+];
+
+
+arrayPilotos.sort((a,b)=> b.puntos - a.puntos);
+
+
+arrayPilotos.forEach((piloto, index)=>{
+    if (cant_podio_pilotos < 3) {
+        insertarPilotoEnPodio(piloto, index+1);
+        cant_podio_pilotos++;
+    }else{
+        insertarPilotoEnTabla(piloto, index+1);
+    }
+
+})
+
+
+function insertarPilotoEnPodio(piloto, posicion) {
+    switch (posicion) {
+        case 1:
+            podio_p1.innerHTML = `
+            <div class="fondo_del_piloto fuente_f1_bold">
+                <img src="${piloto.img_piloto}" alt="" class="imagen_podios">
+                <img src="../assets/img/dorado.png" alt="" class="copa">
+                <div class="nombre_piloto">
+                    <p>1° ${piloto.apellido}</p>
+                </div>
+                <div class="segundo_renglon fuente_f1_bold">
+                    <img src="${piloto.img_escuderia}" alt="">
+                    <div>
+                        <p class="num">${piloto.puntos}</p>
+                        <p class="pts">PTS</p>
+                    </div>
+                </div>
+            </div>`;
+            break;
+        case 2:
+            podio_p2.innerHTML = `
+            <div class="fondo_del_piloto fuente_f1_bold">
+                        <img src="${piloto.img_piloto}" alt="" class="imagen_podios">
+                        <img src="../assets/img/plata.png" alt="" class="copa">
+                        <div class="nombre_piloto">
+                            <p>2° ${piloto.apellido}</p>
+                        </div>
+                        <div class="segundo_renglon fuente_f1_bold">
+                            <img src="${piloto.img_escuderia}" alt="">
+                            <div>
+                                <p class="num">${piloto.puntos}</p>
+                                <p class="pts">PTS</p>
+                            </div>
+                        </div>
+                    </div>`
+            break;
+        case 3:
+            podio_p3.innerHTML = `
+            <div class="fondo_del_piloto fuente_f1_bold">
+                        <img src="${piloto.img_piloto}" alt="" class="imagen_podios">
+                        <img src="../assets/img/bronce.png" alt="" class="copa">
+
+                        <div class="nombre_piloto">
+                            <p>3° ${piloto.apellido}</p>
+                        </div>
+                        <div class="segundo_renglon fuente_f1_bold">
+                            <img src="${piloto.img_escuderia}" alt="">
+                            <div>
+                                <p class="num">${piloto.puntos}</p>
+                                <p class="pts">PTS</p>
+                            </div>
+                        </div>
+                    </div>`
+            break;
+    }
+}
+
+
+function insertarPilotoEnTabla(piloto, posicion) {
+    contenedor_demas_pilotos.innerHTML += `
+    <a href="#" class="otro_piloto">
+                    <div class="div1 fuente_f1_bold">
+                        <p>${posicion}°</p>
+                        <p>${piloto.apellido}</p>
+                    </div>
+
+                    <div class="div2">
+                        <img src="${piloto.img_piloto}" alt="" class="piloto_chiquito">
+                        <span class="${piloto.color}">.</span>
+                        <img src="${piloto.img_escuderia}" alt="" class="logo_team_chiquito">
+                    </div>
+
+                    <div class="puntos fuente_f1_bold">
+                        <p class="num">${piloto.puntos}</p>
+                        <p class="pts">PTS</p>
+                    </div>
+                </a>`;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------   FIN  Campeonato Pilotos      ----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

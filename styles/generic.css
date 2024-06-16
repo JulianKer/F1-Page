@@ -285,7 +285,12 @@ ul{
 
 
 
-
+.desplegable_pilotos,
+.desplegable_equipos,
+.desplegable_cronograma,
+.desplegable_mas{
+    border-bottom: 2px solid #F20400;
+}
 /*---------------------------------------desplegable pilotos--------------------------------------------*/
 .nav_pilotos:hover + .desplegable_pilotos,
 .desplegable_pilotos:hover{
@@ -389,7 +394,6 @@ ul{
     width: 100%;
     padding: 3em 5em;
     background-color: #15151E;
-    border-bottom: 1px solid #F20400;
 
     & .equipo{
         font-size: 1.4em;
