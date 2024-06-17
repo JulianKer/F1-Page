@@ -55,7 +55,6 @@
 /* -------------------------------------------- SECCION 2 -------------------------------------------------- */
 
 .section2{
-    border: solid 2px green;
     margin: 3em 4em 0 3em;
 }
 
@@ -75,6 +74,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+    gap: 2em;
 
     & .bandera_y_nombre{
 
@@ -103,7 +103,6 @@
 }
 
 .contenedor_img_circuito_detallado{
-    border: solid 2px purple;
 
     & .img_circuito_detallado{
         width: 100%;
@@ -113,22 +112,29 @@
 .detalles{
 
     & .div_detalles{
+        margin-bottom: 1.5em;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: .5em;
+        gap: 1.5em;
 
         & .lap_record{
             grid-column: 1/3;
         }
         
-        .lap_record span{
+        span{
             font-size: 16px;
         }
     }
 
     .div_detalles div{
-        border: 1px solid red;
+        border-bottom: 2px solid #c9c9c9;
+        border-right: 2px solid #c9c9c9;
+        border-bottom-right-radius: 1em;
+
+        padding: 0 1em 1em 0;
         font-size: 1em;
+
+        transition: all .3s;
     }
 
     .datos{
@@ -136,8 +142,91 @@
     }
 
     .otros_enlaces{
-        border: solid 2px red;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+        gap:  .5em 2em;
+        
+        & a{
+            color: #000;
+            border-bottom: 2px solid #c9c9c9;
+
+            font-size: 1.1em;
+            min-height: 2.3em;
+
+            display: flex;
+            align-items: center;
+            gap: 1em;
+
+            transition: all .3s;
+        }
     }
 }
 
+
+.div_detalles div:hover{
+    border-color: #F20400;
+}
+
+.otros_enlaces a:hover{
+    border-color: #F20400;
+    & p{
+        color: #F20400;
+    }
+}
 /* --------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+@media screen and (max-width: 750px){
+    .section1{
+        height: 13em;
+         
+        & .titulo_circuito{
+            font-size: 2.8em;
+        }
+
+        .año_circuito{
+            font-size: 1.5em;
+        }
+    }
+
+    .section2{
+        margin: 1em;
+
+        & .bandera_y_nombre{
+            top: -1.3em;
+            & p{
+                font-size: 19px;
+                padding: 0 .5em;
+            }
+
+            img{
+                width: 3em;
+            }
+        }
+
+        .contenedor_de_todos_los_detalles{
+            border-top-right-radius: 2em;
+        }
+
+        .div_detalles{
+            gap: .5em;
+
+            & div{
+                width: 10em;
+            }
+
+            .lap_record{
+                width: 21em;
+            }
+        }
+
+        .datos{
+            font-size: 1.4em;
+        }
+    }
+}

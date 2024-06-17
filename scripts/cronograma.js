@@ -648,7 +648,7 @@ function insertarCarreraPasada(carrera){
 
     // basicamente recibe la carrera a mostrar y la inserta en el contenedor correspondiente rellenando con sus atributos
     contenedorCarrerasPasadas.innerHTML += `
-    <a href="#" class="carrera" id="${carrera.id}">
+    <a href="circuito.html" class="carrera" id="${carrera.id}">
         <h6 class="titulo_rondas fuente_tw_regular">RONDA ${carrera.ronda}</h6>
         <div class="contenedor_dias_mes_img">
             <div class="contenedor_dia_mes">
@@ -683,7 +683,7 @@ function insertarCarreraPresente(carrera) {
 
     // basicamente recibe la carrera a mostrar y la inserta en el contenedor correspondiente rellenando con sus atributos
     contenedorCarreraSiguiente.innerHTML = `
-    <a href="#" class="carrera_proxima" id="${carrera.id}">
+    <a href="circuito.html" class="carrera_proxima" id="${carrera.id}">
                 <div class="contenedor_descripcion">
                     <h6 class="titulo_ronda_siguiente fuente_tw_regular">RONDA ${carrera.ronda} - SIGUIENTE</h6>
                     <div class="contenedor_dias_mes_img">
@@ -738,7 +738,7 @@ function insertarCarreraPresente(carrera) {
 function insertarCarreraFutura(carrera) {
     // basicamente recibe la carrera a mostrar y la inserta en el contenedor correspondiente rellenando con sus atributos
     contenedorCarrerasProximas.innerHTML += `
- <a href="#" class="carrera" id="${carrera.id}">
+ <a href="circuito.html" class="carrera" id="${carrera.id}">
     <h6 class="titulo_rondas fuente_tw_regular">RONDA ${carrera.ronda}</h6>
     <div class="contenedor_dias_mes_img">
         <div class="contenedor_dia_mes">
