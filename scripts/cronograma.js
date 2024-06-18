@@ -596,14 +596,6 @@ if (hayCarreraPresente === false && futuras.length > 0) {
 
     }
 
-// if (hayCarreraPresente === false && futuras.length > 0) {
-//     console.log("Tuve que poner la del FUTURA en PRESENTE");
-//     let futuraParaPresente = futuras.shift();
-//     insertarCarreraPresente(futuraParaPresente);
-//     hayCarreraPresente = true; // Actualiza la variable después de realizar el cambio
-// }
-
-
 
 function calcularFechaDeLaCarrera(carrera) {
     // creo una bandera para despues devolver el estado en un solo return
@@ -754,3 +746,44 @@ function insertarCarreraFutura(carrera) {
     </div>
 </a>`
 }
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// --- func para cuando hago click en algun gp, que me redirija a la pag 'circuito' pero con sus respectivas img y datos  ----
+
+let misEtiquetasA = document.querySelectorAll(".carrera")
+let miEtiquetaACarreraProxima = document.querySelector(".carrera_proxima");
+
+
+// a la etiqueta de carrera proxima, le añado un evento de click evitando que se envie a donde dice esu href
+miEtiquetaACarreraProxima.addEventListener("click", (e)=>{
+    e.preventDefault();
+    // guardo en el localstorage el id del gp q clickee
+    localStorage.setItem("id_gp_clickeado", miEtiquetaACarreraProxima.id)
+    // y despues si, te envio a donde decia su href
+    window.location.href = miEtiquetaACarreraProxima.href;
+})
+
+// y aca lo mismo pero por cada etiqueta 'a' que guardé,
+misEtiquetasA.forEach((carrera)=>{
+    // le añado un evento de click evitando que se envie a donde dice esu href
+    carrera.addEventListener("click", (e)=>{
+        e.preventDefault()
+        // guardo en el localstorage el id del gp q clickee
+        localStorage.setItem("id_gp_clickeado", carrera.id)
+        // y despues si, te envio a donde decia su href
+        window.location.href = carrera.href;
+    });
+})
+
+
+// ---------------------------------------------------------------------------------------------------------------------------
