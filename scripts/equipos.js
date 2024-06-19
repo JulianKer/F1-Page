@@ -205,7 +205,7 @@ arrayEquipos.forEach((equipo, index)=>{
     let posicion = index+1;
 
     eContenedorEquipos.innerHTML += `
-            <a href="#" class="e_equipo" id="${equipo.id}}">
+            <a href="equipoEspecifico.html" class="e_equipo" id="${equipo.id}}">
                 <section class="reng_1 fuente_f1_bold">
                     <p>${posicion}</p>
                     <div>
