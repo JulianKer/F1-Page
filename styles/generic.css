@@ -418,6 +418,7 @@ ul{
             z-index: 20;
             left: .6em;
             filter: brightness(.7);
+            width: 206px;
         }
     }
 
