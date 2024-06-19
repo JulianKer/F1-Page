@@ -1,9 +1,9 @@
 .main{
-    margin: 2em 4em 2em 3em;
+    margin: 4em 4em 10em 3em;
 }
 
 .e_titulo_principal{
-    font-size: 3em;
+    font-size: 3.8em;
     padding: .2em .2em 0 0;
     border-top: solid 10px;
     border-right: solid 10px;
@@ -29,6 +29,7 @@
     & .reng_1, .reng_2{
         border-bottom: 1px solid #b4b4b4;
     }
+
     .reng_1{
         display: flex;
         align-items: center;
@@ -70,11 +71,6 @@
 
         & p{
             font-size: 1.5em;
-        }
-
-        span{
-            background-color: blue;
-            color: blue;
         }
 
         img{
@@ -144,9 +140,12 @@
 
 @media screen and (max-width: 750px) {
     .main{
-        margin: 1.5em;
+        margin: 1.5em 1.5em 7em;
     }
 
+    .e_titulo_principal{
+        font-size: 2em;
+    }
     .e_contenedor_equipos{
         grid-template-columns: 100%;
     }
