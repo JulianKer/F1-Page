@@ -6,6 +6,12 @@ let imgs = [
 ]
 
 window.addEventListener("DOMContentLoaded", ()=>{
+
+    
+
+
+
+    // --------------- esto de aca es para el slider de imgs -----------------------------------------------------------------
     let flechaDer = document.querySelector(".flecha_der")
     let flechaIzq = document.querySelector(".flecha_izq")
     let img_a_cambiar = document.getElementById("img_a_cambiar");
@@ -34,4 +40,5 @@ window.addEventListener("DOMContentLoaded", ()=>{
         }
         img_a_cambiar.src = imgs[num_img_actual].img;
     })
+    // --------------------------------------------------------------------------------------------------------------------
 })

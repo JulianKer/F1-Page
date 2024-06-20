@@ -205,7 +205,7 @@ arrayEquipos.forEach((equipo, index)=>{
     let posicion = index+1;
 
     eContenedorEquipos.innerHTML += `
-            <a href="equipoEspecifico.html" class="e_equipo" id="${equipo.id}}">
+            <a href="equipoEspecifico.html" class="e_equipo" id="${equipo.id}">
                 <section class="reng_1 fuente_f1_bold">
                     <p>${posicion}</p>
                     <div>
@@ -234,4 +234,19 @@ arrayEquipos.forEach((equipo, index)=>{
                     <img src="${equipo.auto}" alt="">
                 </section>
             </a>`
+})
+
+
+
+// esto envia el id al local storage del equipo que tocaste para dirigirte a 'equipoEspecifico' y mostrarte dicho equipo clickeado
+window.addEventListener("DOMContentLoaded", ()=>{
+    let equipos = document.querySelectorAll(".e_equipo");
+    equipos.forEach((equipo)=>{
+
+        equipo.addEventListener("click", (e)=>{
+            e.preventDefault();
+            localStorage.setItem("id_equipo_clickeado", equipo.id);
+            window.location.href = equipo.href;
+        })
+    })
 })
