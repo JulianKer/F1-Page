@@ -113,6 +113,61 @@ body{
     }
 }
 
+
+
+
+.galeria{
+    position: relative;
+    width: 100%;
+
+    & img{
+        width: 100%;
+    }
+
+    .flecha_izq,
+    .flecha_der{
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+
+        padding: .5em;
+        font-size: 2em;
+
+        cursor: pointer;
+        
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        border-radius: .2em;
+
+        transition: all .2s;
+    }
+
+    .flecha_izq{
+        left: .1em;
+    }
+    .flecha_der{
+        right: .1em;
+    }
+
+    .contador_fotos{
+        font-size: 1.2em;
+        border: solid 2px #F20400;
+        border-top: 0;
+        border-bottom-left-radius: .5em;
+        border-bottom-right-radius: .5em;
+        text-align: center;
+    }
+
+    .flecha_der:hover,
+    .flecha_izq:hover{
+        background-color: #F20400;
+    }
+}
+
+
+
+
 @media screen and (max-width: 915px){
     .main{
         margin: 2em;
@@ -154,5 +209,12 @@ body{
             padding-left: 0;
             align-self: center;
         }
+    }
+}
+
+@media screen and (max-width: 412px){
+    .flecha_der,
+    .flecha_izq{
+        top: 35% !important;
     }
 }
