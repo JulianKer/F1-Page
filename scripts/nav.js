@@ -1,6 +1,7 @@
 var img_menu = document.querySelector(".img_burger_menu");
 var menu_desplegable_oculto = document.querySelector(".menu_desplegable_oculto")
 
+let misEquipos = document.querySelectorAll(".equipo");
 
 if (document.title === "Inicio | F1") {
     console.log("INICIO")
@@ -42,3 +43,12 @@ if (document.title === "Inicio | F1") {
         }
     })
 }
+
+
+misEquipos.forEach((equipo)=>{
+    equipo.addEventListener("click", (e)=>{
+        e.preventDefault();
+        localStorage.setItem("id_equipo_clickeado", equipo.id);
+        window.location.href = equipo.href;
+    })
+})
