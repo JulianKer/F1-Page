@@ -18,12 +18,16 @@ let equiposEnPodio = 0;
 // correspondiente y aitomaticamente se mostrara ordenado el que tenga q ir en podio, en podio y asi.
 let arrayEquipos = [
     {
+        "id":'redbull',
+
         "name":'Red Bull Racing',
         "url":'../assets/img/logos_teams/redbull.png',
         "points": 301,
         "color": 'backgroundRedbull',
     },
     {
+        "id":'ferrari',
+
         "name":'Ferrari',
         "url":'../assets/img/logos_teams/ferrari.png',
         "points": 252,
@@ -31,6 +35,8 @@ let arrayEquipos = [
 
     },
     {
+        "id":'mclaren',
+
         "name":'McLaren',
         "url":'../assets/img/logos_teams/mcLaren.png',
         "points": 212,
@@ -38,6 +44,8 @@ let arrayEquipos = [
 
     },
     {
+        "id":'mercedes',
+
         "name":'Mercedes',
         "url":'../assets/img/logos_teams/mercedes-logo.png',
         "points": 124,
@@ -45,6 +53,8 @@ let arrayEquipos = [
 
     },
     {
+        "id":'astonMartin',
+
         "name":'Aston Martin',
         "url":'../assets/img/logos_teams/aston-martin-logo.png',
         "points": 58,
@@ -52,6 +62,8 @@ let arrayEquipos = [
 
     },
     {
+        "id":'rb',
+
         "name":'RB',
         "url":'../assets/img/logos_teams/rb-logo.png',
         "points": 28,
@@ -59,6 +71,8 @@ let arrayEquipos = [
 
     },
     {
+        "id":'haas',
+
         "name":'Haas',
         "url":'../assets/img/logos_teams/haas-logo.png',
         "points": 7,
@@ -66,6 +80,8 @@ let arrayEquipos = [
 
     },
     {
+        "id":'alpine',
+
         "name":'Alpine',
         "url":'../assets/img/logos_teams/alpine-logo.png',
         "points": 5,
@@ -73,6 +89,8 @@ let arrayEquipos = [
 
     },
     {
+        "id":'williams',
+
         "name":'Williams',
         "url":'../assets/img/logos_teams/williams-logo.png',
         "points": 2,
@@ -80,6 +98,8 @@ let arrayEquipos = [
 
     },
     {
+        "id":'kickSauber',
+
         "name":'Kick Sauber',
         "url":'../assets/img/logos_teams/kick-sauber-logo.png',
         "points": 0,
@@ -112,7 +132,7 @@ arrayEquipos.forEach((equipo, index)=>{
 
 function insertarEquipoEnPodio(equipo, posicion) {
     contenedorPodioConstructores.innerHTML += `
-    <a href="" class="podio_c">
+    <a href="equipoEspecifico.html" class="podio_c" id="${equipo.id}">
         <div class="contenedor_puesto_constructores">
             <p class="num_podio fuente_f1_bold">${posicion}°</p>
             <h5 class="titulo_equipo_constructor fuente_tw_bold"> <span class="${equipo.color}">.</span>${equipo.name}</h5>
@@ -127,7 +147,7 @@ function insertarEquipoEnPodio(equipo, posicion) {
 
 function insertarEquipo(equipo, posicion) {
     contenedorEquiposConstructores.innerHTML += `
-    <a href="" class="demas_equipos">
+    <a href="equipoEspecifico.html" class="demas_equipos" id="${equipo.id}">
         <div class="contenedor_puesto_constructores">
             <p class="num_podio fuente_f1_bold">${posicion}°</p>
             <h5 class="titulo_equipo_constructor fuente_tw_bold"> <span class="${equipo.color}">.</span>${equipo.name}</h5>
@@ -140,6 +160,30 @@ function insertarEquipo(equipo, posicion) {
     </a>`
 }
 
+window.addEventListener("DOMContentLoaded",()=>{
+    const equiposDePodio = document.querySelectorAll(".podio_c");
+    const equiposRestantes = document.querySelectorAll(".demas_equipos");
+
+    equiposDePodio.forEach((eq)=>{
+        eq.addEventListener("click", (e)=>{
+            e.preventDefault();
+            localStorage.setItem("id_equipo_clickeado", eq.id);
+            window.location.href = eq.href;
+        })
+
+    })
+
+    equiposRestantes.forEach((eq)=>{
+        eq.addEventListener("click", (e)=>{
+            e.preventDefault();
+            console.log(localStorage.getItem("id_equipo_clickeado"))
+            localStorage.setItem("id_equipo_clickeado", eq.id);
+            console.log(localStorage.getItem("id_equipo_clickeado"))
+            window.location.href = eq.href;
+        })
+
+    })
+})
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------  FIN Campeonato Constructores      ----------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

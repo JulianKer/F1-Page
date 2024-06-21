@@ -382,6 +382,7 @@ let imgs = [
 
 window.addEventListener("DOMContentLoaded", ()=>{
     let equipo_elegido = buscarEquipoPorId(localStorage.getItem("id_equipo_clickeado"));
+    console.log(equipo_elegido)
     insertarEquipoEspecífico(equipo_elegido);
 
 
@@ -432,6 +433,7 @@ function buscarEquipoPorId(idABuscar) {
 
 function insertarEquipoEspecífico(equipo_elegido) {
     let main = document.querySelector(".main")
+    document.title = `Equipo ${equipo_elegido.nombre} | F1`;
     
             main.innerHTML = `
             <h3 class="titulo_del_equipo fuente_f1_reg">${equipo_elegido.nombre}</h3>
