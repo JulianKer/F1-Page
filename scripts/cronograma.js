@@ -672,12 +672,17 @@ function insertarCarreraPasada(carrera){
 }
 
 function insertarCarreraPresente(carrera) {
+    let liveSesion = " SIGUIENTE ";
+
+    if (hayCarreraPresente === true) {
+        liveSesion = ` EN VIVO <span class="circulo_live"><img src="../assets/icons/punto_rojo_live.svg" alt="live session"></span>`
+    }
 
     // basicamente recibe la carrera a mostrar y la inserta en el contenedor correspondiente rellenando con sus atributos
     contenedorCarreraSiguiente.innerHTML = `
     <a href="circuito.html" class="carrera_proxima" id="${carrera.id}">
                 <div class="contenedor_descripcion">
-                    <h6 class="titulo_ronda_siguiente fuente_tw_regular">RONDA ${carrera.ronda} - SIGUIENTE</h6>
+                    <h6 class="titulo_ronda_siguiente fuente_tw_regular">RONDA ${carrera.ronda} - ${liveSesion}</h6>
                     <div class="contenedor_dias_mes_img">
                         <div class="contenedor_dia_mes">
                             <p class="dias fuente_f1_reg">${carrera.dias}</p>
