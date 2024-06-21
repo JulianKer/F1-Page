@@ -1,0 +1,68 @@
+.main_salon{
+    margin: 4em 4em 10em 3em;
+}
+
+.salon_titulo{
+    font-size: 2em;
+    padding-bottom: .4em;
+    border-bottom: solid 6px #F20400;
+    margin-bottom: 2.5em;
+}
+
+.contenedor_campeones{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    column-gap: 5px;
+}
+
+.campeon{
+    overflow: hidden;
+
+    & .contenedor_img{
+        width: 20em;
+        overflow: hidden;
+    }
+    img, .descripcion{
+        width: 100%;
+        transition: all .3s;
+    }
+    .descripcion{
+        position: relative;
+        top: -5px;
+        z-index: 2;
+
+        background-color: #fff;
+
+        height: 7em;
+        padding: 1.5em;
+        font-size: 1.1em;
+    }
+
+}
+
+.campeon:hover{
+    cursor: default;
+
+    & img{
+        transform: scale(1.1);
+    }
+    .descripcion{
+        color: #fff;
+        background-color: #171717;
+        transform: scaleY(1.1);
+    }
+}
+
+
+
+@media screen and (max-width: 412px){
+
+    .main_salon{
+        margin: 1em;
+        font-size: .7em;
+    }
+    .contenedor_campeones{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3px;
+    }
+}
