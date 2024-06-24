@@ -509,6 +509,7 @@ function insertarEquipoEspecífico(equipo_elegido) {
             <button class="flecha_izq"><</button>
             <button class="flecha_der">></button>
             <div class="contador_fotos fuente_tw_regular">
+                <img src="../assets/img/camara_de_fotos.png" alt="photo camera">
                 <p class="contador">1/3</p>
             </div>
         </section>`

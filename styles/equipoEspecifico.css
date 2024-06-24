@@ -128,40 +128,47 @@ body{
     .flecha_der{
         position: absolute;
         z-index: 10;
-        top: 50%;
+        bottom: 2em;
 
         padding: .5em;
         font-size: 2em;
 
         cursor: pointer;
         
-        background-color: transparent;
+        background-color: black;
+        filter: opacity(.4);
         color: #fff;
         border: none;
-        border-radius: .2em;
 
         transition: all .2s;
     }
 
     .flecha_izq{
-        left: .1em;
+        right: 1.6em;
     }
     .flecha_der{
-        right: .1em;
+        right: 0;
     }
 
     .contador_fotos{
+        display: flex;
         font-size: 1.2em;
-        border: solid 2px #F20400;
-        border-top: 0;
-        border-bottom-left-radius: .5em;
-        border-bottom-right-radius: .5em;
-        text-align: center;
+
+        color: #747474;
+        border-top: solid 7px #F20400;
+        border-bottom: #d9d9d9 solid 2px;
+
+        gap: 1em;
+        padding: .5em;
+
+        & img{
+            width: 1.5em;
+        }
     }
 
     .flecha_der:hover,
     .flecha_izq:hover{
-        background-color: #F20400;
+        filter: opacity(.8);
     }
 }
 
@@ -190,7 +197,8 @@ body{
     .sector1{
         grid-template-columns: 1fr;
         padding-left: 2em;
-        max-width: 400px;
+        max-width: 296px;
+
 
         & .logo_equipo{
             grid-column: 1/2;
@@ -198,8 +206,9 @@ body{
     }
 
     .sector2{
-        max-width: 400px;
+        max-width: 296px;
         gap: 3em;
+        margin-left: .4em;
 
         & img, .datos_piloto{
             width: 300px;
@@ -215,6 +224,8 @@ body{
 @media screen and (max-width: 412px){
     .flecha_der,
     .flecha_izq{
-        top: 35% !important;
+        font-size: 1em;
+        padding: 0;        
     }
+
 }
