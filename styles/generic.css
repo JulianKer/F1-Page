@@ -1131,4 +1131,16 @@ footer{
     nav .container_logo_f1 img{
         width: 6em;
     }
+
+    .footer_s1{
+        & .div2{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr !important;
+            gap: 1em;
+
+            & img{
+                width: 6em;
+            }
+        }
+    }
 }
