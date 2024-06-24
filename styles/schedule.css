@@ -243,6 +243,7 @@
     overflow: hidden;
 
     & img{
+        width: 110%;
         position: absolute;
         top: -7.5em;
         left: -2.5em;
@@ -382,6 +383,27 @@
     .contenedor_img_fondo_carrera_proxima{
         width: 100%;
     }
+
+    
+}
+
+@media screen and (max-width: 915px){
+    .contenedor_img_fondo_carrera_proxima{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+        & img{
+            display: none;
+        }
+
+        .horarios{
+            position: relative;
+            top: inherit;
+            right: inherit;
+            gap: 2.5em;
+        }
+    }
 }
 
 
@@ -408,7 +430,10 @@
 
     .contenedor_img_fondo_carrera_proxima{
         & img{
-        left: -20em;
+        /* left: -20em; */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         }
 
         .horarios{

@@ -219,12 +219,12 @@ let arrayCarreras = [
         "banderaPais": '../assets/img/country _flags/spain.png',
         "nombreCircuito": 'España  ',
         "nombreGP": 'FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024 ',
-        "p2NombrePiloto": '',
-        "p2ImgPiloto": '../assets/img/pilotos_podio/',
-        "p1NombrePiloto": '',
-        "p1ImgPiloto": '../assets/img/pilotos_podio/',
-        "p3NombrePiloto": '',
-        "p3ImgPiloto": '../assets/img/pilotos_podio/',
+        "p2NombrePiloto": 'NOR',
+        "p2ImgPiloto": '../assets/img/pilotos_podio/norris.png',
+        "p1NombrePiloto": 'VER',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/max.png',
+        "p3NombrePiloto": 'HAM',
+        "p3ImgPiloto": '../assets/img/pilotos_podio/hamilton.png',
 
         "diaInicio": 21,
         "diaFin": 23,
@@ -542,8 +542,8 @@ let arrayCarreras = [
         "imagen_circuito": '../assets/img/circuitos/abu_dhabi.png'
     }
 
-    // FALTA AGREGAR LAS CARRERAS DESPUES DE ESPAÑA ASI LAS MUESTRA AUTOMATICAMENTE Y PODRIA FIJARME EL TEMA DE LOS HORARIOS 
-    // DE LAS P1 P2 P3 Y Q1 Q2 Y Q3 Y RACE YA QUE NO SON IGUALES PARA TODAS PERO BUENO, ES ALGO MENOR
+    // PODRIA FIJARME EL TEMA DE LOS HORARIOS DE LAS P1 P2 P3 Y Q1 Q2 Y Q3 Y RACE YA QUE NO SON IGUALES 
+    // PARA TODAS PERO BUENO, ES ALGO MENOR
 ]
 
 
@@ -594,7 +594,11 @@ if (hayCarreraPresente === false && futuras.length > 0) {
         insertarCarreraPresente(eliminadaDelArrayFuturas);
     }
 
-    }
+    // ahora, si NO hay carrera siguiente pero TAMPOCO hay mas carreras futuras (osea, terminó la temporada) entonces al
+    // contenedor de carrera siguiente la oculto con display none para que no quede feo una linea gris vacia.
+}else if(hayCarreraPresente === false && futuras.length === 0){
+    contenedorCarreraSiguiente.style.display = "none";
+}
 
 
 function calcularFechaDeLaCarrera(carrera) {
