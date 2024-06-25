@@ -17,6 +17,7 @@
 
 .campeon{
     overflow: hidden;
+    color: #000;
 
     & .contenedor_img{
         width: 20em;
@@ -41,7 +42,7 @@
 }
 
 .campeon:hover{
-    cursor: default;
+    cursor: pointer;
 
     & img{
         transform: scale(1.1);
