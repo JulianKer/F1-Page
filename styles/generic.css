@@ -603,6 +603,98 @@ ul{
 
 
 
+/*---------------------------------------------desplegable resultados------------------------------------------------------*/
+.nav_resultados:hover + .desplegable_resultados,
+.titulos-nav:hover .desplegable_resultados{
+    display: flex;
+    visibility: visible;
+    left: 0;
+    top: 3.5em;
+}
+
+.desplegable_resultados{
+    background-color: #15151E;
+    position: absolute;
+    left: 0;
+    top: 3.5em;
+
+    width: 100%;
+    padding: 3em 5em;
+
+    display: flex;
+    visibility: hidden;
+    gap: 3em;
+
+    & .desplegable_resultados_de_equipos,
+    .desplegable_resultados_de_pilotos{
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        & a{
+            color: #fff;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        .cada_equipo_o_piloto_del_desplegable{
+            color: #fff;
+            font-size: 1em;
+            padding: .3em;
+
+            display: flex;
+            justify-content: space-evenly;
+
+            border-top: solid #38383F 2px;
+            border-right: solid #38383F 2px;
+            border-top-right-radius: 1em;
+
+
+            & img{
+                width: 7em;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+            span{
+                background-color: #000;
+                padding: .2em .5em;
+                border-radius: 1em;
+            }
+        }
+    }
+
+    .desplegable_resultados_de_equipos{
+        gap: 1em;
+    }
+
+
+    .desplegable_resultados_de_pilotos{
+        & .cada_equipo_o_piloto_del_desplegable img{
+            width: 5.2em;
+        }
+    }
+
+    .titulo_desplegable_resultados{
+        & span{
+            color: #F20400;
+        }
+    }
+
+    .titulo_desplegable_resultados:hover{
+        text-decoration: underline #F20400;
+    }
+
+    .cada_equipo_o_piloto_del_desplegable:hover{
+        border-color: #F20400;
+    }
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 
 
