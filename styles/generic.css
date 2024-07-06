@@ -158,19 +158,21 @@ ul{
 
 /*----------------------------- menú para mobile RESPONSIVE--------------------------------------------*/
 .menu_desplegable_oculto{
-    display: none;
+    /* display: none; */
+    display: flex;
     justify-content: center;
     
     background-color: #F20400;
 
-    position: absolute;
+    position: fixed;
     left: 0;
     /* top: 3.75em; */
-    z-index: 10;
+    top: -19em;
+    z-index: 100;
 
     width: 100%;
 
-    transition: all .2s;
+    transition: all .4s;
 }
     
 .menu_desplegable_oculto .ul_secundario{
@@ -207,6 +209,13 @@ ul{
 
 .ul_secundario a:hover{
     transform: translateX(.5em);
+}
+
+
+.mostrar_menu{
+    top: 3.75em;
+    transition: all .4s;
+    
 }
 /*-----------------------------------------------------------------------------------------------------*/
 

@@ -6,16 +6,17 @@ let misEquipos = document.querySelectorAll(".equipo");
 // hago un if  porq como el index esta afuera de las carpetas, tengo q usar el ../ en algunas rutas y si NO
 // estoy en el home, SI que la tengo q usar
 if (document.title === "Inicio | F1") {
-    console.log("INICIO")
 
     // cuando toco el menu, despliego el menu, y si ya esta desplegado, lo oculto
     img_menu.addEventListener("click", ()=>{
         if(img_menu.src.includes("assets/icons/burger_menu.svg")){
             img_menu.src = "assets/icons/cruz.svg";
-            menu_desplegable_oculto.style = "display: flex; top: 3.75em;";
+            // menu_desplegable_oculto.style = "display: flex; top: 3.75em;";
+            menu_desplegable_oculto.classList.add("mostrar_menu");
         } else {
-                img_menu.src = "assets/icons/burger_menu.svg";
-                menu_desplegable_oculto.style = "display: none";
+            img_menu.src = "assets/icons/burger_menu.svg";
+            // menu_desplegable_oculto.style = "display: none";
+            menu_desplegable_oculto.classList.remove("mostrar_menu");
         }
     });
     
@@ -23,7 +24,8 @@ if (document.title === "Inicio | F1") {
     // se hace para que SI el menu esta desplegado, y se agranda la pantalla, que se oculte el menu
     window.addEventListener("resize", ()=>{
         if(window.innerWidth > 915){
-            menu_desplegable_oculto.style = "display: none;";
+            // menu_desplegable_oculto.style = "display: none;";
+            menu_desplegable_oculto.classList.remove("mostrar_menu");
             img_menu.src = "assets/icons/burger_menu.svg";
         }
     })
@@ -33,21 +35,23 @@ if (document.title === "Inicio | F1") {
     document.addEventListener("click", (e)=>{
         if (!menu_desplegable_oculto.contains(e.target) && !img_menu.contains(e.target)) {
             img_menu.src = "assets/icons/burger_menu.svg";
-            menu_desplegable_oculto.style = "display: none";
+            // menu_desplegable_oculto.style = "display: none";
+            menu_desplegable_oculto.classList.remove("mostrar_menu");
         }
     });
     
 }else{
-    console.log("OTRAS PAGINAS")
 
     // cuando toco el menu, despliego el menu, y si ya esta desplegado, lo oculto
     img_menu.addEventListener("click", ()=>{
         if(img_menu.src.includes("assets/icons/burger_menu.svg")){
             img_menu.src = "../assets/icons/cruz.svg";
-            menu_desplegable_oculto.style = "display: flex; top: 3.75em;";
+            // menu_desplegable_oculto.style = "display: flex; top: 3.75em;";
+            menu_desplegable_oculto.classList.add("mostrar_menu");
         } else {
                 img_menu.src = "../assets/icons/burger_menu.svg";
-                menu_desplegable_oculto.style = "display: none";
+                // menu_desplegable_oculto.style = "display: none";
+                menu_desplegable_oculto.classList.remove("mostrar_menu");
         }
     });
     
@@ -55,7 +59,8 @@ if (document.title === "Inicio | F1") {
     // se hace para que SI el menu esta desplegado, y se agranda la pantalla, que se oculte el menu
     window.addEventListener("resize", ()=>{
         if(window.innerWidth > 915){
-            menu_desplegable_oculto.style = "display: none;";
+            // menu_desplegable_oculto.style = "display: none;";
+            menu_desplegable_oculto.classList.remove("mostrar_menu");
             img_menu.src = "../assets/icons/burger_menu.svg";
         }
     })
@@ -65,11 +70,16 @@ if (document.title === "Inicio | F1") {
     document.addEventListener("click", (e)=>{
         if (!menu_desplegable_oculto.contains(e.target) && !img_menu.contains(e.target)) {
             img_menu.src = "../assets/icons/burger_menu.svg";
-            menu_desplegable_oculto.style = "display: none";
+            // menu_desplegable_oculto.style = "display: none";
+            menu_desplegable_oculto.classList.remove("mostrar_menu");
         }
     });
 }
 
+window.addEventListener("scroll", ()=>{
+    img_menu.src = "../assets/icons/burger_menu.svg";
+    menu_desplegable_oculto.classList.remove("mostrar_menu");
+})
 
 
 // este es para que cuando toque algun equipo del desplegable de 'equipos', te redireccione al equipo correspondiente
