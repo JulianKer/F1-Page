@@ -226,12 +226,23 @@
             }
 
             .lap_record{
-                width: 21em;
+                width: 21.7em;
             }
         }
 
         .datos{
             font-size: 1.4em;
         }
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .contenedor_de_todos_los_detalles{
+        border: none;
+        padding: 2em 0 0 .7em;
+    }
+
+    .otros_enlaces{
+        width: 92% !important;
     }
 }

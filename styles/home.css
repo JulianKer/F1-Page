@@ -330,7 +330,7 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 550px) {
     .seccion3 .part2 p{
         font-size: 1.2em !important;
     }
