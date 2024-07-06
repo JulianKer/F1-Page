@@ -327,6 +327,11 @@
             width: 80%;
         }
     }
+}
 
 
+@media screen and (max-width: 750px) {
+    .seccion3 .part2 p{
+        font-size: 1.2em !important;
+    }
 }
