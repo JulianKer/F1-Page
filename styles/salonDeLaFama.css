@@ -12,7 +12,7 @@
 .contenedor_campeones{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
-    column-gap: 5px;
+    gap: 5px;
 }
 
 .campeon{
@@ -27,6 +27,11 @@
         width: 100%;
         transition: all .3s;
     }
+
+    img{
+        height: 12.23em;
+        object-fit: cover;
+    }
     .descripcion{
         position: relative;
         top: -5px;
@@ -35,6 +40,7 @@
         background-color: #fff;
 
         height: 7em;
+        /* height: 100%; */
         padding: 1.5em;
         font-size: 1.1em;
     }
