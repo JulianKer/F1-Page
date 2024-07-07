@@ -8,7 +8,7 @@ let arrayEquipos = [
         "id":'redbull',
         "name":'Red Bull Racing',
         "logoEquipo":'../assets/img/logos_teams/redbull.png',
-        "points": 301,
+        "points": 373,
         "colorRectangulito": 'backgroundRedbull',
         "piloto1": [{
             "nombre":'Max',
@@ -27,7 +27,7 @@ let arrayEquipos = [
 
         "name":'Ferrari',
         "logoEquipo":'../assets/img/logos_teams/ferrari.png',
-        "points": 252,
+        "points": 302,
         "colorRectangulito": 'backgroundFerrari',
         "piloto1": [{
             "nombre":'Charles',
@@ -46,7 +46,7 @@ let arrayEquipos = [
 
         "name":'McLaren',
         "logoEquipo":'../assets/img/logos_teams/mcLaren.png',
-        "points": 212,
+        "points": 295,
         "colorRectangulito": 'backgroundMclaren',
         "piloto1": [{
             "nombre":'Lando',
@@ -65,7 +65,7 @@ let arrayEquipos = [
 
         "name":'Mercedes',
         "logoEquipo":'../assets/img/logos_teams/mercedes-logo.png',
-        "points": 124,
+        "points": 221,
         "colorRectangulito": 'backgroundMercedes',
         "piloto1": [{
             "nombre":'Lewis',
@@ -84,7 +84,7 @@ let arrayEquipos = [
 
         "name":'Aston Martin',
         "logoEquipo":'../assets/img/logos_teams/aston-martin-logo.png',
-        "points": 58,
+        "points": 68,
         "colorRectangulito": 'backgroundAston_martin',
         "piloto1": [{
             "nombre":'Fernando',
@@ -103,7 +103,7 @@ let arrayEquipos = [
 
         "name":'RB',
         "logoEquipo":'../assets/img/logos_teams/rb-logo.png',
-        "points": 28,
+        "points": 31,
         "colorRectangulito": 'backgroundRb',
         "piloto1": [{
             "nombre":'Yuki',
@@ -122,7 +122,7 @@ let arrayEquipos = [
 
         "name":'Haas',
         "logoEquipo":'../assets/img/logos_teams/haas-logo.png',
-        "points": 7,
+        "points": 27,
         "colorRectangulito": 'backgroundHaas',
         "piloto1": [{
             "nombre":'Nico',
@@ -141,7 +141,7 @@ let arrayEquipos = [
 
         "name":'Alpine',
         "logoEquipo":'../assets/img/logos_teams/alpine-logo.png',
-        "points": 5,
+        "points": 9,
         "colorRectangulito": 'backgroundAlpine',
         "piloto1": [{
             "nombre":'Pierre',
@@ -160,7 +160,7 @@ let arrayEquipos = [
 
         "name":'Williams',
         "logoEquipo":'../assets/img/logos_teams/williams-logo.png',
-        "points": 2,
+        "points": 4,
         "colorRectangulito": 'backgroundWilliams',
         "piloto1": [{
             "nombre":'Alex',
