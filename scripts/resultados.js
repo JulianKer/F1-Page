@@ -22,7 +22,7 @@ let arrayEquipos = [
 
         "name":'Red Bull Racing',
         "url":'../assets/img/logos_teams/redbull.png',
-        "points": 301,
+        "points": 373,
         "color": 'backgroundRedbull',
     },
     {
@@ -30,7 +30,7 @@ let arrayEquipos = [
 
         "name":'Ferrari',
         "url":'../assets/img/logos_teams/ferrari.png',
-        "points": 252,
+        "points": 302,
         "color": 'backgroundFerrari',
 
     },
@@ -39,7 +39,7 @@ let arrayEquipos = [
 
         "name":'McLaren',
         "url":'../assets/img/logos_teams/mcLaren.png',
-        "points": 212,
+        "points": 295,
         "color": 'backgroundMclaren',
 
     },
@@ -48,7 +48,7 @@ let arrayEquipos = [
 
         "name":'Mercedes',
         "url":'../assets/img/logos_teams/mercedes-logo.png',
-        "points": 124,
+        "points": 221,
         "color": 'backgroundMercedes',
 
     },
@@ -57,7 +57,7 @@ let arrayEquipos = [
 
         "name":'Aston Martin',
         "url":'../assets/img/logos_teams/aston-martin-logo.png',
-        "points": 58,
+        "points": 68,
         "color": 'backgroundAston_martin',
 
     },
@@ -66,7 +66,7 @@ let arrayEquipos = [
 
         "name":'RB',
         "url":'../assets/img/logos_teams/rb-logo.png',
-        "points": 28,
+        "points": 31,
         "color": 'backgroundRb',
 
     },
@@ -75,7 +75,7 @@ let arrayEquipos = [
 
         "name":'Haas',
         "url":'../assets/img/logos_teams/haas-logo.png',
-        "points": 7,
+        "points": 27,
         "color": 'backgroundHaas',
 
     },
@@ -84,7 +84,7 @@ let arrayEquipos = [
 
         "name":'Alpine',
         "url":'../assets/img/logos_teams/alpine-logo.png',
-        "points": 5,
+        "points": 9,
         "color": 'backgroundAlpine',
 
     },
@@ -93,7 +93,7 @@ let arrayEquipos = [
 
         "name":'Williams',
         "url":'../assets/img/logos_teams/williams-logo.png',
-        "points": 2,
+        "points": 4,
         "color": 'backgroundWilliams',
 
     },
