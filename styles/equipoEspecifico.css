@@ -209,6 +209,9 @@ body{
         max-width: 296px;
         gap: 3em;
         margin-left: .4em;
+        margin-bottom: 3em;
+        padding-left: 1.5em;
+
 
         & img, .datos_piloto{
             width: 300px;
