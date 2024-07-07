@@ -110,16 +110,14 @@ ul{
     font-family: var(--f1-regular);
     font-size: 17px;
     color: #fff;
-    width: 60%;
+    width: 100%;
 
     display: flex;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6.5em, 1fr)); */
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .ul_principal > li > a{
-    padding: 1em 0;
+    padding: 1.1em;
     color: #fff;
     border-bottom: 3px solid #F20400;
     transition: all .3s;
@@ -127,7 +125,7 @@ ul{
 }
 
 .ul_principal > li > a:hover{
-    border-bottom: #fff solid 3px;
+    background-color: #15151E;
 }
 
 .container_icon_perfil{
@@ -300,6 +298,12 @@ ul{
 .desplegable_mas{
     border-bottom: 2px solid #F20400;
 }
+
+
+
+
+
+
 /*---------------------------------------desplegable pilotos--------------------------------------------*/
 .nav_pilotos:hover + .desplegable_pilotos,
 .desplegable_pilotos:hover{
