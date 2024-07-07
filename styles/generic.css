@@ -299,7 +299,9 @@ ul{
     border-bottom: 2px solid #F20400;
 }
 
-
+.fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable{
+    background-color: #15151E;
+}
 
 
 

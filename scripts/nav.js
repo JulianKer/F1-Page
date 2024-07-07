@@ -76,6 +76,8 @@ if (document.title === "Inicio | F1") {
     });
 }
 
+
+// este es para q cuando se detecte scroll en la ventana, se cierre el menu desplegable
 window.addEventListener("scroll", ()=>{
     img_menu.src = "../assets/icons/burger_menu.svg";
     menu_desplegable_oculto.classList.remove("mostrar_menu");
@@ -90,3 +92,54 @@ misEquipos.forEach((equipo)=>{
         window.location.href = equipo.href;
     })
 })
+
+
+
+const desp_pilotos = document.querySelector(".desplegable_pilotos");
+const desp_equipos = document.querySelector(".desplegable_equipos");
+const desp_resultados = document.querySelector(".desplegable_resultados");
+const desp_cronograma = document.querySelector(".desplegable_cronograma");
+const desp_mas = document.querySelector(".desplegable_mas");
+
+const nav_pilotos = document.querySelector(".nav_pilotos");
+const nav_equipos = document.querySelector(".nav_equipos");
+const nav_resultados = document.querySelector(".nav_resultados");
+const nav_cronograma = document.querySelector(".nav_cronograma");
+const nav_mas = document.querySelector(".nav_mas");
+
+// cuando le hago hover al los desplegables
+desp_pilotos.addEventListener("mouseover", ()=>{
+    nav_pilotos.classList.add("fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable");
+});
+desp_equipos.addEventListener("mouseover", ()=>{
+    nav_equipos.classList.add("fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable");
+});
+desp_resultados.addEventListener("mouseover", ()=>{
+    nav_resultados.classList.add("fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable");
+});
+desp_cronograma.addEventListener("mouseover", ()=>{
+    nav_cronograma.classList.add("fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable");
+});
+desp_mas.addEventListener("mouseover", ()=>{
+    nav_mas.classList.add("fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable");
+});
+
+
+// cuando les dejo de hacer hover
+desp_pilotos.addEventListener("mouseout", ()=>{
+    nav_pilotos.classList.remove("fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable");
+});
+desp_equipos.addEventListener("mouseout", ()=>{
+    nav_equipos.classList.remove("fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable");
+});
+desp_resultados.addEventListener("mouseout", ()=>{
+    nav_resultados.classList.remove("fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable");
+});
+desp_cronograma.addEventListener("mouseout", ()=>{
+    nav_cronograma.classList.remove("fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable");
+});
+desp_mas.addEventListener("mouseout", ()=>{
+    nav_mas.classList.remove("fondo_del_nav_seleccionado_al_hacer_hover_en_desplegable");
+});
+
+
