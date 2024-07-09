@@ -9,3 +9,41 @@
     border-right: solid 10px;
     border-top-right-radius: .8em;
 }
+
+.container_salon_de_la_fama{
+    margin-top: 1em;
+    margin-bottom: 5em;
+    color: #000;
+    border-bottom: 2px solid #c9c9c9;
+
+    font-size: 1.1em;
+    min-height: 2.3em;
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    transition: all .3s;
+    
+    & img{
+        width: 24px;
+    }
+}
+
+.container_salon_de_la_fama:hover{
+    border-bottom-color: #F20400;
+    color: #F20400;
+}
+
+
+
+
+.contenedor-podio{
+    width: 100%;
+    background-color: green;
+}
+
+.contenedor-otros{
+    width: 100%;
+    background-color: blue;
+}
