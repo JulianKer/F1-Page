@@ -1,0 +1,11 @@
+.main{
+    margin: 4em 4em 10em 3em;
+}
+
+.titulo_pilotos{
+    font-size: 3.8em;
+    padding: .2em .2em 0 0;
+    border-top: solid 10px;
+    border-right: solid 10px;
+    border-top-right-radius: .8em;
+}
