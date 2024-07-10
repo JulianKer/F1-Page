@@ -826,7 +826,6 @@ ul{
     width: 100%;
     height: auto;
     
-    filter: brightness(.7);
     transition: all .2s;
 }
 
@@ -853,6 +852,24 @@ ul{
     }
 }
 
+.fondo_delGP{
+    position: relative;
+    filter: brightness(.5);
+    transition: all .2s;
+
+    & .nav_nombre_del_gp{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 100%;
+        text-align: center;
+        font-size: 1.4em;
+    }
+}
+
+
 .gp:hover .contenedor_titulo_gp{
     border-right: solid 1px #F20400;
     border-bottom: solid 1px #F20400;
@@ -863,8 +880,8 @@ ul{
     transform: translateX(1em);
 }
 
-.gp:hover img{
-    filter: brightness(1);
+.gp:hover .fondo_delGP{
+    filter: brightness(.8);
     transform: scale(1.1);
 }
 
