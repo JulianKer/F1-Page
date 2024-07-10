@@ -40,6 +40,22 @@ if (document.title === "Inicio | F1") {
         }
     });
     
+    //  (para el index)cuando el dom cargue (osea, se pusieron los gp en el nav segun sea el siguiente y demas) los traigo a los 4 para 
+    // redireccionarlos segun el que toquemos
+    document.addEventListener("DOMContentLoaded", ()=>{
+        const misGpDelNav = document.querySelectorAll(".gp");
+
+        misGpDelNav.forEach((gp)=>{
+            // le añado un evento de click evitando que se envie a donde dice esu href
+            gp.addEventListener("click", (e)=>{
+                e.preventDefault()
+                // guardo en el localstorage el id del gp q clickee
+                localStorage.setItem("id_gp_clickeado", gp.id)
+                // y despues si, te envio a donde decia su href
+                window.location.href = "pages/circuito.html";
+            });
+        })
+    })
 }else{
 
     // cuando toco el menu, despliego el menu, y si ya esta desplegado, lo oculto
@@ -74,6 +90,23 @@ if (document.title === "Inicio | F1") {
             menu_desplegable_oculto.classList.remove("mostrar_menu");
         }
     });
+
+    //  (para el index)cuando el dom cargue (osea, se pusieron los gp en el nav segun sea el siguiente y demas) los traigo a los 4 para 
+    // redireccionarlos segun el que toquemos
+    document.addEventListener("DOMContentLoaded", ()=>{
+        const misGpDelNav = document.querySelectorAll(".gp");
+
+        misGpDelNav.forEach((gp)=>{
+            // le añado un evento de click evitando que se envie a donde dice esu href
+            gp.addEventListener("click", (e)=>{
+                e.preventDefault()
+                // guardo en el localstorage el id del gp q clickee
+                localStorage.setItem("id_gp_clickeado", gp.id)
+                // y despues si, te envio a donde decia su href
+                window.location.href = "circuito.html";
+            });
+        })
+    })
 }
 
 
@@ -487,7 +520,7 @@ function rellenarNavDeCronograma(carreraActual) {
     // console.log(carreraProximamente1)
     // console.log(carreraProximamente2)
 
-    contenedorGps.innerHTML = `<a href="pages/cronograma.html#Monaco" class="gp borde_gris_gp">
+    contenedorGps.innerHTML = `<a href="#" class="gp borde_gris_gp" id="${carreraAnterior.id}">
                                 <p class="t_posicionado1">Anterior</p>
                                 <div class="contenedor_img_titulo_gp">
                                     <div class="fondo_delGP">
@@ -504,7 +537,7 @@ function rellenarNavDeCronograma(carreraActual) {
                                 </div>
                             </a>
 
-                            <a href="pages/cronograma.html#Canadá" class="gp borde_gris_gp">
+                            <a href="#" class="gp borde_gris_gp" id="${carreraActual.id}">
                                 <p class="t_posicionado2">Siguiente</p>
                                 <div class="contenedor_img_titulo_gp">
                                     <div class="fondo_delGP">
@@ -521,7 +554,7 @@ function rellenarNavDeCronograma(carreraActual) {
                                 </div>
                             </a>
 
-                            <a href="pages/cronograma.html#España" class="gp borde_transp_gp">
+                            <a href="#" class="gp borde_transp_gp" id="${carreraProximamente1.id}">
                                 <p class="t_posicionado3">Próximamente</p>
                                 <div class="contenedor_img_titulo_gp">
                                     <div class="fondo_delGP">
@@ -538,7 +571,7 @@ function rellenarNavDeCronograma(carreraActual) {
                                 </div>
                             </a>
 
-                            <a href="pages/cronograma.html#Austria" class="gp borde_transp_gp">
+                            <a href="#" class="gp borde_transp_gp" id="${carreraProximamente2.id}">
                                 <div class="contenedor_img_titulo_gp">
                                     <div class="fondo_delGP">
                                         <img src="${carreraProximamente2.imagen_fondo}" alt="img_fondo">
