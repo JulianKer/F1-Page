@@ -1,4 +1,7 @@
 
+
+// de todos los pilotos, voy a usar su apellido como id para las etiquetas a que inserte al html, asiq al clickearlas, las paso por
+// local storage y hago q mustre la descripcion de cada uno
 const arrayDePilotos = [
     {
         "puntos": 255,
@@ -220,8 +223,62 @@ const arrayDePilotos = [
         "numPiloto": '../assets/img/numeros_pilotos/tsu.avif',
         "imgPiloto": '../assets/img/img_pilotos/tsu.png',
     },
+
+    // este es oliver bearman q corrio una carrera pero tiene q estar
+    {
+        "puntos": 6,
+        "claseRectangulito":'ferrari_piloto',
+        "claseBordeEquipo": 'borde_ferrari_piloto',
+        "nombre": 'Oliver',
+        "apellido": 'BEARMAN',
+        "bandera": '../assets/img/country _flags/gran_bretaña.png',
+        "equipo": 'Ferrari',
+        "numPiloto": '../assets/img/numeros_pilotos/bea.avif',
+        "imgPiloto": '../assets/img/img_pilotos/bea.png',
+    },
 ]
 
+
+const contenedorDeTodosLosPilotos = document.getElementById("contenedor_de_todos_los_pilotos");
+// console.log(contenedorDeTodosLosPilotos)
+
+arrayDePilotos.sort((a,b) => b.puntos - a.puntos);
+// console.log(arrayDePilotos)
+
+
+arrayDePilotos.forEach((piloto, index)=>{
+    let posicion = index+1;
+
+    contenedorDeTodosLosPilotos.innerHTML += `
+    <a href="#" class="piloto_por_separado ${piloto.claseBordeEquipo}" id="${piloto.apellido}">
+                    <section class="piloto_part1 fuente_f1_bold">
+                        <p class="posicion">${posicion}</p>
+                        <div class="cont_puntos">
+                            <p class="num_pts">${piloto.puntos}</p>
+                            <p class="pts">PTS</p>
+                        </div>
+                    </section>
+    
+                    <section class="piloto_part2">
+                        <p class="color_piloto ${piloto.claseRectangulito}">.</p>
+                        <div>
+                            <div class="fuente_f1_bold">
+                                <p class="piloto_nombre fuente_tw_regular">${piloto.nombre}</p>
+                                <p class="piloto_apellido fuente_f1_bold">${piloto.apellido}</p>
+                            </div>
+                            <img src="${piloto.bandera}" alt="img_pais" class="img_pais">
+                        </div>
+                    </section>
+    
+                    <section class="piloto_part3">
+                        <p class="fuente_f1_reg">${piloto.equipo}</p>
+                        <div>
+                            <img class="img_del_num_del_piloto" src="${piloto.numPiloto}" alt="num_piloto">
+                            <img class="img_del_piloto" src="${piloto.imgPiloto}" alt="img_piloto">
+                        </div>
+                    </section>
+                </a>`
+})
 
 
 

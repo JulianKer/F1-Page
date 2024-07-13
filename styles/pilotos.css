@@ -13,6 +13,7 @@
 
 .container_salon_de_la_fama{
     margin: 5em 0;
+    padding: .8em 0;
     color: #000;
     border-bottom: 2px solid #c9c9c9;
     border-right: 2px solid #c9c9c9;
@@ -60,7 +61,7 @@
     justify-content: center;
     align-items: end;
     flex-wrap: wrap; /*esto para q si el elemento no encaja, lo baja a otra fila*/
-    gap: 2em;
+    gap: 4em;
 }
 
 
@@ -72,7 +73,7 @@
 
     display: flex;
     flex-direction: column;
-    flex: 1 1 30%; /*este es el flex-grow (capacidad de agrandarse), flex-shrink (capacodad de achicarse) y el flex-basis (tamaño base, en base a ese, se achica/agranda)*/
+    flex: 1 1 10%; /*este es el flex-grow (capacidad de agrandarse), flex-shrink (capacodad de achicarse) y el flex-basis (tamaño base, en base a ese, se achica/agranda)*/
 
     padding: 1em 1em 0 0;
     border-top: solid 2px;
@@ -116,12 +117,7 @@
         padding-bottom: .7em;
         margin-bottom: .7em;
 
-        & .color_piloto{
-            color: red;
-            background-color: red;
-        }
-        
-        >div{
+        & >div{
             width: 100%;
             margin-left: 1em;
             display: flex;
@@ -236,8 +232,8 @@
 }
 
 .kick_sauber_piloto{
-    color: #229971;
-    background-color: #229971;
+    color: #52E252;
+    background-color: #52E252;
 }
 .borde_kick_sauber_piloto:hover{
     border-top-color: #52E252;
