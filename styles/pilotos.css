@@ -156,7 +156,7 @@
 
 .piloto_por_separado:hover{
     border-color: #F20400;
-    padding-top: 1.5em;
+    transform: translateY(-1em);
 }
 
 
@@ -165,6 +165,106 @@
 
 
 
+
+
+
+
+
+
+/* ----------------------------- colores --------------------------------------*/
+.redbull_piloto{
+    color: #3671C6;
+    background-color: #3671C6;
+}
+.borde_redbull_piloto:hover{
+    border-top-color: #3671C6;
+    border-right-color: #3671C6;
+}
+
+.rb_piloto{
+    color: #6692FF;
+    background-color: #6692FF;
+}
+.borde_rb_piloto:hover{
+    border-top-color: #6692FF;
+    border-right-color: #6692FF;
+}
+
+.ferrari_piloto{
+    color: #E80020;
+    background-color: #E80020;
+}
+.borde_ferrari_piloto:hover{
+    border-top-color: #E80020;
+    border-right-color: #E80020;
+}
+
+.williams_piloto{
+    color: #64C4FF;
+    background-color: #64C4FF;
+}
+.borde_williams_piloto:hover{
+    border-top-color: #64C4FF;
+    border-right-color: #64C4FF;
+}
+
+.haas_piloto{
+    color: #B6BABD;
+    background-color: #B6BABD;
+}
+.borde_haas_piloto:hover{
+    border-top-color: #B6BABD;
+    border-right-color: #B6BABD;
+}
+
+.alpine_piloto{
+    color: #0093CC;
+    background-color: #0093CC;
+}
+.borde_alpine_piloto:hover{
+    border-top-color: #0093CC;
+    border-right-color: #0093CC;
+}
+
+.aston_martin_piloto{
+    color: #229971;
+    background-color: #229971;
+}
+.borde_aston_martin_piloto:hover{
+    border-top-color: #229971;
+    border-right-color: #229971;
+}
+
+.kick_sauber_piloto{
+    color: #229971;
+    background-color: #229971;
+}
+.borde_kick_sauber_piloto:hover{
+    border-top-color: #52E252;
+    border-right-color: #52E252;
+}
+
+
+.mercedes_piloto{
+    color: #27F4D2;
+    background-color: #27F4D2;
+}
+.borde_mercedes_piloto:hover{
+    border-top-color: #27F4D2;
+    border-right-color: #27F4D2;
+}
+
+
+.mclaren_piloto{
+    color: #FF8000;
+    background-color: #FF8000;
+}
+.borde_mclaren_piloto:hover{
+    border-top-color: #FF8000;
+    border-right-color: #FF8000;
+}
+
+/*----------------------------------------------------------------*/
 
 
 
