@@ -8,7 +8,7 @@
     border-top: solid 10px;
     border-right: solid 10px;
     border-top-right-radius: .8em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .container_salon_de_la_fama{
@@ -38,10 +38,139 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 .contenedor-podio{
+    
     width: 100%;
-    background-color: green;
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap; /*esto para q si el elemento no encaja, lo baja a otra fila*/
+    gap: 2em;
 }
+
+
+
+.piloto_podio{
+    color: #000;
+    min-width: 361px;
+    max-width: 447px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%; /*este es el flex-grow (capacidad de agrandarse), flex-shrink (capacodad de achicarse) y el flex-basis (tamaño base, en base a ese, se achica/agranda)*/
+
+    padding: 1em 1em 0 0;
+    border-top: solid 2px;
+    border-right: solid 2px;
+    border-top-right-radius: 2em;
+
+    transition: all .2s;
+
+    & .piloto_part1{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        border-bottom: solid 1px #929292;
+        padding-bottom: .7em;
+        margin-bottom: .7em;
+
+        & .posicion{
+            font-size: 3em;
+        }
+        .cont_puntos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .num_pts{
+            font-size: 1.3em;
+        }
+        .pts{
+            padding: .3em .5em;
+            color: #fff;
+            background-color: #000;
+            border-radius: 1em;
+            font-size: .9em;
+        }
+    }
+
+    .piloto_part2{
+        display: flex;
+        border-bottom: solid 1px #929292;
+        padding-bottom: .7em;
+        margin-bottom: .7em;
+
+        & .color_piloto{
+            color: red;
+            background-color: red;
+        }
+        
+        >div{
+            width: 100%;
+            margin-left: 1em;
+            display: flex;
+            justify-content: space-between; 
+        }
+        img{
+            width: 50px;
+            height: 35px;
+            align-self: center;
+            border-radius: .3em;
+            border: solid 1px #929292;
+        }
+    }
+    .piloto_part3{
+        color: #929292;
+
+        & >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+        .img_del_piloto{
+            width: 15.625em;
+        }
+
+        .img_del_num_del_piloto{
+            width: 6em;
+            height: 6em;
+        }
+    }
+}
+
+.piloto_podio:hover{
+    border-color: #F20400;
+    padding-top: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contenedor-otros{
     width: 100%;
