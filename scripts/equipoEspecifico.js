@@ -440,7 +440,7 @@ function insertarEquipoEspecífico(equipo_elegido) {
         <section class="contenedor_de_sectores">
             <section class="sector1">
                 <div class="logo_equipo">
-                    <img src="${equipo_elegido.logo}" alt="">
+                    <img src="${equipo_elegido.logo}" alt="img_logo_equipo">
                 </div>
                 <div class="renglones_de_info">
                     <p class="estadistica fuente_f1_bold">Nombre completo</p>
@@ -486,7 +486,7 @@ function insertarEquipoEspecífico(equipo_elegido) {
             </section>
             <section class="sector2">
                 <a href="#" class="piloto1">
-                    <img src="${equipo_elegido.piloto1[0].img}" alt="">
+                    <img src="${equipo_elegido.piloto1[0].img}" alt="img_piloto">
                     <div class="datos_piloto">
                         <p class="numero fuente_f1_bold">${equipo_elegido.piloto1[0].num}</p>
                         <p class="nombre fuente_f1_reg">${equipo_elegido.piloto1[0].nombre}</p>
@@ -494,7 +494,7 @@ function insertarEquipoEspecífico(equipo_elegido) {
                     </div>
                 </a>
                 <a href="#" class="piloto2">
-                    <img src="${equipo_elegido.piloto2[0].img}" alt="">
+                    <img src="${equipo_elegido.piloto2[0].img}" alt="img_piloto">
                     <div class="datos_piloto">
                         <p class="numero fuente_f1_bold">${equipo_elegido.piloto2[0].num}</p>
                         <p class="nombre fuente_f1_reg">${equipo_elegido.piloto2[0].nombre}</p>
@@ -514,3 +514,40 @@ function insertarEquipoEspecífico(equipo_elegido) {
             </div>
         </section>`
     }
+
+
+
+
+
+    
+    window.addEventListener("DOMContentLoaded", ()=>{
+        const piloto1 = document.querySelector(".piloto1");
+        const piloto2 = document.querySelector(".piloto2");
+        console.log(piloto1)
+        console.log(piloto2)
+
+        piloto1.addEventListener("click",(e)=>{
+            e.preventDefault();
+
+            let nombreYApellido = piloto1.querySelector(".nombre");
+            // como el apelldio esta con el nombre, primero separo el string con el espacio y selecciono la posicion 2 del array (osea la 1)
+            // y de ahi le hago el substring y lo paso a mayuscula pq estaba con camelcase
+            let primerasTresLetrasDelApellid = nombreYApellido.textContent.split(" ")[1].substring(0, 3).toUpperCase();
+
+            localStorage.setItem("pilotoClickeado", primerasTresLetrasDelApellid)
+            window.location.href = "pilotoEspecifico.html";
+        })
+
+        piloto2.addEventListener("click",(e)=>{
+            e.preventDefault();
+
+            let nombreYApellido = piloto1.querySelector(".nombre");
+            // como el apelldio esta con el nombre, primero separo el string con el espacio y selecciono la posicion 2 del array (osea la 1)
+            // y de ahi le hago el substring
+            let primerasTresLetrasDelApellid = nombreYApellido.textContent.split(" ")[1].substring(0, 3);
+
+            localStorage.setItem("pilotoClickeado", primerasTresLetrasDelApellid)
+            window.location.href = "pilotoEspecifico.html";
+        })
+    })
+    
