@@ -19,7 +19,7 @@ const arrayDePilotos = [
         "colorEquipo":'redbull_piloto',
         "claseBordeEquipo": 'borde_redbull_piloto',
         "nombre": 'Sergio',
-        "apellido": 'PÉREZ',
+        "apellido": 'PEREZ',
         "bandera": '../assets/img/country _flags/mexico.png',
         "equipo": 'RedBull Racing',
         "numPiloto": '../assets/img/numeros_pilotos/per.avif',
@@ -96,7 +96,7 @@ const arrayDePilotos = [
         "claseRectangulito":'aston_martin_piloto',
         "claseBordeEquipo": 'borde_aston_martin_piloto',
         "nombre": 'Fernando',
-        "apellido": 'Alonso',
+        "apellido": 'ALONSO',
         "bandera": '../assets/img/country _flags/spain.png',
         "equipo": 'Aston Martin',
         "numPiloto": '../assets/img/numeros_pilotos/alo.avif',
@@ -107,7 +107,7 @@ const arrayDePilotos = [
         "claseRectangulito":'aston_martin_piloto',
         "claseBordeEquipo": 'borde_aston_martin_piloto',
         "nombre": 'Lance',
-        "apellido": 'Stroll',
+        "apellido": 'STROLL',
         "bandera": '../assets/img/country _flags/canada.png',
         "equipo": 'Aston Martin',
         "numPiloto": '../assets/img/numeros_pilotos/str.avif',
@@ -118,7 +118,7 @@ const arrayDePilotos = [
         "claseRectangulito":'haas_piloto',
         "claseBordeEquipo": 'borde_haas_piloto',
         "nombre": 'Nico',
-        "apellido": 'Hulkenberg',
+        "apellido": 'HULKENBERG',
         "bandera": '../assets/img/country _flags/alemania.png',
         "equipo": 'Haas',
         "numPiloto": '../assets/img/numeros_pilotos/hul.avif',
@@ -162,7 +162,7 @@ const arrayDePilotos = [
         "claseRectangulito":'kick_sauber_piloto',
         "claseBordeEquipo": 'borde_kick_sauber_piloto',
         "nombre": 'Valtteri',
-        "apellido": 'Bottas',
+        "apellido": 'BOTTAS',
         "bandera": '../assets/img/country _flags/finlandia.png',
         "equipo": 'Kick Sauber',
         "numPiloto": '../assets/img/numeros_pilotos/bot.avif',
@@ -284,6 +284,27 @@ arrayDePilotos.forEach((piloto, index)=>{
 
 
 
+document.addEventListener("DOMContentLoaded", ()=>{
+    let pilotos = document.querySelectorAll(".piloto_por_separado");
+    // console.log(pilotos)
+
+    pilotos.forEach((piloto)=>{
+
+        piloto.addEventListener("click", (e)=>{
+            e.preventDefault();
+
+            let primerasTresLetrasDelApellido = piloto.querySelector(".piloto_apellido").textContent.substring(0, 3);
+
+            if (primerasTresLetrasDelApellido === "GUA") { // este va pq el piloto es de China y ponen el nombre en vez del apellido
+                primerasTresLetrasDelApellido = "ZHO";
+            }
+                
+            console.log(primerasTresLetrasDelApellido)
+            localStorage.setItem("pilotoClickeado", primerasTresLetrasDelApellido)
+            window.location.href = "pilotoEspecifico.html"
+        })
+    })
+});
 
 
 
