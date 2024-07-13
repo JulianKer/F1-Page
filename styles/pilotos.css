@@ -15,6 +15,8 @@
     margin: 5em 0;
     color: #000;
     border-bottom: 2px solid #c9c9c9;
+    border-right: 2px solid #c9c9c9;
+    border-bottom-right-radius: 1em;
 
     font-size: 1.1em;
     min-height: 2.3em;
@@ -32,6 +34,7 @@
 
 .container_salon_de_la_fama:hover{
     border-bottom-color: #F20400;
+    border-right-color: #F20400;
     color: #F20400;
 }
 
@@ -48,7 +51,7 @@
 
 
 
-.contenedor-podio{
+.contenedor-todos-los-pilotos-con-puntos{
     
     width: 100%;
     min-height: 450px;
@@ -62,7 +65,7 @@
 
 
 
-.piloto_podio{
+.piloto_por_separado{
     color: #000;
     min-width: 361px;
     max-width: 447px;
@@ -151,7 +154,7 @@
     }
 }
 
-.piloto_podio:hover{
+.piloto_por_separado:hover{
     border-color: #F20400;
     padding-top: 1.5em;
 }
@@ -172,7 +175,18 @@
 
 
 
-.contenedor-otros{
-    width: 100%;
-    background-color: blue;
+
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    .main{
+        margin: 1.5em 1.5em 7em;
+    }
+
+    .titulo_pilotos{
+        font-size: 2.2em;
+    }
 }
