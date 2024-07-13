@@ -206,8 +206,6 @@
         padding: .3em 1.5em;
 
         display: flex;
-        justify-content: space-between;
-        align-items: center;
 
         background-color: #fff;
         border-bottom: solid 2px #929292;
@@ -216,8 +214,16 @@
         & p{
             font-size: 1.3em;
             width: 100%;
-            text-align: center;
             color: #000;
+            padding: 0 .2em;
+        }
+
+        :first-child{
+            text-align: end;
+        }
+
+        :last-child{
+            text-align: start;
         }
     }
     .fondo_del_piloto .segundo_renglon{

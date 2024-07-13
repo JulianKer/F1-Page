@@ -384,7 +384,8 @@ function insertarPilotoEnPodio(piloto, posicion) {
                 <img src="${piloto.img_piloto}" alt="" class="imagen_podios">
                 <img src="../assets/img/dorado.png" alt="" class="copa">
                 <div class="nombre_piloto">
-                    <p>1° ${piloto.apellido}</p>
+                    <p>1°</p>
+                    <p class="apellido_piloto_resultados">${piloto.apellido}</p>
                 </div>
                 <div class="segundo_renglon fuente_f1_bold">
                     <img src="${piloto.img_escuderia}" alt="">
@@ -401,7 +402,8 @@ function insertarPilotoEnPodio(piloto, posicion) {
                         <img src="${piloto.img_piloto}" alt="" class="imagen_podios">
                         <img src="../assets/img/plata.png" alt="" class="copa">
                         <div class="nombre_piloto">
-                            <p>2° ${piloto.apellido}</p>
+                            <p>2°</p>
+                            <p class="apellido_piloto_resultados">${piloto.apellido}</p>
                         </div>
                         <div class="segundo_renglon fuente_f1_bold">
                             <img src="${piloto.img_escuderia}" alt="">
@@ -419,7 +421,8 @@ function insertarPilotoEnPodio(piloto, posicion) {
                         <img src="../assets/img/bronce.png" alt="" class="copa">
 
                         <div class="nombre_piloto">
-                            <p>3° ${piloto.apellido}</p>
+                            <p>3°</p>
+                            <p class="apellido_piloto_resultados">${piloto.apellido}</p>
                         </div>
                         <div class="segundo_renglon fuente_f1_bold">
                             <img src="${piloto.img_escuderia}" alt="">
@@ -436,10 +439,10 @@ function insertarPilotoEnPodio(piloto, posicion) {
 
 function insertarPilotoEnTabla(piloto, posicion) {
     contenedor_demas_pilotos.innerHTML += `
-    <a href="#" class="otro_piloto">
+    <a href="#" class="otro_piloto piloto_de_resultados">
                     <div class="div1 fuente_f1_bold">
                         <p>${posicion}°</p>
-                        <p>${piloto.apellido}</p>
+                        <p class="apellido_piloto_resultados">${piloto.apellido}</p>
                     </div>
 
                     <div class="div2">
@@ -457,3 +460,31 @@ function insertarPilotoEnTabla(piloto, posicion) {
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------   FIN  Campeonato Pilotos      ----------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+window.addEventListener("DOMContentLoaded", ()=>{
+    const pilotosDeResultados = document.querySelectorAll(".piloto_de_resultados")
+    // console.log(pilotosDeResultados)
+
+    pilotosDeResultados.forEach((piloto)=>{
+        piloto.addEventListener("click", (e)=>{
+            e.preventDefault();
+
+            let primerasTresLetrasDelApellido = piloto.querySelector(".apellido_piloto_resultados").textContent.substring(0, 3);
+
+            if (primerasTresLetrasDelApellido === "GUA") { // este va pq el piloto es de China y ponen el nombre en vez del apellido
+                primerasTresLetrasDelApellido = "ZHO";
+            }
+                
+            console.log(primerasTresLetrasDelApellido)
+            localStorage.setItem("pilotoClickeado", primerasTresLetrasDelApellido)
+            window.location.href = "pilotoEspecifico.html";
+        })
+    })
+})
+
+
