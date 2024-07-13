@@ -55,6 +55,27 @@ if (document.title === "Inicio | F1") {
                 window.location.href = "pages/circuito.html";
             });
         })
+
+        let misPilotosDelNav = document.querySelectorAll(".piloto");
+
+        misPilotosDelNav.forEach((piloto)=>{
+
+            piloto.addEventListener("click", (e)=>{
+                e.preventDefault();
+    
+                let primerasTresLetrasDelApellido = piloto.querySelector(".apellido").textContent.substring(0, 3);
+    
+                if (primerasTresLetrasDelApellido === "GUA") { // este va pq el piloto es de China y ponen el nombre en vez del apellido
+                    primerasTresLetrasDelApellido = "ZHO";
+                }
+                    
+                console.log(primerasTresLetrasDelApellido)
+                localStorage.setItem("pilotoClickeado", primerasTresLetrasDelApellido)
+                window.location.href = "pages/pilotoEspecifico.html";
+            })
+        })
+
+
     })
 }else{
 
@@ -105,6 +126,26 @@ if (document.title === "Inicio | F1") {
                 // y despues si, te envio a donde decia su href
                 window.location.href = "circuito.html";
             });
+        })
+
+
+        let misPilotosDelNav = document.querySelectorAll(".piloto");
+
+        misPilotosDelNav.forEach((piloto)=>{
+
+            piloto.addEventListener("click", (e)=>{
+                e.preventDefault();
+    
+                let primerasTresLetrasDelApellido = piloto.querySelector(".apellido").textContent.substring(0, 3);
+    
+                if (primerasTresLetrasDelApellido === "GUA") { // este va pq el piloto es de China y ponen el nombre en vez del apellido
+                    primerasTresLetrasDelApellido = "ZHO";
+                }
+                    
+                console.log(primerasTresLetrasDelApellido)
+                localStorage.setItem("pilotoClickeado", primerasTresLetrasDelApellido)
+                window.location.href = "pilotoEspecifico.html";
+            })
         })
     })
 }
