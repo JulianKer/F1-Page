@@ -24,7 +24,7 @@
     border-right: solid 2px;
     border-top-right-radius: .8em;
     color: #000;
-
+    transition: all .2s;
 
     & .reng_1, .reng_2{
         border-bottom: 1px solid #b4b4b4;
@@ -120,21 +120,69 @@
 
 
 .e_equipo:hover{
-    & .reng_1{
-        & .num{
-            color: #F20400;
-        }
-
-        .pts{
-            color: #fff;
-            background-color: #F20400;
-        }
-    }
-    .reng_4 img{
+    & .reng_4 img{
         transform: translateX(6em);
     }
 
 }
+
+
+
+
+
+/* ------------------------------- colores ---------------------------------------*/
+
+.borde_redbull_piloto:hover{
+    border-top-color: #3671C6;
+    border-right-color: #3671C6;
+}
+.borde_rb_piloto:hover{
+    border-top-color: #6692FF;
+    border-right-color: #6692FF;
+}
+.borde_ferrari_piloto:hover{
+    border-top-color: #E80020;
+    border-right-color: #E80020;
+}
+.borde_williams_piloto:hover{
+    border-top-color: #64C4FF;
+    border-right-color: #64C4FF;
+}
+.borde_haas_piloto:hover{
+    border-top-color: #B6BABD;
+    border-right-color: #B6BABD;
+}
+.borde_alpine_piloto:hover{
+    border-top-color: #0093CC;
+    border-right-color: #0093CC;
+}
+.borde_aston_martin_piloto:hover{
+    border-top-color: #229971;
+    border-right-color: #229971;
+}
+.borde_kick_sauber_piloto:hover{
+    border-top-color: #52E252;
+    border-right-color: #52E252;
+}
+.borde_mercedes_piloto:hover{
+    border-top-color: #27F4D2;
+    border-right-color: #27F4D2;
+}
+.borde_mclaren_piloto:hover{
+    border-top-color: #FF8000;
+    border-right-color: #FF8000;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
 
 
 
