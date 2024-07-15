@@ -384,3 +384,17 @@ const misPilotosDePilotoEspecifico = [
 ]
 
 
+misPilotosDePilotoEspecifico.forEach((p)=>{
+
+    let apellidoDeTresLetras = p.nombreCompleto.split(" ")[1].substring(0,3).toUpperCase();
+
+    if (apellidoDeTresLetras === "GUA") {
+        apellidoDeTresLetras = "ZHO";
+    }
+
+    if (apellidoDeTresLetras === apellidoRecibido) {
+        document.title = p.nombreCompleto + " | F1";
+    }
+
+    
+})

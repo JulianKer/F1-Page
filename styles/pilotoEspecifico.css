@@ -1,0 +1,138 @@
+body{
+    background-color: #F6F4F0;
+    width: 100vw;
+}
+
+.main{
+    background-color: #fff;
+    margin: 4em 4em 6em 3em;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+}
+
+.primer_seccion{
+    width: 100%;
+    
+    & .contenedor_imagen_piloto{
+        width: 100%;
+        height: 27em;
+
+        overflow: hidden;
+
+        & img{
+            width: 100%;
+            transition: all .2s;
+        }
+
+        img:hover{
+            transform: scale(1.03);
+        }
+    }
+
+    .contenedor_num_bandera_nombre{
+        padding: 1em;
+        width: 100%;
+    }
+
+    .contenedor_num_bandera{
+        display: flex;
+        gap: 1em;
+        color: #707070;
+
+        
+        & p{
+            font-size: 2em;
+        }
+        
+        img{
+            width: 5em;
+            height: 3em;
+            border-radius: .3em;
+            border: solid 1px #929292;
+            align-self: center;
+        }
+    }
+
+    .nombre_del_piloto{
+        margin-top: .4em;
+        font-size: 2em;
+    }
+
+}
+
+
+.segunda_seccion{
+    height: 100%;
+    padding: 1em 2em 2em 2em;
+    font-size: 1.1em;
+
+
+    & img{
+        width: 12em;
+        margin-bottom: 1em;
+    }
+
+    .contenedor_general_datos{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }
+
+    .contenedor_cada_dato{
+        width: 100%;
+        display: flex;
+
+        & .tipo_dato{
+            width: 50%;
+        }
+
+        .dato{
+            width: 50%;
+            align-self: center;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 915px){
+    .main{
+        margin: 2em;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    .main{
+        gap: 7em;
+
+        & .primer_seccion{
+            width: 21.5em;
+            
+            & .nombre_del_piloto{
+                font-size: 1.5em;
+            }
+
+        }
+        
+        .segunda_seccion{
+            width: 21.5em;
+            padding: 2em 1em;
+        }
+
+        .contenedor_imagen_piloto{
+            height: auto;
+        }
+
+        .contenedor_num_bandera_nombre{
+            height: 2em;
+        }
+    }
+}
+
+
+
+
+
