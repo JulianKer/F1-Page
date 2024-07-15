@@ -27,7 +27,7 @@ let equipos = [
                 "idPiloto":'per',
                 "img":'../assets/img/equipos/pilotos/per.avif',
                 "num":'11',
-                "nombre":'Sergio Pérez',
+                "nombre":'Sergio Perez',
             }
         ],
         "fotos":[
@@ -541,10 +541,10 @@ function insertarEquipoEspecífico(equipo_elegido) {
         piloto2.addEventListener("click",(e)=>{
             e.preventDefault();
 
-            let nombreYApellido = piloto1.querySelector(".nombre");
+            let nombreYApellido = piloto2.querySelector(".nombre");
             // como el apelldio esta con el nombre, primero separo el string con el espacio y selecciono la posicion 2 del array (osea la 1)
             // y de ahi le hago el substring
-            let primerasTresLetrasDelApellid = nombreYApellido.textContent.split(" ")[1].substring(0, 3);
+            let primerasTresLetrasDelApellid = nombreYApellido.textContent.split(" ")[1].substring(0, 3).toUpperCase();
 
             localStorage.setItem("pilotoClickeado", primerasTresLetrasDelApellid)
             window.location.href = "pilotoEspecifico.html";

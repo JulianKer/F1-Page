@@ -384,6 +384,8 @@ const misPilotosDePilotoEspecifico = [
 ]
 
 
+const main = document.querySelector(".main");
+
 misPilotosDePilotoEspecifico.forEach((p)=>{
 
     let apellidoDeTresLetras = p.nombreCompleto.split(" ")[1].substring(0,3).toUpperCase();
@@ -394,7 +396,75 @@ misPilotosDePilotoEspecifico.forEach((p)=>{
 
     if (apellidoDeTresLetras === apellidoRecibido) {
         document.title = p.nombreCompleto + " | F1";
+
+        main.innerHTML = `<section class="primer_seccion">
+            <div class="contenedor_imagen_piloto">
+                <img src="${p.imgPiloto}" alt="img_piloto">
+            </div>
+
+            <div class="contenedor_num_bandera_nombre">
+                <div class="contenedor_num_bandera">
+                    <p class="numero fuente_f1_reg">${p.numeroPiloto}</p>
+                    <img src="${p.bandera}" alt="bandera_pais">
+                </div>
+                <p class="nombre_del_piloto fuente_f1_bold">${p.nombreCompleto}</p>
+            </div>
+        </section>
+
+
+
+
+        <section class="segunda_seccion">
+            <img src="${p.imgHelmet}" alt="img_casco_piloto">
+            <section class="contenedor_general_datos">
+                <div class="contenedor_cada_dato">
+                    <p class="tipo_dato fuente_tw_bold">Equipo</p>
+                    <p class="dato fuente_tw_regular">${p.equipo}</p>
+                </div>
+                <div class="contenedor_cada_dato">
+                    <p class="tipo_dato fuente_tw_bold">Pais</p>
+                    <p class="dato fuente_tw_regular">${p.pais}</p>
+                </div>
+                <div class="contenedor_cada_dato">
+                    <p class="tipo_dato fuente_tw_bold">Podios</p>
+                    <p class="dato fuente_tw_regular">${p.podios}</p>
+                </div>
+                <div class="contenedor_cada_dato">
+                    <p class="tipo_dato fuente_tw_bold">Puntos</p>
+                    <p class="dato fuente_tw_regular">${p.puntosTotales}</p>
+                </div>
+                <div class="contenedor_cada_dato">
+                    <p class="tipo_dato fuente_tw_bold">Grandes Premios en los que participó</p>
+                    <p class="dato fuente_tw_regular">${p.gpsJugados}</p>
+                </div>
+                <div class="contenedor_cada_dato">
+                    <p class="tipo_dato fuente_tw_bold">Campeonatos mundiales</p>
+                    <p class="dato fuente_tw_regular">${p.campeonatosMundiales}</p>
+                </div>
+                <div class="contenedor_cada_dato">
+                    <p class="tipo_dato fuente_tw_bold">Mejor resultado en carrera</p>
+                    <p class="dato fuente_tw_regular">${p.mejorResultadoEnCarrera}</p>
+                </div>
+                <div class="contenedor_cada_dato">
+                    <p class="tipo_dato fuente_tw_bold">Posicíon más alta en la parrilla</p>
+                    <p class="dato fuente_tw_regular">${p.parrillaMasAlta}</p>
+                </div>
+                <div class="contenedor_cada_dato">
+                    <p class="tipo_dato fuente_tw_bold">Fecha de nacimiento</p>
+                    <p class="dato fuente_tw_regular">${p.fehcaNacimiento}</p>
+                </div>
+                <div class="contenedor_cada_dato">
+                    <p class="tipo_dato fuente_tw_bold">Lugar de nacimiento</p>
+                    <p class="dato fuente_tw_regular">${p.lugarNacimiento}</p>
+                </div>
+            </section>
+        </section>`;
+
+
+
+
     }
 
-    
+
+
 })
