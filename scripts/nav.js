@@ -565,7 +565,7 @@ function rellenarNavDeCronograma(carreraActual) {
                                 <p class="t_posicionado1">Anterior</p>
                                 <div class="contenedor_img_titulo_gp">
                                     <div class="fondo_delGP">
-                                        <img src="${carreraAnterior.imagen_fondo}" alt="img_fondo">
+                                        <img src="${direccionDeImg(carreraAnterior.imagen_fondo)}" alt="img_fondo">
                                         <div class="nav_nombre_del_gp fuente_f1_bold">
                                             <p>${carreraAnterior.nombreCircuito}</p>
                                             <p>${anioActual}</p>
@@ -582,7 +582,7 @@ function rellenarNavDeCronograma(carreraActual) {
                                 <p class="t_posicionado2">Siguiente</p>
                                 <div class="contenedor_img_titulo_gp">
                                     <div class="fondo_delGP">
-                                        <img src="${carreraActual.imagen_fondo}" alt="img_fondo">
+                                        <img src="${direccionDeImg(carreraActual.imagen_fondo)}" alt="img_fondo">
                                         <div class="nav_nombre_del_gp fuente_f1_bold">
                                             <p>${carreraActual.nombreCircuito}</p>
                                             <p>${anioActual}</p>
@@ -599,7 +599,7 @@ function rellenarNavDeCronograma(carreraActual) {
                                 <p class="t_posicionado3">Próximamente</p>
                                 <div class="contenedor_img_titulo_gp">
                                     <div class="fondo_delGP">
-                                        <img src="${carreraProximamente1.imagen_fondo}" alt="img_fondo">
+                                        <img src="${direccionDeImg(carreraProximamente1.imagen_fondo)}" alt="img_fondo">
                                         <div class="nav_nombre_del_gp fuente_f1_bold">
                                             <p>${carreraProximamente1.nombreCircuito}</p>
                                             <p>${anioActual}</p>
@@ -615,7 +615,7 @@ function rellenarNavDeCronograma(carreraActual) {
                             <a href="#" class="gp borde_transp_gp" id="${carreraProximamente2.id}">
                                 <div class="contenedor_img_titulo_gp">
                                     <div class="fondo_delGP">
-                                        <img src="${carreraProximamente2.imagen_fondo}" alt="img_fondo">
+                                        <img src="${direccionDeImg(carreraProximamente2.imagen_fondo)}" alt="img_fondo">
                                         <div class="nav_nombre_del_gp fuente_f1_bold">
                                             <p>${carreraProximamente2.nombreCircuito}</p>
                                             <p>${anioActual}</p>
@@ -631,6 +631,13 @@ function rellenarNavDeCronograma(carreraActual) {
 }
 
 
+function direccionDeImg(direccionOriginal) {
+    if (document.title === "Inicio | F1") {
+        direccionOriginal = direccionOriginal.slice(3)
+    }
+    console.log(direccionOriginal)
+    return direccionOriginal
+}
 
 function dameElMes(numero) {
     const meses = [
