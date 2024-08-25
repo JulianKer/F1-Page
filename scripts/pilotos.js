@@ -4,7 +4,7 @@
 // local storage y hago q mustre la descripcion de cada uno
 const arrayDePilotos = [
     {
-        "puntos": 255,
+        "puntos": 295,
         "claseRectangulito":'redbull_piloto',
         "claseBordeEquipo": 'borde_redbull_piloto',
         "nombre": 'Max',
@@ -15,7 +15,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/ver.png',
     },
     {
-        "puntos": 118,
+        "puntos": 139,
         "colorEquipo":'redbull_piloto',
         "claseBordeEquipo": 'borde_redbull_piloto',
         "nombre": 'Sergio',
@@ -26,7 +26,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/per.png',
     },
     {
-        "puntos": 150,
+        "puntos": 192,
         "claseRectangulito":'ferrari_piloto',
         "claseBordeEquipo": 'borde_ferrari_piloto',
         "nombre": 'Charles',
@@ -37,7 +37,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/lec.png',
     },
     {
-        "puntos": 146,
+        "puntos": 172,
         "claseRectangulito":'ferrari_piloto',
         "claseBordeEquipo": 'borde_ferrari_piloto',
         "nombre": 'Carlos',
@@ -48,7 +48,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/sai.png',
     },
     {
-        "puntos": 171,
+        "puntos": 225,
         "claseRectangulito":'mclaren_piloto',
         "claseBordeEquipo": 'borde_mclaren_piloto',
         "nombre": 'Lando',
@@ -59,7 +59,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/nor.png',
     },
     {
-        "puntos": 124,
+        "puntos": 179,
         "claseRectangulito":'mclaren_piloto',
         "claseBordeEquipo": 'borde_mclaren_piloto',
         "nombre": 'Oscar',
@@ -70,7 +70,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/pia.png',
     },
     {
-        "puntos": 111,
+        "puntos": 122,
         "claseRectangulito":'mercedes_piloto',
         "claseBordeEquipo": 'borde_mercedes_piloto',
         "nombre": 'George',
@@ -81,7 +81,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/rus.png',
     },
     {
-        "puntos": 110,
+        "puntos": 154,
         "claseRectangulito":'mercedes_piloto',
         "claseBordeEquipo": 'borde_mercedes_piloto',
         "nombre": 'Lewis',
@@ -92,7 +92,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/ham.png',
     },
     {
-        "puntos": 45,
+        "puntos": 50,
         "claseRectangulito":'aston_martin_piloto',
         "claseBordeEquipo": 'borde_aston_martin_piloto',
         "nombre": 'Fernando',
@@ -103,7 +103,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/alo.png',
     },
     {
-        "puntos": 23,
+        "puntos": 24,
         "claseRectangulito":'aston_martin_piloto',
         "claseBordeEquipo": 'borde_aston_martin_piloto',
         "nombre": 'Lance',
@@ -180,7 +180,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/zho.png',
     },
     {
-        "puntos": 3,
+        "puntos": 5,
         "claseRectangulito":'alpine_piloto',
         "claseBordeEquipo": 'borde_alpine_piloto',
         "nombre": 'Esteban',
@@ -191,7 +191,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/oco.png',
     },
     {
-        "puntos": 6,
+        "puntos": 8,
         "claseRectangulito":'alpine_piloto',
         "claseBordeEquipo": 'borde_alpine_piloto',
         "nombre": 'Pierre',
@@ -202,7 +202,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/gas.png',
     },
     {
-        "puntos": 11,
+        "puntos": 12,
         "claseRectangulito":'rb_piloto',
         "claseBordeEquipo": 'borde_rb_piloto',
         "nombre": 'Daniel',
@@ -213,7 +213,7 @@ const arrayDePilotos = [
         "imgPiloto": '../assets/img/img_pilotos/ric.png',
     },
     {
-        "puntos": 20,
+        "puntos": 22,
         "claseRectangulito":'rb_piloto',
         "claseBordeEquipo": 'borde_rb_piloto',
         "nombre": 'Yuki',
