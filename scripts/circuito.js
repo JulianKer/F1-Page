@@ -3,7 +3,7 @@
 let main = document.querySelector(".main"); 
 
 // me traigo en una variable cual es el id del gp que clickee en la pagina de cronogramas
-let id_del_gp_clickeado = localStorage.getItem("id_gp_clickeado");
+let id_del_gp_clickeado = localStorage.getItem("id_gp_clickeado") == "testing" ? "Bahrain" : localStorage.getItem("id_gp_clickeado");
 
 // creo un array con todos los circuitos teniendo las cosas que necesito para completar la pagina de 'circuito'
 // esos SI, les pongo el mismo id que tienen los objetos de gps en la pagina de cronogramas. eso es IMPORTANTE
