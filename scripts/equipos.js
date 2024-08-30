@@ -176,9 +176,9 @@ let arrayEquipos = [
             "img":'../assets/img/img_pilotos/alb.png',
         }],
         "piloto2": [{
-            "nombre":'Logan',
-            "apellido":'SARGEANT',
-            "img":'../assets/img/img_pilotos/sar.png',
+            "nombre":'Franco',
+            "apellido":'COLAPINTO',
+            "img":'../assets/img/img_pilotos/col.png',
         }],
         "auto":'../assets/img/cars_equipos/williams.avif',
         "bordeEquipo":'borde_williams_piloto',

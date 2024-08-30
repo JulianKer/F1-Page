@@ -359,6 +359,13 @@ let arrayPilotos = [
         "puntos": 225,
         "color":'backgroundMclaren',
     },
+    {
+        "img_piloto": '../assets/img/img_pilotos/col.png',
+        "apellido": 'COL',
+        "img_escuderia": '../assets/img/logos_teams/williams-logo.png',
+        "puntos": 0,
+        "color":'backgroundWilliams',
+    },
 ];
 
 

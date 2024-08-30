@@ -320,10 +320,10 @@ let equipos = [
         ],
         "piloto2":[
             {
-                "idPiloto":'sar',
-                "img":'../assets/img/equipos/pilotos/sar.avif',
-                "num":'2',
-                "nombre":'Logan Sargeant',
+                "idPiloto":'col',
+                "img":'../assets/img/equipos/pilotos/col.avif',
+                "num":'43',
+                "nombre":'Franco Colapinto',
             }
         ],
         "fotos":[

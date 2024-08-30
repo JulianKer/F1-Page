@@ -380,6 +380,24 @@ const misPilotosDePilotoEspecifico = [
         "fehcaNacimiento":'28/08/1989',
         "lugarNacimiento":'Nastola, Finlandia',
     },
+    {
+        "imgPiloto":'../assets/img/equipos/pilotos/col.avif',
+        "numeroPiloto":'43',
+        "nombreCompleto":'Franco Colapinto',
+        "imgHelmet":'../assets/img/helmets/.avif',
+
+        "equipo":'Williams',
+        "pais":'Argentina',
+        "bandera":'../assets/img/country _flags/argentina.png',
+        "podios":'0',
+        "puntosTotales":'0',
+        "gpsJugados":'0',
+        "campeonatosMundiales":'0',
+        "mejorResultadoEnCarrera":'0 (x0)',
+        "parrillaMasAlta":'0',
+        "fehcaNacimiento":'27/05/2003',
+        "lugarNacimiento":'Buenos Aires, Argentina',
+    },
     
 ]
 

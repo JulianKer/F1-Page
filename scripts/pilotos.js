@@ -159,6 +159,17 @@ const arrayDePilotos = [
     },
     {
         "puntos": 0,
+        "claseRectangulito":'williams_piloto',
+        "claseBordeEquipo": 'borde_williams_piloto',
+        "nombre": 'Franco',
+        "apellido": 'COLAPINTO',
+        "bandera": '../assets/img/country _flags/argentina.png',
+        "equipo": 'Williams',
+        "numPiloto": '../assets/img/numeros_pilotos/col.avif',
+        "imgPiloto": '../assets/img/img_pilotos/col.png',
+    },
+    {
+        "puntos": 0,
         "claseRectangulito":'kick_sauber_piloto',
         "claseBordeEquipo": 'borde_kick_sauber_piloto',
         "nombre": 'Valtteri',
