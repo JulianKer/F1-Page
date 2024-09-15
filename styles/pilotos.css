@@ -276,6 +276,13 @@
 
 
 
+@media screen and (max-width: 920px) {
+    .contenedor-todos-los-pilotos-con-puntos{
+        justify-content: center;
+    }
+
+}
+
 @media screen and (max-width: 750px) {
 
     .main{
