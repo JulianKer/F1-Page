@@ -8,7 +8,7 @@ let arrayEquipos = [
         "id":'redbull',
         "name":'Red Bull Racing',
         "logoEquipo":'../assets/img/logos_teams/redbull.png',
-        "points": 434,
+        "points": 456,
         "colorRectangulito": 'backgroundRedbull',
         "piloto1": [{
             "nombre":'Max',
@@ -28,7 +28,7 @@ let arrayEquipos = [
 
         "name":'Ferrari',
         "logoEquipo":'../assets/img/logos_teams/ferrari.png',
-        "points": 370,
+        "points": 425,
         "colorRectangulito": 'backgroundFerrari',
         "piloto1": [{
             "nombre":'Charles',
@@ -48,7 +48,7 @@ let arrayEquipos = [
 
         "name":'McLaren',
         "logoEquipo":'../assets/img/logos_teams/mcLaren.png',
-        "points": 404,
+        "points": 476,
         "colorRectangulito": 'backgroundMclaren',
         "piloto1": [{
             "nombre":'Lando',
@@ -68,7 +68,7 @@ let arrayEquipos = [
 
         "name":'Mercedes',
         "logoEquipo":'../assets/img/logos_teams/mercedes-logo.png',
-        "points": 276,
+        "points": 309,
         "colorRectangulito": 'backgroundMercedes',
         "piloto1": [{
             "nombre":'Lewis',
@@ -88,7 +88,7 @@ let arrayEquipos = [
 
         "name":'Aston Martin',
         "logoEquipo":'../assets/img/logos_teams/aston-martin-logo.png',
-        "points": 74,
+        "points": 82,
         "colorRectangulito": 'backgroundAston_martin',
         "piloto1": [{
             "nombre":'Fernando',
@@ -128,7 +128,7 @@ let arrayEquipos = [
 
         "name":'Haas',
         "logoEquipo":'../assets/img/logos_teams/haas-logo.png',
-        "points": 27,
+        "points": 29,
         "colorRectangulito": 'backgroundHaas',
         "piloto1": [{
             "nombre":'Nico',
@@ -168,7 +168,7 @@ let arrayEquipos = [
 
         "name":'Williams',
         "logoEquipo":'../assets/img/logos_teams/williams-logo.png',
-        "points": 4,
+        "points": 16,
         "colorRectangulito": 'backgroundWilliams',
         "piloto1": [{
             "nombre":'Alex',

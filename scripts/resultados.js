@@ -22,7 +22,7 @@ let arrayEquipos = [
 
         "name":'Red Bull Racing',
         "url":'../assets/img/logos_teams/redbull.png',
-        "points": 434,
+        "points": 456,
         "color": 'backgroundRedbull',
     },
     {
@@ -30,7 +30,7 @@ let arrayEquipos = [
 
         "name":'Ferrari',
         "url":'../assets/img/logos_teams/ferrari.png',
-        "points": 370,
+        "points": 425,
         "color": 'backgroundFerrari',
 
     },
@@ -39,7 +39,7 @@ let arrayEquipos = [
 
         "name":'McLaren',
         "url":'../assets/img/logos_teams/mcLaren.png',
-        "points": 404,
+        "points": 476,
         "color": 'backgroundMclaren',
 
     },
@@ -48,7 +48,7 @@ let arrayEquipos = [
 
         "name":'Mercedes',
         "url":'../assets/img/logos_teams/mercedes-logo.png',
-        "points": 276,
+        "points": 309,
         "color": 'backgroundMercedes',
 
     },
@@ -57,7 +57,7 @@ let arrayEquipos = [
 
         "name":'Aston Martin',
         "url":'../assets/img/logos_teams/aston-martin-logo.png',
-        "points": 74,
+        "points": 82,
         "color": 'backgroundAston_martin',
 
     },
@@ -75,7 +75,7 @@ let arrayEquipos = [
 
         "name":'Haas',
         "url":'../assets/img/logos_teams/haas-logo.png',
-        "points": 37,
+        "points": 29,
         "color": 'backgroundHaas',
 
     },
@@ -93,7 +93,7 @@ let arrayEquipos = [
 
         "name":'Williams',
         "url":'../assets/img/logos_teams/williams-logo.png',
-        "points": 4,
+        "points": 16,
         "color": 'backgroundWilliams',
 
     },
@@ -216,42 +216,42 @@ let arrayPilotos = [
         "img_piloto": '../assets/img/img_pilotos/sai.png',
         "apellido": 'SAI',
         "img_escuderia": '../assets/img/logos_teams/ferrari.png',
-        "puntos": 172,
+        "puntos": 184,
         "color":'backgroundFerrari',
     },
     {
         "img_piloto": '../assets/img/img_pilotos/per.png',
         "apellido": 'PER',
         "img_escuderia": '../assets/img/logos_teams/redbull.png',
-        "puntos": 139,
+        "puntos": 143,
         "color":'backgroundRedbull',
     },
     {
         "img_piloto": '../assets/img/img_pilotos/pia.png',
         "apellido": 'PIA',
         "img_escuderia": '../assets/img/logos_teams/mclaren.png',
-        "puntos": 179,
+        "puntos": 222,
         "color":'backgroundMclaren',
     },
     {
         "img_piloto": '../assets/img/img_pilotos/rus.png',
         "apellido": 'RUS',
         "img_escuderia": '../assets/img/logos_teams/mercedes-logo.png',
-        "puntos": 122,
+        "puntos": 143,
         "color":'backgroundMercedes',
     },
     {
         "img_piloto": '../assets/img/img_pilotos/ham.png',
         "apellido": 'HAM',
         "img_escuderia": '../assets/img/logos_teams/mercedes-logo.png',
-        "puntos": 154,
+        "puntos": 166,
         "color":'backgroundMercedes',
     },
     {
         "img_piloto": '../assets/img/img_pilotos/alo.png',
         "apellido": 'ALO',
         "img_escuderia": '../assets/img/logos_teams/aston-martin-logo.png',
-        "puntos": 50,
+        "puntos": 58,
         "color":'backgroundAston_martin',
     },
     {
@@ -272,7 +272,7 @@ let arrayPilotos = [
         "img_piloto": '../assets/img/img_pilotos/alb.png',
         "apellido": 'ALB',
         "img_escuderia": '../assets/img/logos_teams/williams-logo.png',
-        "puntos": 4,
+        "puntos": 12,
         "color":'backgroundWilliams',
     },
     {
@@ -286,7 +286,7 @@ let arrayPilotos = [
         "img_piloto": '../assets/img/img_pilotos/mag.png',
         "apellido": 'MAG',
         "img_escuderia": '../assets/img/logos_teams/haas-logo.png',
-        "puntos": 5,
+        "puntos": 6,
         "color":'backgroundHaas',
     },
     {
@@ -307,7 +307,7 @@ let arrayPilotos = [
         "img_piloto": '../assets/img/img_pilotos/bea.png',
         "apellido": 'BEA',
         "img_escuderia": '../assets/img/logos_teams/ferrari.png',
-        "puntos": 6,
+        "puntos": 7,
         "color":'backgroundFerrari',
     },
     {
@@ -342,28 +342,28 @@ let arrayPilotos = [
         "img_piloto": '../assets/img/img_pilotos/ver.png',
         "apellido": 'VER',
         "img_escuderia": '../assets/img/logos_teams/redbull.png',
-        "puntos": 295,
+        "puntos": 313,
         "color":'backgroundRedbull',
     },
     {
         "img_piloto": '../assets/img/img_pilotos/lec.png',
         "apellido": 'LEC',
         "img_escuderia": '../assets/img/logos_teams/ferrari.png',
-        "puntos": 192,
+        "puntos": 235,
         "color":'backgroundFerrari',
     },
     {
         "img_piloto": '../assets/img/img_pilotos/nor.png',
         "apellido": 'NOR',
         "img_escuderia": '../assets/img/logos_teams/mclaren.png',
-        "puntos": 225,
+        "puntos": 254,
         "color":'backgroundMclaren',
     },
     {
         "img_piloto": '../assets/img/img_pilotos/col.png',
         "apellido": 'COL',
         "img_escuderia": '../assets/img/logos_teams/williams-logo.png',
-        "puntos": 0,
+        "puntos": 4,
         "color":'backgroundWilliams',
     },
 ];
