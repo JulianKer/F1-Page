@@ -486,7 +486,7 @@ let arrayCarreras = [
         "p2NombrePiloto": 'HAM',
         "p2ImgPiloto": '../assets/img/pilotos_podio/hamilton.png',
         "p1NombrePiloto": 'RUS',
-        "p1ImgPiloto": '../assets/img/pilotos_podio/russel.png',
+        "p1ImgPiloto": '../assets/img/pilotos_podio/russell.png',
         "p3NombrePiloto": 'SAI',
         "p3ImgPiloto": '../assets/img/pilotos_podio/sainz.png',
 
