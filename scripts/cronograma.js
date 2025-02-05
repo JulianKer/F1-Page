@@ -33,7 +33,7 @@ let arrayCarreras = [
         "mesInicio": 2,
         "mesFin": 3,
         "imagen_fondo": '../assets/img/fondos_carreras_proximas/bahrain.png',
-        "imagen_circuito": '../assets/img/circuitos/.png'
+        "imagen_circuito": '../assets/img/circuitos/bahrain.png'
     },
     {
         "id": 'Saudi_Arabia',
@@ -55,7 +55,7 @@ let arrayCarreras = [
         "mesInicio": 3,
         "mesFin": 3,
         "imagen_fondo": '../assets/img/fondos_carreras_proximas/arabia_saudita.png',
-        "imagen_circuito": '../assets/img/circuitos/.png'
+        "imagen_circuito": '../assets/img/circuitos/saudi_arabia.png'
     },
     {
         "id": 'Australia',
@@ -77,7 +77,7 @@ let arrayCarreras = [
         "mesInicio": 3,
         "mesFin": 3,
         "imagen_fondo": '../assets/img/fondos_carreras_proximas/australia.png',
-        "imagen_circuito": '../assets/img/circuitos/.png'
+        "imagen_circuito": '../assets/img/circuitos/australia.png'
     },
     {
         "id": 'Japan',
@@ -99,7 +99,7 @@ let arrayCarreras = [
         "mesInicio": 4,
         "mesFin": 4,
         "imagen_fondo": '../assets/img/fondos_carreras_proximas/japon.png',
-        "imagen_circuito": '../assets/img/circuitos/.png'
+        "imagen_circuito": '../assets/img/circuitos/japan.png'
     },
     {
         "id": 'China',
@@ -121,7 +121,7 @@ let arrayCarreras = [
         "mesInicio": 4,
         "mesFin": 4,
         "imagen_fondo": '../assets/img/fondos_carreras_proximas/china.png',
-        "imagen_circuito": '../assets/img/circuitos/.png'
+        "imagen_circuito": '../assets/img/circuitos/china.png'
     },
     {
         "id": 'Miami',
@@ -143,7 +143,7 @@ let arrayCarreras = [
         "mesInicio": 5,
         "mesFin": 5,
         "imagen_fondo": '../assets/img/fondos_carreras_proximas/miami.png',
-        "imagen_circuito": '../assets/img/circuitos/.png'
+        "imagen_circuito": '../assets/img/circuitos/miami.png'
     },
     {
         "id": 'Emilia-Romagna',
@@ -165,7 +165,7 @@ let arrayCarreras = [
         "mesInicio": 5,
         "mesFin": 5,
         "imagen_fondo": '../assets/img/fondos_carreras_proximas/emilia_romagna.png',
-        "imagen_circuito": '../assets/img/circuitos/.png'
+        "imagen_circuito": '../assets/img/circuitos/emilia_romagna.png'
     },
     {
         "id": 'Monaco',
@@ -187,7 +187,7 @@ let arrayCarreras = [
         "mesInicio": 5,
         "mesFin": 5,
         "imagen_fondo": '../assets/img/fondos_carreras_proximas/monaco.png',
-        "imagen_circuito": '../assets/img/circuitos/.png'
+        "imagen_circuito": '../assets/img/circuitos/monaco.png'
     },
     {
         "id": 'Canada',
@@ -615,9 +615,9 @@ function calcularFechaDeLaCarrera(carrera) {
     ahora.setHours(0, 0, 0, 0);
 
     // creo la fecha de inicio del gp con los datos de cada carrera
-    let fechaInicio = new Date(anioActual, carrera.mesInicio-1, carrera.diaInicio);
+    let fechaInicio = new Date(/*anioActual*/2024, carrera.mesInicio-1, carrera.diaInicio); // aca comenté el anio actual pq sino se "reiniciaban" las carreras, y como son solo del 2024, le pongo directamente ese año, aun así tengo q ver si hago la pag dinamica para el 2025
     // creo la fecha de fin del gp con los datos de cada carrera
-    let fechaFin = new Date(anioActual, carrera.mesFin-1, carrera.diaFin);
+    let fechaFin = new Date(/*anioActual*/2024, carrera.mesFin-1, carrera.diaFin); // aca comenté el anio actual pq sino se "reiniciaban" las carreras, y como son solo del 2024, le pongo directamente ese año, aun así tengo q ver si hago la pag dinamica para el 2025
 
     // console.log('Fecha de inicio: ' + fechaInicio.getDate() + ' ' + fechaInicio.getMonth() + ' ' + fechaInicio.getFullYear());
     // console.log('Fecha de fin: ' + fechaFin.getDate() + ' '  + fechaFin.getMonth() + ' ' + fechaFin.getFullYear());

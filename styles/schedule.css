@@ -23,6 +23,10 @@
     display: grid;
     grid-template-columns:  /*repeat(4, 1fr)*/ repeat(auto-fit, minmax(315px, 1fr));
     row-gap: 4em;
+
+    .carrera{
+        max-width: 352px;
+    }
 }
 
 .contenedor_titulo_f1_schedeule{
@@ -302,6 +306,10 @@
     background-image: url(../assets/img/circuitos/fondo/img_plus_fondo_de_circuitos_oscuro.png);
     background-size: 8px;
     border-radius: .7em;
+
+    & img{
+        width: 100%;
+    }
 }
 
 .circulo_live img{   
